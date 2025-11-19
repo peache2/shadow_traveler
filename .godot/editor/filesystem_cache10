@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763571657
+character.tscn::PackedScene::7568736426605155974::1763571469::0::1::::<><><>0<>0<><>::uid://dipveob2f5c8w::::res://Sprites/Character /idle.png<>uid://dk532fu4yfkni::::res://Sprites/Character /walk.png
+icon.svg::CompressedTexture2D::7559548607474439773::1763571469::1763571501::1::::<><><>0<>0<>fc42611d8242a9cddd08f4b723e9156f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1763571469::0::1::::<><><>0<>0<><>::
+world.tscn::PackedScene::1684946301082014432::1763571469::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://character.tscn
+::res://Sprites/::1763571469
+::res://Sprites/Character/::1763571501
+idle.png::CompressedTexture2D::7753021404624501344::1763571469::1763571501::1::::<><><>0<>0<>2762cd3dbd6cb98a5cf129b2c3288b57<>res://.godot/imported/idle.png-362ab61637250042ed04c29fe10c8cf3.ctex::
+SPRITE_PORTRAIT.png::CompressedTexture2D::1171759152652912800::1763571469::1763571501::1::::<><><>0<>0<>d525f8e9ae86317b0522058fdb63f8e2<>res://.godot/imported/SPRITE_PORTRAIT.png-985f7d8d59c08a46514f23c45e770e43.ctex::
+SPRITE_SHEET.png::CompressedTexture2D::1818349275862446364::1763571469::1763571501::1::::<><><>0<>0<>5145108ea554ee4ce75dd2f41c3c8115<>res://.godot/imported/SPRITE_SHEET.png-afdbfc36cfdeb3b8818732fcb84f97db.ctex::
+walk.png::CompressedTexture2D::7924830407177060402::1763571469::1763571501::1::::<><><>0<>0<>18de534dd7d2badb81d0a74ebccb717d<>res://.godot/imported/walk.png-c8056a849c570c825ac87a2c950377cc.ctex::
