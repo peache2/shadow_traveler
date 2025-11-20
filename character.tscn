@@ -1,7 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://df3l8orlk0kgk"]
+[gd_scene load_steps=37 format=3 uid="uid://df3l8orlk0kgk"]
 
+[ext_resource type="Texture2D" uid="uid://gabehqhoa7l8" path="res://Sprites/Character/Attack 1.png" id="1_px5sl"]
 [ext_resource type="Texture2D" uid="uid://bydd40ntbcxx3" path="res://Sprites/Character/Fall.png" id="1_wfnr8"]
-[ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/idle.png" id="2_wfnr8"]
+[ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/Idle.png" id="2_wfnr8"]
 [ext_resource type="Texture2D" uid="uid://dbal8a3ywlxv6" path="res://Sprites/Character/Jump.png" id="3_px5sl"]
 [ext_resource type="Texture2D" uid="uid://dpp5iwrxo2fgg" path="res://Sprites/Character/Run.png" id="4_0qfo5"]
 
@@ -10,6 +11,9 @@ script/source = "extends CharacterBody2D
 
 @export var speed= 195
 @export var jump = -500
+
+var atacar:bool = false
+
 # Obtener la gravedad desde la configuración del proyecto para sincronizar con nodos RigidBody.
 var gravity = 900
 @onready var animated_sprite_2d = $AnimatedSprite2D
@@ -17,38 +21,65 @@ func _physics_process(delta):
 	# Aplicar la gravedad.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-
-	# Manejar el salto.
-	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
-		velocity.y = jump
-  
-	# Obtener la dirección del input y manejar el movimiento/desaceleración.
-	# Como buena práctica, deberías reemplazar las acciones UI por acciones personalizadas de juego.
-	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
-	if direction < 0:
-		animated_sprite_2d.flip_h = true
-	elif direction > 0:
-		animated_sprite_2d.flip_h = false
-	if is_on_floor():
-		if direction == 0:
-			animated_sprite_2d.play(\"Idle\")
+	if not atacar:
+		# Manejar el salto.
+		if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+			velocity.y = jump
+		# Obtener la dirección del input y manejar el movimiento/desaceleración.
+		# Como buena práctica, deberías reemplazar las acciones UI por acciones personalizadas de juego.
+		var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+		if direction < 0:
+			animated_sprite_2d.flip_h = true
+		elif direction > 0:
+			animated_sprite_2d.flip_h = false
+		if is_on_floor():
+			if direction == 0:
+				animated_sprite_2d.play(\"Idle\")
+			else:
+				animated_sprite_2d.play(\"Run\")
 		else:
-			animated_sprite_2d.play(\"Run\")
-	else:
-		if velocity.y < 0:
-			animated_sprite_2d.play(\"Jump\")
+			if velocity.y < 0:
+				animated_sprite_2d.play(\"Jump\")
+			else:
+				animated_sprite_2d.play(\"Fall\")
+		if direction:
+			velocity.x = direction * speed
 		else:
-			animated_sprite_2d.play(\"Fall\")
-	if direction:
-		velocity.x = direction * speed
+			velocity.x = move_toward(velocity.x, 0, speed)
+			
+		if Input.is_action_just_pressed(\"ui_attack\"):
+			atacar = true
+		move_and_slide()
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+		$AnimatedSprite2D.play(\"Attack\")
+		await ($AnimatedSprite2D.animation_finished)
+		atacar = false
 
-	move_and_slide()
+	
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
 size = Vector2(9.400001, 20.800003)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvb2f"]
+atlas = ExtResource("1_px5sl")
+region = Rect2(432, 0, 144, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uswop"]
+atlas = ExtResource("1_px5sl")
+region = Rect2(576, 0, 144, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shm3m"]
+atlas = ExtResource("1_px5sl")
+region = Rect2(720, 0, 144, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_go3uk"]
+atlas = ExtResource("1_px5sl")
+region = Rect2(864, 0, 144, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyohd"]
+atlas = ExtResource("1_px5sl")
+region = Rect2(1008, 0, 144, 144)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qi5as"]
 atlas = ExtResource("1_wfnr8")
@@ -110,21 +141,17 @@ region = Rect2(288, 0, 144, 144)
 atlas = ExtResource("3_px5sl")
 region = Rect2(432, 0, 144, 144)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lpiy1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjduu"]
 atlas = ExtResource("4_0qfo5")
-region = Rect2(0, 0, 144, 144)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_88tkl"]
-atlas = ExtResource("4_0qfo5")
-region = Rect2(144, 0, 144, 144)
+region = Rect2(432, 0, 144, 144)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y0ipg"]
 atlas = ExtResource("4_0qfo5")
 region = Rect2(288, 0, 144, 144)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kjduu"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_88tkl"]
 atlas = ExtResource("4_0qfo5")
-region = Rect2(432, 0, 144, 144)
+region = Rect2(144, 0, 144, 144)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1r1pa"]
 atlas = ExtResource("4_0qfo5")
@@ -142,8 +169,32 @@ region = Rect2(864, 0, 144, 144)
 atlas = ExtResource("4_0qfo5")
 region = Rect2(1008, 0, 144, 144)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_lpiy1"]
+atlas = ExtResource("4_0qfo5")
+region = Rect2(0, 0, 144, 144)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_qi5as"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvb2f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uswop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shm3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_go3uk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lyohd")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 18.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qi5as")
@@ -206,16 +257,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lpiy1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_88tkl")
+"texture": SubResource("AtlasTexture_kjduu")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_y0ipg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kjduu")
+"texture": SubResource("AtlasTexture_88tkl")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1r1pa")
@@ -228,10 +276,13 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8vvwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lpiy1")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 9.0
+"speed": 10.0
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -246,6 +297,5 @@ shape = SubResource("RectangleShape2D_pjt0s")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.40000004, 2.8)
 sprite_frames = SubResource("SpriteFrames_qi5as")
-animation = &"Jump"
-frame = 2
-frame_progress = 0.3066556
+animation = &"Idle"
+autoplay = "Idle"
