@@ -13,6 +13,8 @@ size = Vector2(715, 110)
 position = Vector2(370, 365)
 scale = Vector2(3, 3)
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
