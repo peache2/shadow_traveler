@@ -94,7 +94,6 @@ animations = [{
 }]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_26xuy"]
-blend_mode = 3
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_f3sb7"]
 
@@ -104,7 +103,6 @@ size = Vector2(715, 110)
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_f3sb7"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_cbp6q"]
-blend_mode = 3
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tlwt5"]
 
