@@ -1,2 +1,13 @@
-res://character.tscn
 res://world.tscn
+res://character.tscn
+res://boss.tscn
+res://Sprites/Executioner/state.gd
+res://finite_state_machine.gd
+res://idle.gd
+res://boss.gd
+res://follow.gd
+res://Follow.gd
+res://Idle.gd
+res://player.tscn
+res://attack.gd
+res://teleport.gd
