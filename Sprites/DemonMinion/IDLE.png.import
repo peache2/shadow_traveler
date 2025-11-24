@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3pw10btdtnsi"
-path="res://.godot/imported/Idle.png-5a93f2e154754517a3277de54c16d89b.ctex"
+uid="uid://bfsbw7j3k620t"
+path="res://.godot/imported/IDLE.png-ad87fa0902eae3a87b80263a35f9222f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Character/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-5a93f2e154754517a3277de54c16d89b.ctex"]
+source_file="res://Sprites/DemonMinion/IDLE.png"
+dest_files=["res://.godot/imported/IDLE.png-ad87fa0902eae3a87b80263a35f9222f.ctex"]
 
 [params]
 

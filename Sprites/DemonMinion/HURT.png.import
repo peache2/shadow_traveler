@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3pw10btdtnsi"
-path="res://.godot/imported/Idle.png-5a93f2e154754517a3277de54c16d89b.ctex"
+uid="uid://dasls8ra37erk"
+path="res://.godot/imported/HURT.png-5d39ef1a61b2b457afe0461fa5fa51c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Character/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-5a93f2e154754517a3277de54c16d89b.ctex"]
+source_file="res://Sprites/DemonMinion/HURT.png"
+dest_files=["res://.godot/imported/HURT.png-5d39ef1a61b2b457afe0461fa5fa51c6.ctex"]
 
 [params]
 

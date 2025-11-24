@@ -1,46 +1,85 @@
-[gd_scene load_steps=55 format=3 uid="uid://df3l8orlk0kgk"]
+[gd_scene load_steps=56 format=3 uid="uid://df3l8orlk0kgk"]
 
+[ext_resource type="PackedScene" uid="uid://byn23xie65q7o" path="res://bullet.tscn" id="1_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://gabehqhoa7l8" path="res://Sprites/Character/Attack 1.png" id="1_px5sl"]
 [ext_resource type="Texture2D" uid="uid://bydd40ntbcxx3" path="res://Sprites/Character/Fall.png" id="1_wfnr8"]
 [ext_resource type="Texture2D" uid="uid://ds05vygp2y0ek" path="res://Sprites/Character/Dash.png" id="2_0qfo5"]
-[ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/idle.png" id="2_wfnr8"]
+[ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/Idle.png" id="2_wfnr8"]
 [ext_resource type="Texture2D" uid="uid://dbal8a3ywlxv6" path="res://Sprites/Character/Jump.png" id="3_px5sl"]
 [ext_resource type="Texture2D" uid="uid://dpp5iwrxo2fgg" path="res://Sprites/Character/Run.png" id="4_0qfo5"]
 
 [sub_resource type="GDScript" id="GDScript_pjt0s"]
 script/source = "extends CharacterBody2D
 
-@export var speed= 200
+@export var speed = 200
 @export var jump = -500
+@export var bullet_node: PackedScene
+
 var jump_count = 0
 
+# Control de disparo
+var can_shoot: bool = true
+var shoot_cooldown: float = 0.3   # segundos entre cada disparo
 
-var atacar:bool = false
-
-# Obtener la gravedad desde la configuración del proyecto para sincronizar con nodos RigidBody.
+var atacar: bool = false
 var gravity = 900
+
 @onready var animated_sprite_2d = $AnimatedSprite2D
+
+
+func shoot():
+	if bullet_node == null:
+		push_error(\"No asignaste la escena del bullet en el inspector.\")
+		return
+
+	if not can_shoot:
+		return
+
+	can_shoot = false
+	# Inicia cooldown
+	await get_tree().create_timer(shoot_cooldown).timeout
+	can_shoot = true
+
+	# Crear bala
+	var bullet = bullet_node.instantiate()
+
+	# Posición de salida (puedes cambiarla si quieres que salga de la mano)
+	bullet.position = global_position
+
+	# Dirección basada en hacia dónde mira el personaje
+	bullet.direction = Vector2.LEFT if animated_sprite_2d.flip_h else Vector2.RIGHT
+
+	# Añadir bala a la escena
+	get_tree().current_scene.add_child(bullet)
+
+
+func _input(event):
+	if event.is_action_pressed(\"shoot\"):
+		shoot()
+
+
 func _physics_process(delta):
-	# Aplicar la gravedad.
+	# Gravedad
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	else:
 		jump_count = 0
+
 	if not atacar:
-		# Manejar el salto.
+
+		# SALTO
 		if Input.is_action_just_pressed(\"ui_accept\") and jump_count < 2:
 			jump_count += 1
 			velocity.y = jump
-		# Obtener la dirección del input y manejar el movimiento/desaceleración.
-		# Como buena práctica, deberías reemplazar las acciones UI por acciones personalizadas de juego.ç
-	
-	if not atacar:
-	
+
+		# MOVIMIENTO
 		var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+
 		if direction < 0:
 			animated_sprite_2d.flip_h = true
 		elif direction > 0:
 			animated_sprite_2d.flip_h = false
+
 		if is_on_floor():
 			if direction == 0:
 				animated_sprite_2d.play(\"Idle\")
@@ -51,20 +90,22 @@ func _physics_process(delta):
 				animated_sprite_2d.play(\"Jump\")
 			else:
 				animated_sprite_2d.play(\"Fall\")
+
 		if direction:
 			velocity.x = direction * speed
 		else:
 			velocity.x = move_toward(velocity.x, 0, speed)
-			
+
+		# ATAQUE
 		if Input.is_action_just_pressed(\"ui_attack\"):
 			atacar = true
-			
+
 		move_and_slide()
+
 	else:
-		$AnimatedSprite2D.play(\"Attack\")
-		await ($AnimatedSprite2D.animation_finished)
+		animated_sprite_2d.play(\"Attack\")
+		await animated_sprite_2d.animation_finished
 		atacar = false
-		
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
@@ -421,6 +462,7 @@ animations = [{
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(2.5, 2.5)
 script = SubResource("GDScript_pjt0s")
+bullet_node = ExtResource("1_1jxqw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.9999996, 0.40000093)

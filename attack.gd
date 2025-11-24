@@ -5,7 +5,7 @@ func enter():
 	combo()
  
 func attack(move = "1"):
-	animation_player.play("Attack" + move)
+	animation_player.play("Attack_" + move)
 	await animation_player.animation_finished
  
  
@@ -17,5 +17,5 @@ func combo():
 	combo()
  
 func transition():
-	if owner.direction.length() > 40:
+	if owner.direction.length() > 300:
 		get_parent().change_state("Follow")

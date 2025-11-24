@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://c8kkoalfhhgjj"]
+[gd_scene load_steps=81 format=3 uid="uid://c8kkoalfhhgjj"]
 
 [ext_resource type="Script" uid="uid://blqfris6x47ak" path="res://boss.gd" id="1_kles1"]
 [ext_resource type="Texture2D" uid="uid://dtjcn2g5qulac" path="res://Sprites/Executioner/Anims/attacking.png" id="1_o1i15"]
@@ -7,11 +7,14 @@
 [ext_resource type="Texture2D" uid="uid://oqfrlyder3k" path="res://Sprites/Executioner/Anims/summon.png" id="4_ef0k6"]
 [ext_resource type="Texture2D" uid="uid://dd83gphoni4fq" path="res://Sprites/Executioner/Anims/skill1.png" id="5_ry61v"]
 [ext_resource type="Script" uid="uid://c6y76s8ypqb2l" path="res://finite_state_machine.gd" id="6_kvofc"]
-[ext_resource type="Script" uid="uid://blb2bfbo4sh1j" path="res://Sprites/Executioner/state.gd" id="7_ef0k6"]
 [ext_resource type="Script" uid="uid://c20rwdy1qh880" path="res://idle.gd" id="7_ry61v"]
 [ext_resource type="Script" uid="uid://clet82sem4ckq" path="res://follow.gd" id="9_etj48"]
 [ext_resource type="Script" uid="uid://bndicjcwjt4fl" path="res://attack.gd" id="10_etj48"]
 [ext_resource type="Script" uid="uid://c5g0fi1dmq45m" path="res://teleport.gd" id="11_h3lj5"]
+[ext_resource type="Script" uid="uid://b41wx82t2s4f" path="res://spawn_minion.gd" id="12_km2bi"]
+[ext_resource type="PackedScene" uid="uid://bxlw76iuiwnr5" path="res://minion.tscn" id="13_u0duv"]
+[ext_resource type="Script" uid="uid://c2so0vq731m8b" path="res://death.gd" id="14_km2bi"]
+[ext_resource type="AudioStream" uid="uid://gurf2t3nojvn" path="res://Sounds/knockout.mp3" id="15_u0duv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kles1"]
 atlas = ExtResource("1_o1i15")
@@ -221,10 +224,6 @@ region = Rect2(300, 100, 100, 100)
 atlas = ExtResource("5_ry61v")
 region = Rect2(400, 100, 100, 100)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x36vw"]
-atlas = ExtResource("5_ry61v")
-region = Rect2(500, 100, 100, 100)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_ein1h"]
 animations = [{
 "frames": [{
@@ -334,7 +333,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vxe4g")
 }],
-"loop": true,
+"loop": false,
 "name": &"Death",
 "speed": 8.0
 }, {
@@ -371,9 +370,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gr7pa")
 }],
-"loop": true,
+"loop": false,
 "name": &"Summon",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -408,43 +407,11 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xcyd7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x36vw")
 }],
-"loop": true,
+"loop": false,
 "name": &"Teleport",
-"speed": 8.0
+"speed": 15.0
 }]
-
-[sub_resource type="Animation" id="Animation_wdjsq"]
-resource_name = "Attack2"
-length = 0.8750125
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"Attack2"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6]
-}
 
 [sub_resource type="Animation" id="Animation_ex6fr"]
 resource_name = "Death"
@@ -473,6 +440,20 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../FiniteStateMachine/Death")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.75),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"boss_slained"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_mfce7"]
@@ -514,39 +495,9 @@ tracks/2/keys = {
 "values": [Color(1, 1, 1, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_ywwnh"]
-resource_name = "Summon"
-length = 0.6250125
-step = 0.125
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"Summon"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4]
-}
-
 [sub_resource type="Animation" id="Animation_d25u6"]
 resource_name = "Teleport"
-length = 1.5000125
-step = 0.125
+step = 0.065
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -676,16 +627,88 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3, 4, 5]
 }
 
+[sub_resource type="Animation" id="Animation_wdjsq"]
+resource_name = "Attack2"
+length = 0.8750125
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Attack2"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_ywwnh"]
+resource_name = "Summon"
+length = 0.6250125
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Summon"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../FiniteStateMachine/SpawnMinion")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.375),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"spawn"
+}]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2rput"]
 _data = {
-&"Attack1": SubResource("Animation_blebq"),
-&"Attack2": SubResource("Animation_wdjsq"),
+&"Attack_1": SubResource("Animation_blebq"),
+&"Attack_2": SubResource("Animation_wdjsq"),
 &"Death": SubResource("Animation_ex6fr"),
 &"RESET": SubResource("Animation_mfce7"),
-&"Summon": SubResource("Animation_ywwnh"),
 &"Teleport": SubResource("Animation_d25u6"),
 &"boss_slained": SubResource("Animation_o1i15"),
-&"idle": SubResource("Animation_rdnqb")
+&"idle": SubResource("Animation_rdnqb"),
+&"summon": SubResource("Animation_ywwnh")
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1i15"]
@@ -693,7 +716,9 @@ radius = 17.0
 height = 49.69
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we8h1"]
-size = Vector2(68, 93)
+size = Vector2(60, 60)
+
+[sub_resource type="FontVariation" id="FontVariation_u0duv"]
 
 [node name="boss" type="CharacterBody2D"]
 collision_layer = 2
@@ -725,7 +750,6 @@ shape = SubResource("RectangleShape2D_we8h1")
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="UI"]
-visible = false
 custom_minimum_size = Vector2(200, 0)
 anchors_preset = 7
 anchor_left = 0.5
@@ -741,6 +765,7 @@ max_value = 10.0
 value = 10.0
 
 [node name="Label" type="Label" parent="UI/ProgressBar"]
+visible = false
 layout_mode = 0
 offset_left = 1.0
 offset_top = -19.0
@@ -763,8 +788,9 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_u0duv")
 theme_override_font_sizes/font_size = 40
-text = "Boss Slained"
+text = "KNOCKOUT"
 
 [node name="debug" type="Label" parent="."]
 visible = false
@@ -792,10 +818,14 @@ script = ExtResource("10_etj48")
 [node name="Teleport" type="Node2D" parent="FiniteStateMachine"]
 script = ExtResource("11_h3lj5")
 
-[node name="SpawnMinions" type="Node2D" parent="FiniteStateMachine"]
-script = ExtResource("7_ef0k6")
+[node name="SpawnMinion" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("12_km2bi")
+minion_node = ExtResource("13_u0duv")
 
 [node name="Death" type="Node2D" parent="FiniteStateMachine"]
-script = ExtResource("7_ef0k6")
+script = ExtResource("14_km2bi")
+
+[node name="Knockout" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_u0duv")
 
 [connection signal="body_entered" from="PlayerDetect" to="FiniteStateMachine/Idle" method="_on_player_detect_body_entered"]

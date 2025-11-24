@@ -1,8 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://yag24h5rqkiy"]
+[gd_scene load_steps=12 format=3 uid="uid://yag24h5rqkiy"]
 
 [ext_resource type="PackedScene" uid="uid://df3l8orlk0kgk" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://c8kkoalfhhgjj" path="res://boss.tscn" id="2_fj7yv"]
-[ext_resource type="AudioStream" uid="uid://b07ujxx448spf" path="res://Sounds/CrisisFight.mp3" id="3_tlwt5"]
 
 [sub_resource type="GDScript" id="GDScript_tlwt5"]
 
@@ -28,7 +27,7 @@ size = Vector2(99.71088, 191.49597)
 script = SubResource("GDScript_tlwt5")
 
 [node name="player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(-63.999985, 203.00002)
+position = Vector2(-106, -276)
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
@@ -143,8 +142,3 @@ shape = SubResource("RectangleShape2D_fj7yv")
 [node name="Boss" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(671, 157)
 scale = Vector2(3.6650026, 3.585)
-
-[node name="CrisisFight" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(373, 249)
-stream = ExtResource("3_tlwt5")
-autoplay = true
