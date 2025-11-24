@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://c20rwdy1qh880" path="res://idle.gd" id="7_ry61v"]
 [ext_resource type="Script" uid="uid://clet82sem4ckq" path="res://follow.gd" id="9_etj48"]
 [ext_resource type="Script" uid="uid://bndicjcwjt4fl" path="res://attack.gd" id="10_etj48"]
+[ext_resource type="Script" uid="uid://c5g0fi1dmq45m" path="res://teleport.gd" id="11_h3lj5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kles1"]
 atlas = ExtResource("1_o1i15")
@@ -416,35 +417,6 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="Animation" id="Animation_blebq"]
-resource_name = "Attack"
-length = 0.6666778
-step = 0.11111111
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"Attack"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.11111111, 0.22222222, 0.33333334, 0.44444445, 0.5555556),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5]
-}
-
 [sub_resource type="Animation" id="Animation_wdjsq"]
 resource_name = "Attack2"
 length = 0.8750125
@@ -501,36 +473,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-}
-
-[sub_resource type="Animation" id="Animation_rdnqb"]
-resource_name = "Idle"
-length = 0.6666834
-loop_mode = 1
-step = 0.16666667
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"Idle"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3]
 }
 
 [sub_resource type="Animation" id="Animation_mfce7"]
@@ -675,16 +617,75 @@ tracks/1/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_rdnqb"]
+resource_name = "Idle"
+length = 0.6666834
+loop_mode = 1
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_blebq"]
+resource_name = "Attack"
+length = 0.6666778
+step = 0.11111111
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Attack"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.11111111, 0.22222222, 0.33333334, 0.44444445, 0.5555556),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2rput"]
 _data = {
-&"Attack": SubResource("Animation_blebq"),
+&"Attack1": SubResource("Animation_blebq"),
 &"Attack2": SubResource("Animation_wdjsq"),
 &"Death": SubResource("Animation_ex6fr"),
-&"Idle": SubResource("Animation_rdnqb"),
 &"RESET": SubResource("Animation_mfce7"),
 &"Summon": SubResource("Animation_ywwnh"),
 &"Teleport": SubResource("Animation_d25u6"),
-&"boss_slained": SubResource("Animation_o1i15")
+&"boss_slained": SubResource("Animation_o1i15"),
+&"idle": SubResource("Animation_rdnqb")
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1i15"]
@@ -693,28 +694,6 @@ height = 49.69
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we8h1"]
 size = Vector2(68, 93)
-
-[sub_resource type="GDScript" id="GDScript_etj48"]
-script/source = "extends State
- 
-var can_transition: bool = false
- 
-func enter():
-	super.enter()
-	animation_player.play(\"Teleport\")
-	await animation_player.animation_finished
-	can_transition = true
- 
- 
-func teleport():
-	owner.position = player.position + Vector2.RIGHT * 40
- 
- 
-func transition():
-	if can_transition:
-		get_parent().change_state(\"Attack\")
-		can_transition = false
-"
 
 [node name="boss" type="CharacterBody2D"]
 collision_layer = 2
@@ -730,7 +709,7 @@ root_node = NodePath("../AnimatedSprite2D")
 libraries = {
 &"": SubResource("AnimationLibrary_2rput")
 }
-autoplay = "Idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-6, 0)
@@ -811,7 +790,7 @@ script = ExtResource("9_etj48")
 script = ExtResource("10_etj48")
 
 [node name="Teleport" type="Node2D" parent="FiniteStateMachine"]
-script = SubResource("GDScript_etj48")
+script = ExtResource("11_h3lj5")
 
 [node name="SpawnMinions" type="Node2D" parent="FiniteStateMachine"]
 script = ExtResource("7_ef0k6")

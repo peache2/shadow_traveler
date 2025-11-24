@@ -145,6 +145,6 @@ position = Vector2(671, 157)
 scale = Vector2(3.6650026, 3.585)
 
 [node name="CrisisFight" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(378, 237)
+position = Vector2(373, 249)
 stream = ExtResource("3_tlwt5")
 autoplay = true
