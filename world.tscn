@@ -139,6 +139,22 @@ position = Vector2(749, 494)
 scale = Vector2(1.8399999, 1)
 shape = SubResource("RectangleShape2D_fj7yv")
 
+[node name="Obstacle4" type="StaticBody2D" parent="."]
+position = Vector2(624, -177)
+scale = Vector2(0.11858165, 0.34269083)
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle4"]
+modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_26xuy")
+position = Vector2(791.47534, 495.00003)
+scale = Vector2(1237.0493, 112.25)
+texture = SubResource("PlaceholderTexture2D_f3sb7")
+
+[node name="Collision" type="CollisionShape2D" parent="Obstacle4"]
+position = Vector2(749, 494)
+scale = Vector2(1.8399999, 1)
+shape = SubResource("RectangleShape2D_fj7yv")
+
 [node name="Boss" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(671, 157)
+position = Vector2(708, 135)
 scale = Vector2(3.6650026, 3.585)

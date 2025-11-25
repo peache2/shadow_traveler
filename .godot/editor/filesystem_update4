@@ -1,14 +1,2 @@
 res://boss.tscn
-res://attack.gd
 res://world.tscn
-res://minion.gd
-res://spawn_minion.gd
-res://minion.tscn
-res://death.gd
-res://boss.gd
-res://player.tscn
-res://bullet.gd
-res://bullet.tscn
-res://idle.gd
-res://Sprites/Executioner/state.gd
-res://finite_state_machine.gd
