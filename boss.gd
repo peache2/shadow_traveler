@@ -6,7 +6,7 @@ extends CharacterBody2D
  
 var direction : Vector2
  
-var health: = 10:
+var health: = 100:
 	set(value):
 		health = value
 		progress_bar.value = value
@@ -14,9 +14,7 @@ var health: = 10:
 			progress_bar.visible = false
 			find_child("FiniteStateMachine").change_state("Death")
  
-func _ready():
-	set_physics_process(false)
- 
+	
  
 func _process(_delta):
 	direction = player.position - position
@@ -32,3 +30,10 @@ func _physics_process(delta):
  
 func take_damage():
 	health -= 2
+	
+
+
+
+	
+
+	

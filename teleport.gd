@@ -10,7 +10,7 @@ func enter():
  
  
 func teleport():
-	owner.position = player.position + Vector2.RIGHT * 40
+	owner.position = player.position + Vector2.RIGHT * 20
  
  
 func transition():

@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://gabehqhoa7l8" path="res://Sprites/Character/Attack 1.png" id="1_px5sl"]
 [ext_resource type="Texture2D" uid="uid://bydd40ntbcxx3" path="res://Sprites/Character/Fall.png" id="1_wfnr8"]
 [ext_resource type="Texture2D" uid="uid://ds05vygp2y0ek" path="res://Sprites/Character/Dash.png" id="2_0qfo5"]
-[ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/Idle.png" id="2_wfnr8"]
+[ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/idle.png" id="2_wfnr8"]
 [ext_resource type="Texture2D" uid="uid://dbal8a3ywlxv6" path="res://Sprites/Character/Jump.png" id="3_px5sl"]
 [ext_resource type="Texture2D" uid="uid://dpp5iwrxo2fgg" path="res://Sprites/Character/Run.png" id="4_0qfo5"]
 
 [sub_resource type="GDScript" id="GDScript_pjt0s"]
 script/source = "extends CharacterBody2D
 
-@export var speed = 200
+@export var speed = 300
 @export var jump = -500
 @export var bullet_node: PackedScene
 
@@ -57,9 +57,7 @@ func _input(event):
 	if event.is_action_pressed(\"shoot\"):
 		shoot()
 
-
 func _physics_process(delta):
-	# Gravedad
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	else:
@@ -106,10 +104,12 @@ func _physics_process(delta):
 		animated_sprite_2d.play(\"Attack\")
 		await animated_sprite_2d.animation_finished
 		atacar = false
+		
+		
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
-size = Vector2(7.600002, 20.800003)
+size = Vector2(7.600002, 16.800003)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pm3tn"]
 atlas = ExtResource("1_px5sl")
@@ -465,7 +465,7 @@ script = SubResource("GDScript_pjt0s")
 bullet_node = ExtResource("1_1jxqw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.9999996, 0.40000093)
+position = Vector2(0.9999996, 2.4000003)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_pjt0s")
 

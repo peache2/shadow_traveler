@@ -27,7 +27,11 @@ size = Vector2(99.71088, 191.49597)
 script = SubResource("GDScript_tlwt5")
 
 [node name="player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(-106, -276)
+position = Vector2(-358, -55.000046)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-3.5999908, -0.7999878)
+scale = Vector2(1.2000002, 1.2000002)
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
@@ -78,37 +82,16 @@ physics_material_override = SubResource("PhysicsMaterial_f3sb7")
 [node name="Sprite2D" type="Sprite2D" parent="Wall2"]
 modulate = Color(0, 0, 0, 1)
 material = SubResource("CanvasItemMaterial_cbp6q")
-position = Vector2(469.27414, -88.79193)
-scale = Vector2(100, 280.308)
+position = Vector2(469.27414, -45.516182)
+scale = Vector2(100, 193.75652)
 texture = SubResource("PlaceholderTexture2D_tlwt5")
 
 [node name="Collision" type="CollisionShape2D" parent="Wall2"]
 position = Vector2(469.27417, -45.418915)
 shape = SubResource("RectangleShape2D_tlwt5")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(359.00012, 123.99997)
-scale = Vector2(3.0000005, 3.0000005)
-zoom = Vector2(0.95, 0.95)
-
-[node name="Obstacle" type="StaticBody2D" parent="."]
-position = Vector2(39, 181)
-scale = Vector2(0.11858165, 0.34269083)
-
-[node name="Sprite2D" type="Sprite2D" parent="Obstacle"]
-modulate = Color(0, 0, 0, 1)
-material = SubResource("CanvasItemMaterial_26xuy")
-position = Vector2(791.47534, 495.00003)
-scale = Vector2(1237.0493, 112.25)
-texture = SubResource("PlaceholderTexture2D_f3sb7")
-
-[node name="Collision" type="CollisionShape2D" parent="Obstacle"]
-position = Vector2(749, 494)
-scale = Vector2(1.8399999, 1)
-shape = SubResource("RectangleShape2D_fj7yv")
-
 [node name="Obstacle2" type="StaticBody2D" parent="."]
-position = Vector2(206, 6)
+position = Vector2(94.00001, 152)
 scale = Vector2(0.11858165, 0.34269083)
 
 [node name="Sprite2D" type="Sprite2D" parent="Obstacle2"]
@@ -124,7 +107,7 @@ scale = Vector2(1.8399999, 1)
 shape = SubResource("RectangleShape2D_fj7yv")
 
 [node name="Obstacle3" type="StaticBody2D" parent="."]
-position = Vector2(612, 99.00001)
+position = Vector2(-51.000004, -37)
 scale = Vector2(0.11858165, 0.34269083)
 
 [node name="Sprite2D" type="Sprite2D" parent="Obstacle3"]
@@ -156,5 +139,37 @@ scale = Vector2(1.8399999, 1)
 shape = SubResource("RectangleShape2D_fj7yv")
 
 [node name="Boss" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(708, 135)
+position = Vector2(777, 338)
 scale = Vector2(3.6650026, 3.585)
+
+[node name="Wall3" type="StaticBody2D" parent="."]
+position = Vector2(-200.00002, 313)
+scale = Vector2(2.527307, 2.4439156)
+physics_material_override = SubResource("PhysicsMaterial_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall3"]
+modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_cbp6q")
+position = Vector2(469.27414, -88.79193)
+scale = Vector2(100, 280.308)
+texture = SubResource("PlaceholderTexture2D_tlwt5")
+
+[node name="Collision" type="CollisionShape2D" parent="Wall3"]
+position = Vector2(469.27417, -45.418915)
+shape = SubResource("RectangleShape2D_tlwt5")
+
+[node name="Floor2" type="StaticBody2D" parent="."]
+position = Vector2(-608, -797)
+scale = Vector2(1.22, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor2"]
+modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_26xuy")
+position = Vector2(791.47534, 495.00003)
+scale = Vector2(1237.0493, 112.25)
+texture = SubResource("PlaceholderTexture2D_f3sb7")
+
+[node name="Collision" type="CollisionShape2D" parent="Floor2"]
+position = Vector2(749, 494)
+scale = Vector2(1.8399999, 1)
+shape = SubResource("RectangleShape2D_fj7yv")
