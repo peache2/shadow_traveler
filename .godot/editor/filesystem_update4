@@ -1,10 +1,2 @@
-res://world.tscn
-res://boss.tscn
-res://boss.gd
-res://minion.tscn
-res://follow.gd
-res://spawn_minion.gd
-res://teleport.gd
-res://attack.gd
-res://minion.gd
 res://player.tscn
+res://boss.tscn
