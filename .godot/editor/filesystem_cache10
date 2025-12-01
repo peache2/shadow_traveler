@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1764323355
+::res://::1764580507
 attack.gd::GDScript::3305558568591789841::1764150904::0::1::::<>State<><>0<>0<><>::
 boss.gd::GDScript::3191862400670320578::1764154329::0::1::::<>CharacterBody2D<><>0<>0<><>::
-boss.tscn::PackedScene::7110349173253864155::1764154329::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
+boss.tscn::PackedScene::7110349173253864155::1764323755::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
 bullet.gd::GDScript::5553383051957979148::1764058514::0::1::::<>Area2D<><>0<>0<><>::
 bullet.tscn::PackedScene::4099480423462542446::1764058514::0::1::::<><><>0<>0<><>::uid://cledn4cvm46ce::::res://bullet.gd
 death.gd::GDScript::6705994757132116899::1764058514::0::1::::<>State<><>0<>0<><>::
@@ -13,12 +13,12 @@ icon.svg::CompressedTexture2D::7559548607474439773::1763627960::1763627960::1:::
 idle.gd::GDScript::6720621261655881719::1763976814::0::1::::<>State<><>0<>0<><>::
 minion.gd::GDScript::1487647055088517993::1764149214::0::1::::<>CharacterBody2D<><>0<>0<><>::
 minion.tscn::PackedScene::4024866803410891588::1764154916::0::1::::<><><>0<>0<><>::uid://vgvlhcskekb6::::res://minion.gd<>uid://egj1b2ndo84f::::res://Sprites/Executioner/Anims/summonAppear.png<>uid://b02kub7onfdbc::::res://Sprites/Executioner/Anims/summonIdle.png
-player.tscn::PackedScene::7568736426605155974::1764323355::0::1::::<><><>0<>0<><>::uid://byn23xie65q7o::::res://bullet.tscn<>uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://ds05vygp2y0ek::::res://Sprites/Character/Dash.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
+player.tscn::PackedScene::7568736426605155974::1764323750::0::1::::<><><>0<>0<><>::uid://byn23xie65q7o::::res://bullet.tscn<>uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://ds05vygp2y0ek::::res://Sprites/Character/Dash.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://c4fr2grt0gg1b::::res://Sounds/dashtest.mp3
 README.md::TextFile::-1::1763627960::0::1::::<><><>0<>0<><>::
 spawn_minion.gd::GDScript::131674988052430543::1764150071::0::1::::<>State<><>0<>0<><>::
 teleport.gd::GDScript::6892420257344940060::1764150007::0::1::::<>State<><>0<>0<><>::
 world.tscn::PackedScene::1684946301082014432::1764156831::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://c8kkoalfhhgjj::::res://boss.tscn
-::res://Sounds/::1764323430
+::res://Sounds/::1764323431
 CrisisFight.mp3::AudioStreamMP3::4208433519699551107::1763975625::1763975625::1::::<><><>0<>0<>3c43f2b7322441325c1cbafcfb8b775c<>res://.godot/imported/CrisisFight.mp3-a185c0929c940ac2690f6eaadf39cb90.mp3str::
 dashtest.mp3::AudioStreamMP3::6819720469270603245::1764323430::1764323431::1::::<><><>0<>0<>b1353e359b11a8c89ee4754ffd28e2fe<>res://.godot/imported/dashtest.mp3-cbb467373850234ec53e208d1c865112.mp3str::
 knockout.mp3::AudioStreamMP3::463463183527807611::1764058514::1764058514::1::::<><><>0<>0<>30fe20608f6203f57288446a21f0c865<>res://.godot/imported/knockout.mp3-9ce0344cbe4da10a75bb5b062bb3eb9b.mp3str::

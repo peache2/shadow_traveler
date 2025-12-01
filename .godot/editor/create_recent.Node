@@ -1,6 +1,6 @@
+CollisionShape2D
 Timer
 Area2D
-CollisionShape2D
 VisibleOnScreenNotifier2D
 Sprite2D
 Node2D
@@ -12,4 +12,3 @@ CanvasLayer
 AnimationPlayer
 ParallaxBackground
 DirectionalLight2D
-PointLight2D

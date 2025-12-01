@@ -1,2 +1,4 @@
-res://player.tscn
 res://boss.tscn
+res://player.tscn
+res://world.tscn
+res://bullet.tscn

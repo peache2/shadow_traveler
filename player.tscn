@@ -23,12 +23,13 @@ var can_shoot: bool = true
 var shoot_cooldown: float = 0.3
 
 var atacar: bool = false
-var gravity = 900
+var gravity = 950
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
 
 func shoot():
+	
 	if bullet_node == null:
 		push_error(\"No asignaste la escena del bullet en el inspector.\")
 		return
@@ -106,16 +107,9 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, speed)
 
-		# ATAQUE
-		if Input.is_action_just_pressed(\"ui_attack\"):
-			atacar = true
+
 
 		move_and_slide()
-
-	else:
-		animated_sprite_2d.play(\"Attack\")
-		await animated_sprite_2d.animation_finished
-		atacar = false
 		
 		
 func _on_dash_timer_timeout() -> void:
