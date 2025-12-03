@@ -1,24 +1,24 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1764580507
+::res://::1764764104
 attack.gd::GDScript::3305558568591789841::1764150904::0::1::::<>State<><>0<>0<><>::
-boss.gd::GDScript::3191862400670320578::1764154329::0::1::::<>CharacterBody2D<><>0<>0<><>::
-boss.tscn::PackedScene::7110349173253864155::1764323755::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
+boss.gd::GDScript::3191862400670320578::1764761143::0::1::::<>CharacterBody2D<><>0<>0<><>::
+boss.tscn::PackedScene::7110349173253864155::1764763048::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
 bullet.gd::GDScript::5553383051957979148::1764058514::0::1::::<>Area2D<><>0<>0<><>::
-bullet.tscn::PackedScene::4099480423462542446::1764058514::0::1::::<><><>0<>0<><>::uid://cledn4cvm46ce::::res://bullet.gd
+bullet.tscn::PackedScene::4099480423462542446::1764758935::0::1::::<><><>0<>0<><>::uid://cledn4cvm46ce::::res://bullet.gd
 death.gd::GDScript::6705994757132116899::1764058514::0::1::::<>State<><>0<>0<><>::
 enemy.tscn::PackedScene::5537815078936988580::1763713746::0::1::::<><><>0<>0<><>::
-finite_state_machine.gd::GDScript::7000239887152193749::1764058514::0::1::::<>Node2D<><>0<>0<><>::
+finite_state_machine.gd::GDScript::7000239887152193749::1764761339::0::1::::<>Node2D<><>0<>0<><>::
 follow.gd::GDScript::5554390158618075412::1764149967::0::1::::<>State<><>0<>0<><>::
 icon.svg::CompressedTexture2D::7559548607474439773::1763627960::1763627960::1::::<><><>0<>0<>fc42611d8242a9cddd08f4b723e9156f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 idle.gd::GDScript::6720621261655881719::1763976814::0::1::::<>State<><>0<>0<><>::
 minion.gd::GDScript::1487647055088517993::1764149214::0::1::::<>CharacterBody2D<><>0<>0<><>::
 minion.tscn::PackedScene::4024866803410891588::1764154916::0::1::::<><><>0<>0<><>::uid://vgvlhcskekb6::::res://minion.gd<>uid://egj1b2ndo84f::::res://Sprites/Executioner/Anims/summonAppear.png<>uid://b02kub7onfdbc::::res://Sprites/Executioner/Anims/summonIdle.png
-player.tscn::PackedScene::7568736426605155974::1764323750::0::1::::<><><>0<>0<><>::uid://byn23xie65q7o::::res://bullet.tscn<>uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://ds05vygp2y0ek::::res://Sprites/Character/Dash.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://c4fr2grt0gg1b::::res://Sounds/dashtest.mp3
+player.tscn::PackedScene::7568736426605155974::1764760133::0::1::::<><><>0<>0<><>::uid://byn23xie65q7o::::res://bullet.tscn<>uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://ds05vygp2y0ek::::res://Sprites/Character/Dash.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://c4fr2grt0gg1b::::res://Sounds/dashtest.mp3
 README.md::TextFile::-1::1763627960::0::1::::<><><>0<>0<><>::
 spawn_minion.gd::GDScript::131674988052430543::1764150071::0::1::::<>State<><>0<>0<><>::
 teleport.gd::GDScript::6892420257344940060::1764150007::0::1::::<>State<><>0<>0<><>::
-world.tscn::PackedScene::1684946301082014432::1764156831::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://c8kkoalfhhgjj::::res://boss.tscn
-::res://Sounds/::1764323431
+world.tscn::PackedScene::1684946301082014432::1764763775::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://c8kkoalfhhgjj::::res://boss.tscn
+::res://Sounds/::1764665528
 CrisisFight.mp3::AudioStreamMP3::4208433519699551107::1763975625::1763975625::1::::<><><>0<>0<>3c43f2b7322441325c1cbafcfb8b775c<>res://.godot/imported/CrisisFight.mp3-a185c0929c940ac2690f6eaadf39cb90.mp3str::
 dashtest.mp3::AudioStreamMP3::6819720469270603245::1764323430::1764323431::1::::<><><>0<>0<>b1353e359b11a8c89ee4754ffd28e2fe<>res://.godot/imported/dashtest.mp3-cbb467373850234ec53e208d1c865112.mp3str::
 knockout.mp3::AudioStreamMP3::463463183527807611::1764058514::1764058514::1::::<><><>0<>0<>30fe20608f6203f57288446a21f0c865<>res://.godot/imported/knockout.mp3-9ce0344cbe4da10a75bb5b062bb3eb9b.mp3str::
@@ -95,3 +95,14 @@ frame0008.png::CompressedTexture2D::7040508487856703737::1763975625::1763975625:
 frame0009.png::CompressedTexture2D::6942488087216510505::1763975625::1763975625::1::::<><><>0<>0<>7323edeb5eb05226a9b2f43232fd2681<>res://.godot/imported/frame0009.png-2b556d6cc36b4310532660bc6ac91fa8.ctex::
 frame0010.png::CompressedTexture2D::1871466392370287947::1763975625::1763975625::1::::<><><>0<>0<>797b3eb8d5a6fe3af02285a953b579b0<>res://.godot/imported/frame0010.png-0c789055b8ea83c3b3a1d86bc601bea6.ctex::
 frame0011.png::CompressedTexture2D::8530245481825854790::1763975625::1763975625::1::::<><><>0<>0<>6dfe2ca0e90bcdf3aecfc98bcdcaefb4<>res://.godot/imported/frame0011.png-c1740c8e16a45593f952db34165cedff.ctex::
+::res://Tilemap/::1764764117
+::res://Tilemap/PixelFantasy_Caves_1.0/::1764764117
+background1.png::CompressedTexture2D::2505218070515810506::1565811402::1764764176::1::::<><><>0<>0<>776de47c7e3f069502d9835b4ea915c4<>res://.godot/imported/background1.png-9d775cf077e6c27e52e3a8e48e7ba2fd.ctex::
+background2.png::CompressedTexture2D::2510102656075724666::1565819826::1764764176::1::::<><><>0<>0<>3222894596e1d5c3d66098e5906e8256<>res://.godot/imported/background2.png-3d2e357789431323e51720d1dbac4a0a.ctex::
+background3.png::CompressedTexture2D::5144723989770683919::1565819050::1764764176::1::::<><><>0<>0<>2e795e6bfe8a4b88a6e67c769225e2fe<>res://.godot/imported/background3.png-79a0ab4df0f2e95f7bac17c88a8380a1.ctex::
+background4a.png::CompressedTexture2D::4803926513355763822::1565811452::1764764176::1::::<><><>0<>0<>7f6dbdd8c8be3310474c2db6176ac188<>res://.godot/imported/background4a.png-5c904403de99dbbfc89c97805bc7048f.ctex::
+background4b.png::CompressedTexture2D::4870468444246594564::1565818714::1764764176::1::::<><><>0<>0<>969eff08e3dfdee2a0320f7bd411645c<>res://.godot/imported/background4b.png-01484d0f4a92d1e4369d236c5748a639.ctex::
+mainlev_build.png::CompressedTexture2D::753197283903901437::1565811300::1764764176::1::::<><><>0<>0<>a7811cd4c6d0f416eba8a8797b56c461<>res://.godot/imported/mainlev_build.png-f68cca390b8d55c445262faba3b462bf.ctex::
+props1.png::CompressedTexture2D::2506564892569005722::1565812708::1764764176::1::::<><><>0<>0<>7eba98f11201d93715dcd53d056954dd<>res://.godot/imported/props1.png-a3d0959648d1a0da68adc49a703710e1.ctex::
+props2.png::CompressedTexture2D::4944430019464636288::1565811346::1764764176::1::::<><><>0<>0<>17cdd58facfca22ae34df5e853379fd3<>res://.godot/imported/props2.png-3beac09e79a9eda210212b35b4bd70e0.ctex::
+::res://Tilemap/PixelFantasy_Caves_1.0/PSD/::1565819830

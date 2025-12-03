@@ -1,4 +1,7 @@
-res://boss.tscn
-res://player.tscn
-res://world.tscn
 res://bullet.tscn
+res://boss.tscn
+res://world.tscn
+res://Health_Bar.gd
+res://player.tscn
+res://boss.gd
+res://finite_state_machine.gd
