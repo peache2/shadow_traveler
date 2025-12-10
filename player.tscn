@@ -1,6 +1,6 @@
-[gd_scene load_steps=34 format=3 uid="uid://df3l8orlk0kgk"]
+[gd_scene load_steps=35 format=3 uid="uid://df3l8orlk0kgk"]
 
-[ext_resource type="PackedScene" uid="uid://byn23xie65q7o" path="res://bullet.tscn" id="1_1jxqw"]
+[ext_resource type="Script" uid="uid://br4od2nncfi0q" path="res://sword_collision.gd" id="3_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://p6ghr7ckkf1s" path="res://Sprites/NewCharacter/DarkSamuraiAssets/DarkSamurai (64x64).png" id="5_1jxqw"]
 [ext_resource type="AudioStream" uid="uid://c4fr2grt0gg1b" path="res://Sounds/dashtest.mp3" id="8_dw050"]
 
@@ -10,69 +10,92 @@ script/source = "extends CharacterBody2D
 @export var speed = 300
 @export var jump = -500
 @export var bullet_node: PackedScene
+@export var atacar = false
+@onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var sword_collision = $SwordCollision/CollisionShape2D
+
+
 
 var jump_count = 0
-
-# Control de disparo
-var can_shoot: bool = true
-var shoot_cooldown: float = 0.3
-
-var atacar: bool = false
 var gravity = 950
 
-@onready var animated_sprite_2d = $AnimatedSprite2D
+func _process(_delta):
+
+	# DETECTAR ATAQUE
+	if Input.is_action_just_pressed(\"Attack\") and not atacar:
+		attack()
+
+	if atacar:
+		var total_frames = animated_sprite_2d.sprite_frames.get_frame_count(\"Attack\")
+		var last_frame = total_frames - 1
+		
+		if animated_sprite_2d.animation == \"Attack\" \\
+		and animated_sprite_2d.frame == last_frame \\
+		and not animated_sprite_2d.is_playing():
+			atacar = false
+			sword_collision.disabled = true
+
+
+func attack():
+	atacar = true
+	velocity.x = 0  
+	animated_sprite_2d.play(\"Attack\")
+	sword_collision.disabled = false
+
 
 func _physics_process(delta):
+
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	else:
 		jump_count = 0
 
-	if not atacar:
-
-		# SALTO
-		if Input.is_action_just_pressed(\"ui_accept\") and jump_count < 2:
-			jump_count += 1
-			velocity.y = jump
-
-		# MOVIMIENTO
-		var direction = Input.get_axis(\"ui_left\", \"ui_right\")
-
-	
-		if Input.is_action_just_pressed(\"dash\"):
-			$Dashtest.play()
-			$DashTimer.start()
-			speed *= 5
-			velocity.x = direction * speed
-			
-			
-		if direction < 0:
-			animated_sprite_2d.flip_h = true
-		elif direction > 0:
-			animated_sprite_2d.flip_h = false
-
-		if is_on_floor():
-			if direction == 0:
-				animated_sprite_2d.play(\"Idle\")
-			else:
-				animated_sprite_2d.play(\"Run\")
-		else:
-			if velocity.y < 0:
-				animated_sprite_2d.play(\"Jump\")
-			else:
-				animated_sprite_2d.play(\"Fall\")
-
-		if direction:
-			velocity.x = direction * speed
-		else:
-			velocity.x = move_toward(velocity.x, 0, speed)
-
-
-
+	if atacar:
 		move_and_slide()
-		
-		
-func _on_dash_timer_timeout() -> void:
+		return
+
+	# SALTO
+	if Input.is_action_just_pressed(\"ui_accept\") and jump_count < 2:
+		jump_count += 1
+		velocity.y = jump
+
+	# MOVIMIENTO
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+
+	if Input.is_action_just_pressed(\"dash\"):
+		$Dashtest.play()
+		$DashTimer.start()
+		speed *= 5
+		velocity.x = direction * speed
+
+	# Girar sprite
+	if direction < 0:
+		animated_sprite_2d.flip_h = true
+	elif direction > 0:
+		animated_sprite_2d.flip_h = false
+
+	# ANIMACIONES
+	if is_on_floor():
+		if direction == 0:
+			animated_sprite_2d.play(\"Idle\")
+		else:
+			animated_sprite_2d.play(\"Run\")
+	else:
+		if velocity.y < 0:
+			animated_sprite_2d.play(\"Jump\")
+		else:
+			animated_sprite_2d.play(\"Fall\")
+
+	# APLICAR MOVIMIENTO
+	if direction:
+		velocity.x = direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+
+	move_and_slide()
+
+
+func _on_dash_timer_timeout():
 	speed = 300
 "
 
@@ -201,7 +224,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Attack",
-"speed": 18.0
+"speed": 17.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -296,10 +319,12 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
+size = Vector2(23.600002, 45.2)
+
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(2.5, 2.5)
 script = SubResource("GDScript_pjt0s")
-bullet_node = ExtResource("1_1jxqw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.39999938, -1.7999994)
@@ -309,8 +334,10 @@ shape = SubResource("RectangleShape2D_pjt0s")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.39999998, -5.2)
 sprite_frames = SubResource("SpriteFrames_qi5as")
-animation = &"Idle"
+animation = &"Attack"
 autoplay = "Idle"
+frame = 2
+frame_progress = 1.0
 
 [node name="DashTimer" type="Timer" parent="."]
 wait_time = 0.12
@@ -319,4 +346,22 @@ wait_time = 0.12
 stream = ExtResource("8_dw050")
 volume_db = -1.14
 
+[node name="SwordCollision" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("3_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordCollision"]
+position = Vector2(20.599997, 0.2000015)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_hqtel")
+disabled = true
+debug_color = Color(0.5680971, 0.9732383, 1.540184e-06, 0.41960785)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="SwordCollision"]
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
+[connection signal="body_entered" from="SwordCollision" to="SwordCollision" method="_on_body_entered"]
+[connection signal="body_exited" from="SwordCollision" to="SwordCollision" method="_on_body_exited"]
+[connection signal="screen_exited" from="SwordCollision/VisibleOnScreenNotifier2D" to="SwordCollision" method="_on_visible_on_screen_notifier_2d_screen_exited"]

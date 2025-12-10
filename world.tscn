@@ -951,9 +951,6 @@ tile_set = SubResource("TileSet_036b0")
 position = Vector2(350, 155)
 scale = Vector2(3.0000005, 3.0000005)
 
-[node name="player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(62, 365)
-
 [node name="Background" type="ParallaxBackground" parent="."]
 
 [node name="Gray" type="Sprite2D" parent="Background"]
@@ -966,3 +963,6 @@ texture = SubResource("CanvasTexture_cbp6q")
 [node name="Boss" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(764, -34)
 scale = Vector2(3.6650026, 3.585)
+
+[node name="player" parent="." instance=ExtResource("1_f3sb7")]
+position = Vector2(62, 365)

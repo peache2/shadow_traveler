@@ -1,6 +1,4 @@
-res://world.tscn
 res://player.tscn
 res://bullet.tscn
-res://minion.tscn
-res://boss.tscn
-res://follow.gd
+res://sword_collision.gd
+res://world.tscn
