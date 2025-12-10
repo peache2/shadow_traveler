@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://oqfrlyder3k" path="res://Sprites/Executioner/Anims/summon.png" id="4_ef0k6"]
 [ext_resource type="Texture2D" uid="uid://dd83gphoni4fq" path="res://Sprites/Executioner/Anims/skill1.png" id="5_ry61v"]
 [ext_resource type="Script" uid="uid://c6y76s8ypqb2l" path="res://finite_state_machine.gd" id="6_kvofc"]
+[ext_resource type="Texture2D" uid="uid://cywgpwpgyarp4" path="res://Sprites/Executioner/LOGO.png" id="7_lc4na"]
 [ext_resource type="Script" uid="uid://c20rwdy1qh880" path="res://idle.gd" id="7_ry61v"]
 [ext_resource type="Script" uid="uid://clet82sem4ckq" path="res://follow.gd" id="9_etj48"]
 [ext_resource type="Script" uid="uid://bndicjcwjt4fl" path="res://attack.gd" id="10_etj48"]
@@ -712,13 +713,10 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1i15"]
-radius = 17.0
 height = 49.69
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we8h1"]
 size = Vector2(60, 60)
-
-[sub_resource type="FontVariation" id="FontVariation_u0duv"]
 
 [node name="boss" type="CharacterBody2D"]
 collision_layer = 2
@@ -727,6 +725,8 @@ slide_on_ceiling = false
 script = ExtResource("1_kles1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.4999971, -3)
+scale = Vector2(0.83000004, 0.78)
 sprite_frames = SubResource("SpriteFrames_ein1h")
 animation = &"Idle"
 
@@ -747,13 +747,14 @@ collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect"]
 position = Vector2(-5, -1.5)
-scale = Vector2(0.95, 0.95)
+scale = Vector2(0.9499999, 0.9499999)
 shape = SubResource("RectangleShape2D_we8h1")
 debug_color = Color(0.9822305, 0, 0.36822537, 0.41960785)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="UI"]
+modulate = Color(1, 0, 0, 1)
 custom_minimum_size = Vector2(200, 0)
 anchors_preset = 7
 anchor_left = 0.5
@@ -793,9 +794,13 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("FontVariation_u0duv")
 theme_override_font_sizes/font_size = 40
 text = "DEAD"
+
+[node name="Logo" type="Sprite2D" parent="UI"]
+position = Vector2(938, 52)
+scale = Vector2(1.5701524, 1.5124999)
+texture = ExtResource("7_lc4na")
 
 [node name="debug" type="Label" parent="."]
 visible = false
