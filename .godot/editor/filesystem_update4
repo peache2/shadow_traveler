@@ -1,4 +1,5 @@
-res://player.tscn
-res://bullet.tscn
-res://sword_collision.gd
 res://world.tscn
+res://spawn_minion.gd
+res://player.tscn
+res://twin.tscn
+res://Traveler.tscn

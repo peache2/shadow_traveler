@@ -100,7 +100,7 @@ func _on_dash_timer_timeout():
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
-size = Vector2(17.600002, 25.200005)
+size = Vector2(11.600002, 14.800003)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("5_1jxqw")
@@ -327,12 +327,13 @@ scale = Vector2(2.5, 2.5)
 script = SubResource("GDScript_pjt0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.39999938, -1.7999994)
+position = Vector2(-2.6, 3.3999999)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_pjt0s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0.39999998, -5.2)
+position = Vector2(-2, -1.2)
+scale = Vector2(0.6976562, 0.746875)
 sprite_frames = SubResource("SpriteFrames_qi5as")
 animation = &"Attack"
 autoplay = "Idle"
@@ -352,16 +353,13 @@ collision_mask = 2
 script = ExtResource("3_i3pqv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SwordCollision"]
-position = Vector2(20.599997, 0.2000015)
+position = Vector2(15.600001, 0.39999998)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_hqtel")
 disabled = true
 debug_color = Color(0.5680971, 0.9732383, 1.540184e-06, 0.41960785)
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="SwordCollision"]
-
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
 [connection signal="body_entered" from="SwordCollision" to="SwordCollision" method="_on_body_entered"]
 [connection signal="body_exited" from="SwordCollision" to="SwordCollision" method="_on_body_exited"]
-[connection signal="screen_exited" from="SwordCollision/VisibleOnScreenNotifier2D" to="SwordCollision" method="_on_visible_on_screen_notifier_2d_screen_exited"]
