@@ -339,7 +339,7 @@ animations = [{
 size = Vector2(9.4000025, 14.800003)
 
 [node name="player" type="CharacterBody2D"]
-scale = Vector2(2.5, 2.5)
+scale = Vector2(2.85, 2.85)
 script = SubResource("GDScript_pjt0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
