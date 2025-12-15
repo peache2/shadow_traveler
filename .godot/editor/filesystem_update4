@@ -1,5 +1,9 @@
-res://world.tscn
-res://spawn_minion.gd
 res://player.tscn
-res://twin.tscn
-res://Traveler.tscn
+res://world.tscn
+res://GiantBoss.tscn
+res://boss.tscn
+res://giantboss.gd
+res://giant_follow.gd
+res://giant_boss_finite_state_machine.gd
+res://giant_attack.gd
+res://giant_idle.gd
