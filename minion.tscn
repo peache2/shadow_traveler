@@ -102,6 +102,6 @@ sprite_frames = SubResource("SpriteFrames_gnj65")
 animation = &"idle"
 autoplay = "default"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="AnimatedSprite2D2" type="CollisionShape2D" parent="."]
 position = Vector2(-2.5, 5)
 shape = SubResource("RectangleShape2D_012lr")

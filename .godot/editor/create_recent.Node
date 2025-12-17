@@ -1,7 +1,9 @@
-CollisionShape2D
-Area2D
-AnimatedSprite2D
 CharacterBody2D
+Timer
+RayCast2D
+CollisionShape2D
+AnimatedSprite2D
+Area2D
 StaticBody2D
 Node2D
 VisibleOnScreenNotifier2D
@@ -10,5 +12,3 @@ AnimationTree
 Sprite2D
 TileMapLayer
 ProgressBar
-CanvasLayer
-CanvasGroup
