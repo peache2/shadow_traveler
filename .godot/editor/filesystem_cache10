@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765971152
+::res://::1766049204
 attack.gd::GDScript::3305558568591789841::1765531292::0::1::::<>State<><>0<>0<><>::
 boss.gd::GDScript::3191862400670320578::1765531292::0::1::::<>CharacterBody2D<><>0<>0<><>::
 boss.tscn::PackedScene::7110349173253864155::1765531292::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://cywgpwpgyarp4::::res://Sprites/Executioner/LOGO.png<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
@@ -8,7 +8,7 @@ bullet.tscn::PackedScene::4099480423462542446::1765531292::0::1::::<><><>0<>0<><
 death.gd::GDScript::6705994757132116899::1765531292::0::1::::<>State<><>0<>0<><>::
 enemy.tscn::PackedScene::5537815078936988580::1765531292::0::1::::<><><>0<>0<><>::
 enemy_walk.gd::GDScript::6023077800255774318::1765970994::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy_walk.tscn::PackedScene::5199917415635181576::1765971152::0::1::::<><><>0<>0<><>::uid://bkbe28whgxnhi::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png<>uid://cr2vhgmm1gp0q::::res://enemy_walk.gd<>uid://c7ucj3jyvoyew::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_7.png<>uid://dxq67vrq3u278::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_6.png<>uid://b1fyme3tlu2l7::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_5.png<>uid://c3j0okwm01wr6::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png<>uid://dqalnw8t7m05f::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png<>uid://bcayopawtv455::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png<>uid://dk1souhv3sfcy::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png
+enemy_walk.tscn::PackedScene::5199917415635181576::1765974768::0::1::::<><><>0<>0<><>::uid://bkbe28whgxnhi::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png<>uid://cr2vhgmm1gp0q::::res://enemy_walk.gd<>uid://c7ucj3jyvoyew::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_7.png<>uid://dxq67vrq3u278::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_6.png<>uid://b1fyme3tlu2l7::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_5.png<>uid://c3j0okwm01wr6::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png<>uid://dqalnw8t7m05f::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png<>uid://bcayopawtv455::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png<>uid://dk1souhv3sfcy::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png
 finite_state_machine.gd::GDScript::7000239887152193749::1765531292::0::1::::<>Node2D<><>0<>0<><>::
 follow.gd::GDScript::5554390158618075412::1765531292::0::1::::<>State<><>0<>0<><>::
 icon.svg::CompressedTexture2D::7559548607474439773::1765531292::1765790101::1::::<><><>0<>0<>fc42611d8242a9cddd08f4b723e9156f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -21,7 +21,7 @@ spawn_minion.gd::GDScript::131674988052430543::1765537503::0::1::::<>State<><>0<
 sword_collision.gd::GDScript::3640354814494281386::1765531292::0::1::::<>Area2D<><>0<>0<><>::
 teleport.gd::GDScript::6892420257344940060::1765531292::0::1::::<>State<><>0<>0<><>::
 Traveler.tscn::PackedScene::6214521017251545227::1765540559::0::1::::<><><>0<>0<><>::uid://c6nt2gymahi7n::::res://Sprites/Crow/Animations/crow_idle.png
-world.tscn::PackedScene::1684946301082014432::1765971115::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://cgc446ofpv28c::::res://enemy_walk.tscn<>uid://ky4bw5vwqco0::::res://Tilemap/PixelFantasy_Caves_1.0/mainlev_build.png
+world.tscn::PackedScene::1684946301082014432::1765974769::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://cgc446ofpv28c::::res://enemy_walk.tscn<>uid://ky4bw5vwqco0::::res://Tilemap/PixelFantasy_Caves_1.0/mainlev_build.png
 ::res://Sounds/::1765531292
 CrisisFight.mp3::AudioStreamMP3::4208433519699551107::1765531292::1765531292::1::::<><><>0<>0<>3c43f2b7322441325c1cbafcfb8b775c<>res://.godot/imported/CrisisFight.mp3-a185c0929c940ac2690f6eaadf39cb90.mp3str::
 dashtest.mp3::AudioStreamMP3::6819720469270603245::1765531292::1765531292::1::::<><><>0<>0<>b1353e359b11a8c89ee4754ffd28e2fe<>res://.godot/imported/dashtest.mp3-cbb467373850234ec53e208d1c865112.mp3str::
@@ -187,7 +187,7 @@ Bringer-of-Death_Walk_8.png::CompressedTexture2D::8993277869598287423::161735272
 ::res://Sprites/Enemy/Bringer-Of-Death/SpriteSheet/::1765969704
 Bringer-of-Death-SpritSheet.png::CompressedTexture2D::2000045534354338419::1617352432::1765969704::1::::<><><>0<>0<>6e6fdae9194748c5f64102e4e57f548f<>res://.godot/imported/Bringer-of-Death-SpritSheet.png-d9b955071f69969ea994c178e9f9616e.ctex::
 Bringer-of-Death-SpritSheet_no-Effect.png::CompressedTexture2D::8482520843629251236::1617352512::1765969704::1::::<><><>0<>0<>d21e77382c97321a2f6a99137e178c4d<>res://.godot/imported/Bringer-of-Death-SpritSheet_no-Effect.png-6fecf6162f8e6d97c16533bd2d1c56bb.ctex::
-::res://Sprites/Enemy/NightBorne/::1765974758
+::res://Sprites/Enemy/NightBorne/::1765974768
 NightBorne.png::CompressedTexture2D::3238809655044625598::1618649248::1765974768::1::::<><><>0<>0<>e7e0935c56d65ff341042bcf25363dcd<>res://.godot/imported/NightBorne.png-8bba57dd20be6f83e6371b2fec59ae25.ctex::
 ::res://Sprites/EnemyGiant/::1765790096
 ::res://Sprites/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/::1765790096
