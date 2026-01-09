@@ -1,1 +1,6 @@
 res://world.tscn
+res://player.tscn
+res://menu_principal.gd
+res://menu_principal.tscn
+res://pantalla_de_carga.tscn
+res://pantalla_de_carga.gd

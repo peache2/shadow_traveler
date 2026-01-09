@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4lcmbmhgpuq1"]
+
+[ext_resource type="Texture2D" uid="uid://braj4k7xxu353" path="res://photos/menu.png" id="1_bj1uy"]
+[ext_resource type="Script" uid="uid://dpsmwc20r1x3d" path="res://menu_principal.gd" id="1_gmcsc"]
+
+[node name="MenuPrincipal" type="Node2D"]
+script = ExtResource("1_gmcsc")
+
+[node name="Menu" type="Sprite2D" parent="."]
+position = Vector2(575, 332)
+scale = Vector2(0.75390625, 0.6484375)
+texture = ExtResource("1_bj1uy")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 528.0
+offset_top = 247.0
+offset_right = 620.0
+offset_bottom = 304.0
+theme_override_font_sizes/font_size = 35
+text = "PLAY"
+flat = true
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 528.0
+offset_top = 310.0
+offset_right = 620.0
+offset_bottom = 367.0
+theme_override_font_sizes/font_size = 35
+text = "EXIT"
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
