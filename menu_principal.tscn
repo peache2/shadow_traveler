@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4lcmbmhgpuq1"]
+[gd_scene load_steps=6 format=3 uid="uid://d4lcmbmhgpuq1"]
 
 [ext_resource type="Texture2D" uid="uid://braj4k7xxu353" path="res://photos/menu.png" id="1_bj1uy"]
 [ext_resource type="Script" uid="uid://dpsmwc20r1x3d" path="res://menu_principal.gd" id="1_gmcsc"]
 [ext_resource type="FontFile" uid="uid://dhisoryfcfmwj" path="res://fonts/trajan-pro/TrajanPro-Bold.otf" id="3_ns3he"]
 [ext_resource type="AudioStream" uid="uid://ctxuaki2t6avq" path="res://Sounds/menu.wav" id="3_ul6ys"]
+[ext_resource type="AudioStream" uid="uid://bvebsiw1yrfdp" path="res://Sounds/clicknewgame.wav" id="5_fa1tu"]
 
 [node name="MenuPrincipal" type="Node2D"]
 script = ExtResource("1_gmcsc")
@@ -13,32 +14,42 @@ position = Vector2(575, 332)
 scale = Vector2(0.75390625, 0.6484375)
 texture = ExtResource("1_bj1uy")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 519.0
-offset_top = 281.0
-offset_right = 648.0
-offset_bottom = 358.0
+[node name="NUEVO JUEGO" type="Button" parent="."]
+offset_left = 478.0
+offset_top = 279.0
+offset_right = 688.0
+offset_bottom = 356.0
+focus_mode = 0
+theme_override_colors/font_pressed_color = Color(0.5538816, 0.4200829, 1, 1)
 theme_override_fonts/font = ExtResource("3_ns3he")
 theme_override_font_sizes/font_size = 25
-text = "PLAY"
+text = "NUEVO JUEGO"
 flat = true
 icon_alignment = 1
 
-[node name="Button2" type="Button" parent="."]
+[node name="EXIT" type="Button" parent="."]
 offset_left = 538.0
 offset_top = 333.0
 offset_right = 630.0
 offset_bottom = 390.0
+focus_mode = 0
+theme_override_colors/font_pressed_color = Color(0.5220885, 0.23772591, 1, 1)
 theme_override_fonts/font = ExtResource("3_ns3he")
 theme_override_font_sizes/font_size = 25
-text = "EXIT"
+text = "SALIR"
 flat = true
 icon_alignment = 1
 
 [node name="Menu2" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(600, 256)
 stream = ExtResource("3_ul6ys")
+volume_db = 15.0
 autoplay = true
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[node name="Clicknewgame" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_fa1tu")
+mix_target = 1
+playback_type = 1
+
+[connection signal="pressed" from="NUEVO JUEGO" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="EXIT" to="." method="_on_button_2_pressed"]

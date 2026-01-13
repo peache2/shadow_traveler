@@ -16,6 +16,11 @@ script/source = "extends CharacterBody2D
 @export var atacar = false
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var sword_collision = $SwordCollision/CollisionShape2D
+@export var look_l: bool = true
+
+
+func _ready() -> void:
+	animated_sprite_2d.flip_h = true
 
 
 var jump_count = 0

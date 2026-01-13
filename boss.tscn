@@ -747,14 +747,14 @@ collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect"]
 position = Vector2(-5, -1.5)
-scale = Vector2(0.9499999, 0.9499999)
+scale = Vector2(1.1, 1.1)
 shape = SubResource("RectangleShape2D_we8h1")
 debug_color = Color(0.9822305, 0, 0.36822537, 0.41960785)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="UI"]
-modulate = Color(1, 0, 0, 1)
+modulate = Color(0.5465015, 0.0039540376, 0.9918929, 1)
 custom_minimum_size = Vector2(200, 0)
 anchors_preset = 7
 anchor_left = 0.5
