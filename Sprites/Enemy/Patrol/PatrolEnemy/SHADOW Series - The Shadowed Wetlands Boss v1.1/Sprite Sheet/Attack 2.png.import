@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk1souhv3sfcy"
-path="res://.godot/imported/Bringer-of-Death_Idle_1.png-1ad4fa77d366c988d7a3c65cffacc47e.ctex"
+uid="uid://ra7e527moesv"
+path="res://.godot/imported/Attack 2.png-9eca3c9ad376d5d701587cc9e6428311.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png"
-dest_files=["res://.godot/imported/Bringer-of-Death_Idle_1.png-1ad4fa77d366c988d7a3c65cffacc47e.ctex"]
+source_file="res://Sprites/Enemy/Patrol/PatrolEnemy/SHADOW Series - The Shadowed Wetlands Boss v1.1/Sprite Sheet/Attack 2.png"
+dest_files=["res://.godot/imported/Attack 2.png-9eca3c9ad376d5d701587cc9e6428311.ctex"]
 
 [params]
 

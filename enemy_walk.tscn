@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c3j0okwm01wr6" path="res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png" id="5_4wobt"]
 [ext_resource type="Texture2D" uid="uid://dqalnw8t7m05f" path="res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png" id="6_bu2fk"]
 [ext_resource type="Texture2D" uid="uid://bcayopawtv455" path="res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png" id="7_u2q0h"]
-[ext_resource type="Texture2D" uid="uid://dk1souhv3sfcy" path="res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png" id="8_8yhe3"]
+[ext_resource type="Texture2D" uid="uid://dk1souhv3sfcy" path="res://photos/loadingpng/Bringer-of-Death_Idle_1.png" id="8_8yhe3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8koj3"]
 animations = [{
