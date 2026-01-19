@@ -1,7 +1,3 @@
 res://world.tscn
-res://patrol_enemy.tscn
-res://patrol_enemy.gd
-res://pantalla_de_carga.tscn
-res://player.tscn
-res://menu_principal.tscn
-res://menu_principal.gd
+res://boss.tscn
+res://attack.gd
