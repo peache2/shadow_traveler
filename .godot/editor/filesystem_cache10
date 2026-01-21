@@ -1,15 +1,13 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768813869
-attack.gd::GDScript::3305558568591789841::1768305586::0::1::::<>State<><>0<>0<><>::
+::res://::1768995249
+attack.gd::GDScript::3305558568591789841::1768815474::0::1::::<>State<><>0<>0<><>::
 boss.gd::GDScript::3191862400670320578::1768305208::0::1::::<>CharacterBody2D<><>0<>0<><>::
-boss.tscn::PackedScene::7110349173253864155::1768306043::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://cywgpwpgyarp4::::res://Sprites/Executioner/LOGO.png<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
+boss.tscn::PackedScene::7110349173253864155::1768815227::0::1::::<><><>0<>0<><>::uid://blqfris6x47ak::::res://boss.gd<>uid://dtjcn2g5qulac::::res://Sprites/Executioner/Anims/attacking.png<>uid://dvshndwuv4mum::::res://Sprites/Executioner/Anims/death.png<>uid://musv24ino0px::::res://Sprites/Executioner/Anims/idle.png<>uid://oqfrlyder3k::::res://Sprites/Executioner/Anims/summon.png<>uid://dd83gphoni4fq::::res://Sprites/Executioner/Anims/skill1.png<>uid://c6y76s8ypqb2l::::res://finite_state_machine.gd<>uid://cywgpwpgyarp4::::res://Sprites/Executioner/LOGO.png<>uid://c20rwdy1qh880::::res://idle.gd<>uid://clet82sem4ckq::::res://follow.gd<>uid://bndicjcwjt4fl::::res://attack.gd<>uid://c5g0fi1dmq45m::::res://teleport.gd<>uid://b41wx82t2s4f::::res://spawn_minion.gd<>uid://bxlw76iuiwnr5::::res://minion.tscn<>uid://c2so0vq731m8b::::res://death.gd<>uid://gurf2t3nojvn::::res://Sounds/knockout.mp3
 boss_zone.gd::GDScript::806444797099167199::1768297723::0::1::::<>Area2D<><>0<>0<><>::
 bullet.gd::GDScript::5553383051957979148::1765531292::0::1::::<>Area2D<><>0<>0<><>::
 bullet.tscn::PackedScene::4099480423462542446::1765531292::0::1::::<><><>0<>0<><>::uid://cledn4cvm46ce::::res://bullet.gd
 death.gd::GDScript::6705994757132116899::1765531292::0::1::::<>State<><>0<>0<><>::
-enemy.tscn::PackedScene::5537815078936988580::1765531292::0::1::::<><><>0<>0<><>::
-enemy_walk.gd::GDScript::6023077800255774318::1765970994::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy_walk.tscn::PackedScene::5199917415635181576::1768379702::0::1::::<><><>0<>0<><>::uid://bkbe28whgxnhi::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png<>uid://cr2vhgmm1gp0q::::res://enemy_walk.gd<>uid://c7ucj3jyvoyew::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_7.png<>uid://dxq67vrq3u278::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_6.png<>uid://b1fyme3tlu2l7::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_5.png<>uid://c3j0okwm01wr6::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png<>uid://dqalnw8t7m05f::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png<>uid://bcayopawtv455::::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png<>uid://dk1souhv3sfcy::::res://photos/loadingpng/Bringer-of-Death_Idle_1.png
+enemy.gd::GDScript::4781162893579354521::1768988293::0::1::::<>CharacterBody2D<><>0<>0<><>::
 finite_state_machine.gd::GDScript::7000239887152193749::1765531292::0::1::::<>Node2D<><>0<>0<><>::
 follow.gd::GDScript::5554390158618075412::1765531292::0::1::::<>State<><>0<>0<><>::
 icon.svg::CompressedTexture2D::7559548607474439773::1765531292::1768292200::1::::<><><>0<>0<>fc42611d8242a9cddd08f4b723e9156f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -20,19 +18,36 @@ minion.gd::GDScript::1487647055088517993::1765879111::0::1::::<>CharacterBody2D<
 minion.tscn::PackedScene::4024866803410891588::1765971069::0::1::::<><><>0<>0<><>::uid://vgvlhcskekb6::::res://minion.gd<>uid://egj1b2ndo84f::::res://Sprites/Executioner/Anims/summonAppear.png<>uid://b02kub7onfdbc::::res://Sprites/Executioner/Anims/summonIdle.png
 pantalla_de_carga.gd::GDScript::1699196023289195244::1767961010::0::1::::<>Node2D<><>0<>0<><>::
 pantalla_de_carga.tscn::PackedScene::8243151391547567685::1768390084::0::1::::<><><>0<>0<><>::uid://yhdrl31w6crk::::res://pantalla_de_carga.gd<>uid://dvatftj2kc5cs::::res://photos/loadingpng/frame_00_delay-0.05s.png<>uid://cdoa4n76rjuvc::::res://photos/loadingpng/frame_01_delay-0.05s.png<>uid://0emr14ioli05::::res://photos/loadingpng/frame_02_delay-0.05s.png<>uid://cha8ogdkib4jc::::res://photos/loadingpng/frame_03_delay-0.05s.png<>uid://37i4rti44pot::::res://photos/loadingpng/frame_04_delay-0.05s.png<>uid://b0ittly8v0q84::::res://photos/loadingpng/frame_05_delay-0.05s.png<>uid://yqkybr0ocfcx::::res://photos/loadingpng/frame_06_delay-0.05s.png<>uid://2oye73dq3di1::::res://photos/loadingpng/frame_07_delay-0.05s.png<>uid://c0mdhnf6cc25q::::res://photos/loadingpng/frame_08_delay-0.05s.png<>uid://bp4nwldngi74h::::res://photos/loadingpng/frame_09_delay-0.05s.png<>uid://cbvnt7qh526dd::::res://photos/loadingpng/frame_10_delay-0.05s.png<>uid://dd7d0cryeadfd::::res://photos/loadingpng/frame_11_delay-0.05s.png<>uid://ba3ntevkds606::::res://photos/loadingpng/frame_12_delay-0.05s.png<>uid://q2q60n6rhi64::::res://photos/loadingpng/frame_13_delay-0.05s.png<>uid://b3jf7d3q75plh::::res://photos/loadingpng/frame_14_delay-0.05s.png<>uid://cbjk6781y5m1h::::res://photos/loadingpng/frame_15_delay-0.05s.png<>uid://bs3rr2tmesko6::::res://photos/loadingpng/frame_16_delay-0.05s.png<>uid://m4h8wmi0ug2d::::res://photos/loadingpng/frame_17_delay-0.05s.png<>uid://saplbo8buw5y::::res://photos/loadingpng/frame_18_delay-0.05s.png<>uid://dtfb7tocg6rp8::::res://photos/loadingpng/frame_19_delay-0.05s.png<>uid://njmeplok4cnk::::res://photos/loadingpng/frame_20_delay-0.05s.png<>uid://n5yu7m5kwvyt::::res://photos/loadingpng/frame_21_delay-0.05s.png<>uid://ce1401wyb3o1j::::res://photos/loadingpng/frame_22_delay-0.05s.png<>uid://c28a8gjobax0c::::res://photos/loadingpng/frame_23_delay-0.05s.png
-patrol_enemy.gd::GDScript::761139274007998661::1768393508::0::1::::<>CharacterBody2D<><>0<>0<><>::
-patrol_enemy.tscn::PackedScene::8581635004698478818::1768393691::0::1::::<><><>0<>0<><>::uid://4wlre21rewy3::::res://Sprites/Enemy/Patrol/PatrolEnemy/SHADOW Series - The Shadowed Wetlands Boss v1.1/Sprite Sheet/walk.png<>uid://k3x38wej021n::::res://patrol_enemy.gd<>uid://dbctqvunc0vb4::::res://Sprites/Enemy/Patrol/PatrolEnemy/SHADOW Series - The Shadowed Wetlands Boss v1.1/Sprite Sheet/Attack 1.png
-player.tscn::PackedScene::7568736426605155974::1768391293::0::1::::<><><>0<>0<><>::uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://br4od2nncfi0q::::res://sword_collision.gd<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png
+PatrolEnemy.tscn::PackedScene::1858933572652890275::1768995265::0::1::::<><><>0<>0<><>::uid://caebb32at82bt::::res://enemy.gd<>uid://hqvujtllncg8::::res://Sprites/Enemy/Sicklezeep/sickle_sheet.png
+player.tscn::PackedScene::7568736426605155974::1768993261::0::1::::<><><>0<>0<><>::uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://br4od2nncfi0q::::res://sword_collision.gd<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://b07ujxx448spf::::res://Sounds/CrisisFight.mp3
 README.md::TextFile::-1::1765531292::0::1::::<><><>0<>0<><>::
 spawn_minion.gd::GDScript::131674988052430543::1765537503::0::1::::<>State<><>0<>0<><>::
 sword_collision.gd::GDScript::3640354814494281386::1765531292::0::1::::<>Area2D<><>0<>0<><>::
 teleport.gd::GDScript::6892420257344940060::1765531292::0::1::::<>State<><>0<>0<><>::
 Traveler.tscn::PackedScene::6214521017251545227::1765540559::0::1::::<><><>0<>0<><>::uid://c6nt2gymahi7n::::res://Sprites/Crow/Animations/crow_idle.png
-world.tscn::PackedScene::1684946301082014432::1768393883::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://bmby306iu71w6::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_7.png<>uid://bjx1ykoicsjif::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_6.png<>uid://c4rnbgly3uou8::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_5.png<>uid://ky4bw5vwqco0::::res://Tilemap/PixelFantasy_Caves_1.0/mainlev_build.png<>uid://dvc6u7lt4wcil::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_4.png<>uid://buqa76r7mjugv::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_3.png<>uid://m447pwhql6r0::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_2.png<>uid://be82s4foiyo5l::::res://Sprites/Portal/pixelartportal/Frames/portal1_frame_1.png<>uid://dujajluga756m::::res://patrol_enemy.tscn
+world.tscn::PackedScene::1684946301082014432::1768995241::0::1::::<><><>0<>0<><>::uid://df3l8orlk0kgk::::res://player.tscn<>uid://ky4bw5vwqco0::::res://Tilemap/PixelFantasy_Caves_1.0/mainlev_build.png<>uid://1qqmngll3bi6::::res://PatrolEnemy.tscn<>uid://c8kkoalfhhgjj::::res://boss.tscn
 ::res://fonts/::1768292178
 ::res://fonts/trajan-pro/::1768292178
 TrajanPro-Bold.otf::FontFile::7668217815764792333::1768292178::1768292178::1::::<><><>0<>0<>bade00b4c691568b62ab996c11df8946<>res://.godot/imported/TrajanPro-Bold.otf-2ed78bb102be7523487cb7aee504a4d5.fontdata::
 TrajanPro-Regular.ttf::FontFile::5688160603166973820::1768292178::1768292178::1::::<><><>0<>0<>9271f00e337c9d0b329204e4a789d93b<>res://.godot/imported/TrajanPro-Regular.ttf-b840b5dcf26c4ad571cc89ef42455b83.fontdata::
+::res://Forest_Monsters_FREE/::1768988293
+::res://Forest_Monsters_FREE/Mushroom/::1768988293
+::res://Forest_Monsters_FREE/Mushroom/Mushroom with VFX/::1768993958
+Mushroom-Attack.png::CompressedTexture2D::7281449126785005876::1768988293::1768993958::1::::<><><>0<>0<>ad36a77de8c2a284185580eea51b3ef6<>res://.godot/imported/Mushroom-Attack.png-0ca86d95bff5bf943835bd3d6b776f2a.ctex::
+Mushroom-AttackWithStun.png::CompressedTexture2D::1516324633876220252::1768988293::1768993958::1::::<><><>0<>0<>7ea75316560531054bc02d7568fdb440<>res://.godot/imported/Mushroom-AttackWithStun.png-1a67666509df27cfa2ff6b0c4f97c605.ctex::
+Mushroom-Die.png::CompressedTexture2D::4890457280512361232::1768988293::1768993958::1::::<><><>0<>0<>d5134bd57ef016e780150fe376be1164<>res://.godot/imported/Mushroom-Die.png-07fc581d5e0c5b3996fce8435e093327.ctex::
+Mushroom-Hit.png::CompressedTexture2D::5002098525414770237::1768988293::1768993958::1::::<><><>0<>0<>d5c0ffb205fe65505ed7e74ae81598e4<>res://.godot/imported/Mushroom-Hit.png-408da01b1613fa905c3ffa4cc32c41f1.ctex::
+Mushroom-Idle.png::CompressedTexture2D::1439052590805866788::1768988293::1768993958::1::::<><><>0<>0<>0b218fbbb4ba74aafe081a68445f69bd<>res://.godot/imported/Mushroom-Idle.png-2ab3a0b9d7729312a352f8c3e509d6c0.ctex::
+Mushroom-Run.png::CompressedTexture2D::2885426108257116816::1768988293::1768993958::1::::<><><>0<>0<>f630f53ef05de4784d8746fefb9d21e7<>res://.godot/imported/Mushroom-Run.png-3558f21f911689a410e8eef03aca91c5.ctex::
+Mushroom-Stun.png::CompressedTexture2D::4483871840316832771::1768988293::1768993958::1::::<><><>0<>0<>5c2cb031d3463af771e14daddee8b5c1<>res://.godot/imported/Mushroom-Stun.png-a54fd0470632a13884d9afb917924bf2.ctex::
+::res://Forest_Monsters_FREE/Mushroom/Mushroom without VFX/::1768993958
+Mushroom-Attack.png::CompressedTexture2D::1899786178273880949::1768988293::1768993958::1::::<><><>0<>0<>ea07d69fc6c4f659a20c8255a1026ab1<>res://.godot/imported/Mushroom-Attack.png-c30b8605910df871e1b457a3ef569887.ctex::
+Mushroom-AttackWithStun.png::CompressedTexture2D::3964628623722551248::1768988293::1768993958::1::::<><><>0<>0<>e9c8cd0485b79803195b59aefe84fbcc<>res://.godot/imported/Mushroom-AttackWithStun.png-873cbb922d0bcea092aa91677b777f7b.ctex::
+Mushroom-Die.png::CompressedTexture2D::585152197333711403::1768988293::1768993958::1::::<><><>0<>0<>85feeb983bdca7d42f0a1686caf33856<>res://.godot/imported/Mushroom-Die.png-da6536b823df8e9076cd7d2971794fca.ctex::
+Mushroom-Hit.png::CompressedTexture2D::2923593506327165500::1768988293::1768993958::1::::<><><>0<>0<>c9ee30402aee10c7671242c43a5e3a4e<>res://.godot/imported/Mushroom-Hit.png-022fc106d3f25774015b761c5d252b77.ctex::
+Mushroom-Idle.png::CompressedTexture2D::8698241101090019258::1768988293::1768993958::1::::<><><>0<>0<>0c2bb43a14bb198705d576ff8d0c72c7<>res://.godot/imported/Mushroom-Idle.png-70fa62afb281d3f850fd8b163a88e8a7.ctex::
+Mushroom-Run.png::CompressedTexture2D::4673796590690199174::1768988293::1768993958::1::::<><><>0<>0<>f9e3e841d5cfa3fb2d999be3e45d489a<>res://.godot/imported/Mushroom-Run.png-64f57ab2cf363ef91100b30c6493e739.ctex::
+Mushroom-Stun.png::CompressedTexture2D::7267656425622270079::1768988293::1768993958::1::::<><><>0<>0<>4adee31c898cc4ce113354e4d8b72ca1<>res://.godot/imported/Mushroom-Stun.png-ed010d3b7ab40254cd7a16cbddd477ee.ctex::
 ::res://photos/::1767960670
 menu.png::CompressedTexture2D::3580229842241604472::1767865775::1767865807::1::::<><><>0<>0<>e25805f3f7e710f95d165a6fe6302271<>res://.godot/imported/menu.png-a44b69c6b02f45bfa6da3271c33d3c0d.ctex::
 ::res://photos/loadingpng/::1768379702
@@ -61,175 +76,324 @@ frame_20_delay-0.05s.png::CompressedTexture2D::931770919663478740::1767960652::1
 frame_21_delay-0.05s.png::CompressedTexture2D::975880924282880807::1767960652::1767960673::1::::<><><>0<>0<>440fec0b1c0e4705b6ce2fed982ef92d<>res://.godot/imported/frame_21_delay-0.05s.png-e4bbd489bb4472dcbf5024473ab26883.ctex::
 frame_22_delay-0.05s.png::CompressedTexture2D::5109077401867440677::1767960652::1767960673::1::::<><><>0<>0<>24a1c2db02c56f4a45da4a51336f29f1<>res://.godot/imported/frame_22_delay-0.05s.png-c20d40aeb0ba0492ed3c57a5a68a7286.ctex::
 frame_23_delay-0.05s.png::CompressedTexture2D::6736123872376710976::1767960652::1767960673::1::::<><><>0<>0<>4d7eb0e48133397c1925643e68e94b36<>res://.godot/imported/frame_23_delay-0.05s.png-bf52eec31f5eb029133cea64780e7d6b.ctex::
-::res://Sounds/::1768306267
+::res://Sounds/::1768993984
 clicknewgame.wav::AudioStreamWAV::3868737227777640273::1768306248::1768306267::1::::<><><>0<>0<>6d55e6c6b18bb45a7bcf88a3e13901d4<>res://.godot/imported/clicknewgame.wav-ff13a14a5890295987192b27b0cf71ce.sample::
 CrisisFight.mp3::AudioStreamMP3::4208433519699551107::1765531292::1765531292::1::::<><><>0<>0<>3c43f2b7322441325c1cbafcfb8b775c<>res://.godot/imported/CrisisFight.mp3-a185c0929c940ac2690f6eaadf39cb90.mp3str::
 dashtest.mp3::AudioStreamMP3::6819720469270603245::1765531292::1765531292::1::::<><><>0<>0<>b1353e359b11a8c89ee4754ffd28e2fe<>res://.godot/imported/dashtest.mp3-cbb467373850234ec53e208d1c865112.mp3str::
+homemadeoof-47509.mp3::AudioStreamMP3::6053116662805998489::1768988293::1768993984::1::::<><><>0<>0<>70aba2db98f460b578b670e01f86b1aa<>res://.godot/imported/homemadeoof-47509.mp3-386c45632dbe5ba1bfe9df848fe484cc.mp3str::
 knockout.mp3::AudioStreamMP3::463463183527807611::1765531292::1765531292::1::::<><><>0<>0<>30fe20608f6203f57288446a21f0c865<>res://.godot/imported/knockout.mp3-9ce0344cbe4da10a75bb5b062bb3eb9b.mp3str::
 menu.wav::AudioStreamWAV::6155124963552824290::1768292178::1768292178::1::::<><><>0<>0<>b1b8c51bb61a4b7cd0c7746071b0b69e<>res://.godot/imported/menu.wav-11bed67358de27cbbf24956a0f488fe9.sample::
-::res://Sprites/::1768302741
-::res://Sprites/Bat/::1765791718
-Bat.png::CompressedTexture2D::2806184958810592290::1721606042::1765791718::1::::<><><>0<>0<>7c67ecba8306082486b2c466e30ab743<>res://.godot/imported/Bat.png-c4e84347f5e433244b0630c78c89bbf4.ctex::
-::res://Sprites/Character/::1765531292
-Attack 1.png::CompressedTexture2D::421201314713696087::1765531292::1765531292::1::::<><><>0<>0<>de6ed64194387bc2d499bfe776381da9<>res://.godot/imported/Attack 1.png-717ddf7c144725898638d1d09914795a.ctex::
-Attack 2.png::CompressedTexture2D::719012799416575946::1765531292::1765531292::1::::<><><>0<>0<>08f21e765fa9871496ee996f485d93c5<>res://.godot/imported/Attack 2.png-6bc1ecca600e6792228c16a62e03191e.ctex::
-Dash.png::CompressedTexture2D::8476130962418191942::1765531292::1765531292::1::::<><><>0<>0<>e23ca8283646b65b3b86d8b2ee7ea19c<>res://.godot/imported/Dash.png-ef9bf7306d113d2313a4a17476b7ed9e.ctex::
-Death.png::CompressedTexture2D::1804491615369973498::1765531292::1765531292::1::::<><><>0<>0<>32e36eeeda15ec2e95a5fc0feb51ec34<>res://.godot/imported/Death.png-a7fbafc47139cea0cb84a7f86754b65d.ctex::
-Fall.png::CompressedTexture2D::4077381337300525382::1765531292::1765531292::1::::<><><>0<>0<>9e8894d8b127bd30e29ecbc8111293f6<>res://.godot/imported/Fall.png-50470e0de7a149a638db3a54d71bf1f0.ctex::
-Hurt.png::CompressedTexture2D::323913048146232414::1765531292::1765531292::1::::<><><>0<>0<>712b3fc98e41ba45c9098f47ec57d2ac<>res://.godot/imported/Hurt.png-df0fdb48b8f5405870659dd98c9d8c28.ctex::
-idle.png::CompressedTexture2D::6770478175540997512::1765531292::1765531292::1::::<><><>0<>0<>8578a18f44cf1ec5741bdb18d81d0e14<>res://.godot/imported/idle.png-362ab61637250042ed04c29fe10c8cf3.ctex::
-Jump.png::CompressedTexture2D::7230177757211461117::1765531292::1765531292::1::::<><><>0<>0<>49b9ca925906063ef9a3d00571a618ec<>res://.godot/imported/Jump.png-1b2274fc762ccf36e6a6d6d6aa92b6a1.ctex::
-Run.png::CompressedTexture2D::8244897350935087550::1765531292::1765531292::1::::<><><>0<>0<>55ca9ba5e065c88d0fa4e50513881594<>res://.godot/imported/Run.png-eae8d5ab4bd87d1c4891b43294258ef2.ctex::
-::res://Sprites/Crow/::1765531292
-::res://Sprites/Crow/Animations/::1765531292
-crow_attack.png::CompressedTexture2D::3949949812074078339::1765531292::1765531292::1::::<><><>0<>0<>e981fc0612f4680758e0fbc8db434727<>res://.godot/imported/crow_attack.png-5add9d6e7c3db6d9404756737f37214a.ctex::
-crow_damage.png::CompressedTexture2D::3431219006442879144::1765531292::1765531292::1::::<><><>0<>0<>a26d63d6d29b7f35f152a98b27d4f6d4<>res://.godot/imported/crow_damage.png-af35ed045f05aba68cedc2977f26f13f.ctex::
-crow_death1.png::CompressedTexture2D::5466188514965671722::1765531292::1765531292::1::::<><><>0<>0<>4b0711a46ac2a39387141f5c5ed3431a<>res://.godot/imported/crow_death1.png-84797ec12c8abc087722c26c2cc24978.ctex::
-crow_death2.png::CompressedTexture2D::6348513009261165483::1765531292::1765531292::1::::<><><>0<>0<>e5d69e6277d3a7480655816a2f8a2101<>res://.godot/imported/crow_death2.png-825a328360adfa9dfd0ea2d502c7a9bc.ctex::
-crow_idle.png::CompressedTexture2D::6976734623026895525::1765531292::1765531292::1::::<><><>0<>0<>7b2ff9b1185569744b530a2ed3362d18<>res://.godot/imported/crow_idle.png-5c9fd74e1043e4db9cbbe0314eed2c0d.ctex::
-crow_jump.png::CompressedTexture2D::1658941027608972736::1765531292::1765531292::1::::<><><>0<>0<>fe77c9717323f160e2f13ac992c6f7cb<>res://.godot/imported/crow_jump.png-26034a11f0731896c8d3148b20916760.ctex::
-crow_walk.png::CompressedTexture2D::4915708143008802273::1765531292::1765531292::1::::<><><>0<>0<>3aa5dc5df1af24e0336281a0069ab2cf<>res://.godot/imported/crow_walk.png-7bca4272c68136649599ad0f06b25f25.ctex::
-::res://Sprites/DemonMinion/::1765531292
-ATTACK.png::CompressedTexture2D::5705451072511484576::1765531292::1765531292::1::::<><><>0<>0<>454123b3d2acb641fd651298a34cece2<>res://.godot/imported/ATTACK.png-a69196e1e903b8676da7d4d7eba018a7.ctex::
-DEATH.png::CompressedTexture2D::4680233983320538042::1765531292::1765531292::1::::<><><>0<>0<>41eeb33344f473b2a56c38b81a89190d<>res://.godot/imported/DEATH.png-a02af1a14123f212c00377023bcb3412.ctex::
-FLYING.png::CompressedTexture2D::1551297883468700632::1765531292::1765531292::1::::<><><>0<>0<>8f92650a647fe2379c6e42fc5e58fe23<>res://.godot/imported/FLYING.png-b31ae8d54ff0dad8693158421fe1791d.ctex::
-HURT.png::CompressedTexture2D::7197122641434008540::1765531292::1765531292::1::::<><><>0<>0<>b1c78bcff351cc1d63d0de4b6b4c144a<>res://.godot/imported/HURT.png-5d39ef1a61b2b457afe0461fa5fa51c6.ctex::
-IDLE.png::CompressedTexture2D::2774625401852263209::1765531292::1765531292::1::::<><><>0<>0<>6729eeb96453a09954d54047e2f166de<>res://.godot/imported/IDLE.png-ad87fa0902eae3a87b80263a35f9222f.ctex::
-::res://Sprites/Enemy/::1768392529
-::res://Sprites/Enemy/Bringer-Of-Death/::1617352226
-Contact.txt::TextFile::-1::1601133100::0::1::::<><><>0<>0<><>::
-License.txt::TextFile::-1::1601132956::0::1::::<><><>0<>0<><>::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/::1617352874
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Attack/::1765969704
-Bringer-of-Death_Attack_1.png::CompressedTexture2D::7424670611390892154::1617352734::1765969704::1::::<><><>0<>0<>f58bcb7ffe1b9fb28f944fde98455031<>res://.godot/imported/Bringer-of-Death_Attack_1.png-6ed3c1a7434db4e50363baf2d9a77410.ctex::
-Bringer-of-Death_Attack_2.png::CompressedTexture2D::4141059287600558002::1617352734::1765969704::1::::<><><>0<>0<>5451075a79065480cc5029de0b699364<>res://.godot/imported/Bringer-of-Death_Attack_2.png-09a2f19e91292b00362aa8f27cfe3af1.ctex::
-Bringer-of-Death_Attack_3.png::CompressedTexture2D::4639478084012068774::1617352734::1765969704::1::::<><><>0<>0<>1f6379bf7c2e87b4d8b3ae5a38b0c13a<>res://.godot/imported/Bringer-of-Death_Attack_3.png-43f9d11cd504e1eded511ca29cf469c6.ctex::
-Bringer-of-Death_Attack_4.png::CompressedTexture2D::6703493406627874912::1617352734::1765969704::1::::<><><>0<>0<>8b4d7959154d802f2eb545c3103eb66c<>res://.godot/imported/Bringer-of-Death_Attack_4.png-04d6903fe81836c9af43a363ed018e5d.ctex::
-Bringer-of-Death_Attack_5.png::CompressedTexture2D::3852140299802105585::1617352734::1765969704::1::::<><><>0<>0<>aeeb5244609d57c5cbd8c602b4020822<>res://.godot/imported/Bringer-of-Death_Attack_5.png-0ab2170579b875afc996ee03f9cfe795.ctex::
-Bringer-of-Death_Attack_6.png::CompressedTexture2D::4381703373005686540::1617352734::1765969704::1::::<><><>0<>0<>72e211896593d5d832134cdaf96bb9bd<>res://.godot/imported/Bringer-of-Death_Attack_6.png-820e8aebac25eba1d67aab80f5eb2e43.ctex::
-Bringer-of-Death_Attack_7.png::CompressedTexture2D::3952146254609588042::1617352734::1765969704::1::::<><><>0<>0<>6eaecb5af46701a291527eab7299e952<>res://.godot/imported/Bringer-of-Death_Attack_7.png-bd398d76d383d8cf5839aaab92361e23.ctex::
-Bringer-of-Death_Attack_8.png::CompressedTexture2D::5717096746938604976::1617352734::1765969704::1::::<><><>0<>0<>58c983c11e8dbbb87b5316bab4d82e29<>res://.godot/imported/Bringer-of-Death_Attack_8.png-782b71ed29e1eacf7b80e9b21b4d04fb.ctex::
-Bringer-of-Death_Attack_9.png::CompressedTexture2D::6950075031612302996::1617352734::1765969704::1::::<><><>0<>0<>db5ab9019013ad0df18ea1c7f57a7ec8<>res://.godot/imported/Bringer-of-Death_Attack_9.png-dc46230dc87378922dc05f2b0f4f43cb.ctex::
-Bringer-of-Death_Attack_10.png::CompressedTexture2D::2296715278741404323::1617352734::1765969704::1::::<><><>0<>0<>6c08265cde3a2fb8eefbda39e9d7759b<>res://.godot/imported/Bringer-of-Death_Attack_10.png-975d9df6fae67ad191105134afa07414.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Cast/::1765969704
-Bringer-of-Death_Cast_1.png::CompressedTexture2D::8452510878934518009::1617352768::1765969704::1::::<><><>0<>0<>b5d5493887c7d6381f2038cef6777466<>res://.godot/imported/Bringer-of-Death_Cast_1.png-0bd6f47039a71e1b0b12c84d4c10b579.ctex::
-Bringer-of-Death_Cast_2.png::CompressedTexture2D::151140134541575116::1617352768::1765969704::1::::<><><>0<>0<>096e57aeb923366f82c0c359e4e382ee<>res://.godot/imported/Bringer-of-Death_Cast_2.png-09c0c485f9a6444b17779e890ee02b11.ctex::
-Bringer-of-Death_Cast_3.png::CompressedTexture2D::6420083843902550181::1617352768::1765969704::1::::<><><>0<>0<>173c8646f876caf43e07426e750689ad<>res://.godot/imported/Bringer-of-Death_Cast_3.png-e22e428559be4bccf8e6a79667ca61d2.ctex::
-Bringer-of-Death_Cast_4.png::CompressedTexture2D::1769027031638393105::1617352768::1765969704::1::::<><><>0<>0<>0a987cf5cf9a6a2a224b9107c2508788<>res://.godot/imported/Bringer-of-Death_Cast_4.png-909170329b2a9c87d7f366e1760455d8.ctex::
-Bringer-of-Death_Cast_5.png::CompressedTexture2D::1196355863691770216::1617352768::1765969704::1::::<><><>0<>0<>70dcdc337c6d2d608c21f563aa9e3a7d<>res://.godot/imported/Bringer-of-Death_Cast_5.png-6416bea7a05f7620ce3da0ba48e78433.ctex::
-Bringer-of-Death_Cast_6.png::CompressedTexture2D::6666621375075916178::1617352768::1765969704::1::::<><><>0<>0<>aa458a07ee46fdb85c9d7e7634e32dba<>res://.godot/imported/Bringer-of-Death_Cast_6.png-48247231fe125a70b755b2cbfe5db83e.ctex::
-Bringer-of-Death_Cast_7.png::CompressedTexture2D::1939134495526902639::1617352768::1765969704::1::::<><><>0<>0<>f5e5c2483094c2f3b7a6c488840e62a0<>res://.godot/imported/Bringer-of-Death_Cast_7.png-744de1319ff65cd14e3fd3822c2d3a11.ctex::
-Bringer-of-Death_Cast_8.png::CompressedTexture2D::1735782295083079681::1617352768::1765969704::1::::<><><>0<>0<>6c51cb1031a902eb73d74c3ca3c56c3b<>res://.godot/imported/Bringer-of-Death_Cast_8.png-3e58e45dcb234d320de962e9c92b7434.ctex::
-Bringer-of-Death_Cast_9.png::CompressedTexture2D::498422240699199952::1617352768::1765969704::1::::<><><>0<>0<>4133b1a60dad3e539b0eeeaff2abbf57<>res://.godot/imported/Bringer-of-Death_Cast_9.png-584b8292f4caa89748064c8034b0adab.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Death/::1765969704
-Bringer-of-Death_Death_1.png::CompressedTexture2D::1329147432129914453::1617352756::1765969704::1::::<><><>0<>0<>16649359dc1db863cf2b5d50f8daae2f<>res://.godot/imported/Bringer-of-Death_Death_1.png-344ba20b61314f35685617ebb1f46209.ctex::
-Bringer-of-Death_Death_2.png::CompressedTexture2D::166041935607959049::1617352756::1765969704::1::::<><><>0<>0<>dba30aeff6085f7e0e835ee0d2abb8fc<>res://.godot/imported/Bringer-of-Death_Death_2.png-fefe350664c4d22a70e4d0521f7d804f.ctex::
-Bringer-of-Death_Death_3.png::CompressedTexture2D::7112756892134621350::1617352756::1765969704::1::::<><><>0<>0<>33c4fd77081d15af68d2d8855bebbe34<>res://.godot/imported/Bringer-of-Death_Death_3.png-243eec2496b130feeb035cd992d0128f.ctex::
-Bringer-of-Death_Death_4.png::CompressedTexture2D::142332263204005972::1617352756::1765969704::1::::<><><>0<>0<>5e89d595978fa231e8dc9a95044fce74<>res://.godot/imported/Bringer-of-Death_Death_4.png-f1309a7cf242236e47b3de62d3186c81.ctex::
-Bringer-of-Death_Death_5.png::CompressedTexture2D::8003477189229618958::1617352756::1765969704::1::::<><><>0<>0<>56890b7444837b9837a04bd716a43057<>res://.godot/imported/Bringer-of-Death_Death_5.png-ef39bd074b2ff33a5723169e5343b5ca.ctex::
-Bringer-of-Death_Death_6.png::CompressedTexture2D::8601260194016847098::1617352756::1765969704::1::::<><><>0<>0<>8c5667ba62273be9ea63de69a3e8f24d<>res://.godot/imported/Bringer-of-Death_Death_6.png-95b6e53dd27fa2e596ef9f612632f44b.ctex::
-Bringer-of-Death_Death_7.png::CompressedTexture2D::8016118552784503345::1617352756::1765969704::1::::<><><>0<>0<>78d9d7a2ad7882a93631b42e66297d2b<>res://.godot/imported/Bringer-of-Death_Death_7.png-f235c7eeafd4fab63c682d8a6c2188fe.ctex::
-Bringer-of-Death_Death_8.png::CompressedTexture2D::6618732005725413617::1617352756::1765969704::1::::<><><>0<>0<>a84cfeed73fa510ccf83ea731121ae0f<>res://.godot/imported/Bringer-of-Death_Death_8.png-92e20448514b983763b96fd24481050f.ctex::
-Bringer-of-Death_Death_9.png::CompressedTexture2D::601434095165511393::1617352756::1765969704::1::::<><><>0<>0<>7edb1dab8781843730e7dd513f881bfe<>res://.godot/imported/Bringer-of-Death_Death_9.png-4eedef6d85e0492b651d5530c9c14797.ctex::
-Bringer-of-Death_Death_10.png::CompressedTexture2D::8559958061153615965::1617352756::1765969704::1::::<><><>0<>0<>297b9dd92f1b14c842d048d77915b9cd<>res://.godot/imported/Bringer-of-Death_Death_10.png-f683d4ba6219d7a3758ce7fcd8564f34.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Hurt/::1765969704
-Bringer-of-Death_Hurt_1.png::CompressedTexture2D::3451688286480433925::1617352744::1765969704::1::::<><><>0<>0<>0769969d3c300f939884993b4b8a96fb<>res://.godot/imported/Bringer-of-Death_Hurt_1.png-5e1d76625d1e79edb7d6b036ddbc801f.ctex::
-Bringer-of-Death_Hurt_2.png::CompressedTexture2D::2900472476067226595::1617352744::1765969704::1::::<><><>0<>0<>748b07c1e86f73b7727afa50914b6bea<>res://.godot/imported/Bringer-of-Death_Hurt_2.png-e0aa8cce53d60efa55851d8a24af246d.ctex::
-Bringer-of-Death_Hurt_3.png::CompressedTexture2D::3165115974159805011::1617352744::1765969704::1::::<><><>0<>0<>f631fede5f7c485ba05f3109c7c18a53<>res://.godot/imported/Bringer-of-Death_Hurt_3.png-fbb1d9365e36e3c09faf8988d28647e9.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Idle/::1768379702
-Bringer-of-Death_Idle_2.png::CompressedTexture2D::2528281368786311334::1617352702::1765969704::1::::<><><>0<>0<>3ad0922cc48005e49e8ee0e7f4f6e088<>res://.godot/imported/Bringer-of-Death_Idle_2.png-450acbdf0cd94ce2ee600345b5fa7ed2.ctex::
-Bringer-of-Death_Idle_3.png::CompressedTexture2D::8282975858927802341::1617352702::1765969704::1::::<><><>0<>0<>420e94107c3857083767a02ac9a8602c<>res://.godot/imported/Bringer-of-Death_Idle_3.png-256c916432f2c370ef2477876ae870d0.ctex::
-Bringer-of-Death_Idle_4.png::CompressedTexture2D::6758251874770357017::1617352702::1765969704::1::::<><><>0<>0<>8a565c0e2c9df1348bdf5805ecf38e70<>res://.godot/imported/Bringer-of-Death_Idle_4.png-a52afafb3bd933f070bcaafa47825dff.ctex::
-Bringer-of-Death_Idle_5.png::CompressedTexture2D::4223131398632210482::1617352702::1765969704::1::::<><><>0<>0<>610803a845c1ab446cdcae6b3dc2047c<>res://.godot/imported/Bringer-of-Death_Idle_5.png-d4458ee5ef6a1e2444c1aa283ade0398.ctex::
-Bringer-of-Death_Idle_6.png::CompressedTexture2D::8808576001016952173::1617352702::1765969704::1::::<><><>0<>0<>54900a80411691cafae47d166b49276f<>res://.godot/imported/Bringer-of-Death_Idle_6.png-f2239e72560c729ec376a1c746bad345.ctex::
-Bringer-of-Death_Idle_7.png::CompressedTexture2D::7060310910691246078::1617352704::1765969704::1::::<><><>0<>0<>21f7a67a68e19766005eab2dde43acbe<>res://.godot/imported/Bringer-of-Death_Idle_7.png-66838df1455b01d0b86b21275e75b35f.ctex::
-Bringer-of-Death_Idle_8.png::CompressedTexture2D::3090666349817219874::1617352704::1765969704::1::::<><><>0<>0<>182172592340138fca802aec0c6c5c4e<>res://.godot/imported/Bringer-of-Death_Idle_8.png-39bd4a52ec7972167fa4f3085957d070.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/No Effect Sprites/::1617353058
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/No Effect Sprites/Attack/::1765969704
-Bringer-of-Death_Attack_1.png::CompressedTexture2D::1544675309158294825::1617352952::1765969704::1::::<><><>0<>0<>2fc96fdb83845e72b416cc23c426eef9<>res://.godot/imported/Bringer-of-Death_Attack_1.png-db6b1e8278dec7e92d76a98314d081f9.ctex::
-Bringer-of-Death_Attack_2.png::CompressedTexture2D::8390708350192805479::1617352952::1765969704::1::::<><><>0<>0<>5240b04997a932718114472e74554014<>res://.godot/imported/Bringer-of-Death_Attack_2.png-1b6c4c218023728e98f18d4e2149bcd6.ctex::
-Bringer-of-Death_Attack_3.png::CompressedTexture2D::2101157735785872105::1617352952::1765969704::1::::<><><>0<>0<>078067a51b3b16852419054f2e8ddcfb<>res://.godot/imported/Bringer-of-Death_Attack_3.png-82d327ee988176af48379eaadb90b895.ctex::
-Bringer-of-Death_Attack_4.png::CompressedTexture2D::695142369742111160::1617352952::1765969704::1::::<><><>0<>0<>7db4fa4d19df8a5fc2bcc0dd79fcfe0b<>res://.godot/imported/Bringer-of-Death_Attack_4.png-f411af2215a0bd8d06ef31f6d4375e43.ctex::
-Bringer-of-Death_Attack_5.png::CompressedTexture2D::5278229683938664665::1617352952::1765969704::1::::<><><>0<>0<>fd3d03dfc38eead6b3715f03b0056970<>res://.godot/imported/Bringer-of-Death_Attack_5.png-28abbe8adaea7a3af31fd0ae841156c2.ctex::
-Bringer-of-Death_Attack_6.png::CompressedTexture2D::1451795294183572973::1617352952::1765969704::1::::<><><>0<>0<>2e574301cef168c23726e5fa1eeae38e<>res://.godot/imported/Bringer-of-Death_Attack_6.png-a2bbc255007f9b418299de4fb41d78a9.ctex::
-Bringer-of-Death_Attack_7.png::CompressedTexture2D::382719753420351545::1617352952::1765969704::1::::<><><>0<>0<>b02a9b185265dbc591e7b31948282580<>res://.godot/imported/Bringer-of-Death_Attack_7.png-79f8abd08270006b14e87178af62ae0a.ctex::
-Bringer-of-Death_Attack_8.png::CompressedTexture2D::3547899195350037476::1617352952::1765969704::1::::<><><>0<>0<>7fc1b21bcdf4a8887a83169d7c927adb<>res://.godot/imported/Bringer-of-Death_Attack_8.png-f1cb187033c015f7175da6e440713849.ctex::
-Bringer-of-Death_Attack_9.png::CompressedTexture2D::8967058451821594908::1617352952::1765969704::1::::<><><>0<>0<>ade7a1229ef50224e052cdc06a0c7833<>res://.godot/imported/Bringer-of-Death_Attack_9.png-59a1fde2486bd78b9a8c24ccc23c6154.ctex::
-Bringer-of-Death_Attack_10.png::CompressedTexture2D::8305658935133105679::1617352952::1765969704::1::::<><><>0<>0<>1ff67211fa459439d6c27d026a497bf1<>res://.godot/imported/Bringer-of-Death_Attack_10.png-d3ce8dc6d8cc4ee2e5f2fad38fd35a2c.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/No Effect Sprites/Cast/::1765969704
-Bringer-of-Death_Cast_1.png::CompressedTexture2D::1126043540777959156::1617352980::1765969704::1::::<><><>0<>0<>26b3cb20d46eeb495ed13764c5ec5b13<>res://.godot/imported/Bringer-of-Death_Cast_1.png-3811329dbf41142f1cf86fd1d3816c15.ctex::
-Bringer-of-Death_Cast_2.png::CompressedTexture2D::8244583882197293016::1617352980::1765969704::1::::<><><>0<>0<>a7f887a27ed385c49f09b0bc5004911e<>res://.godot/imported/Bringer-of-Death_Cast_2.png-33c8b2bdab8d7cca715455175794d14e.ctex::
-Bringer-of-Death_Cast_3.png::CompressedTexture2D::5913168583124980591::1617352980::1765969704::1::::<><><>0<>0<>1864d0aeef57150c1a282a34eb17cf62<>res://.godot/imported/Bringer-of-Death_Cast_3.png-10e95745e02b92ec8955866452063db8.ctex::
-Bringer-of-Death_Cast_4.png::CompressedTexture2D::5913691104469423176::1617352980::1765969704::1::::<><><>0<>0<>e1c502d7cef9e3e87376a080fbad9af7<>res://.godot/imported/Bringer-of-Death_Cast_4.png-33f3e1c7afd7a85f0cad4d00ddd06ea4.ctex::
-Bringer-of-Death_Cast_5.png::CompressedTexture2D::6990971708399777009::1617352980::1765969704::1::::<><><>0<>0<>2775758542879a8ef0c4cfc18c19979a<>res://.godot/imported/Bringer-of-Death_Cast_5.png-64f95186d42b6637fe512ceba4fd7823.ctex::
-Bringer-of-Death_Cast_6.png::CompressedTexture2D::2856893631709130255::1617352980::1765969704::1::::<><><>0<>0<>8d0d10299ff9869fef106a4bd3087bca<>res://.godot/imported/Bringer-of-Death_Cast_6.png-a458d21ddebb82281f1cd0473f4edfba.ctex::
-Bringer-of-Death_Cast_7.png::CompressedTexture2D::5041641284565776200::1617352980::1765969704::1::::<><><>0<>0<>883dfa019c09988e72c4972a214750a9<>res://.godot/imported/Bringer-of-Death_Cast_7.png-92f1ee878ddc8e16ec54babe5acf7c3b.ctex::
-Bringer-of-Death_Cast_8.png::CompressedTexture2D::1301615814562636444::1617352980::1765969704::1::::<><><>0<>0<>39e6a584a26801e475c3de1b10769b31<>res://.godot/imported/Bringer-of-Death_Cast_8.png-8bb3271bd0b613714a66c8f41a22eb13.ctex::
-Bringer-of-Death_Cast_9.png::CompressedTexture2D::3259778234828994426::1617352980::1765969704::1::::<><><>0<>0<>e4c41ab9d929cc52e9ed6a409d889234<>res://.godot/imported/Bringer-of-Death_Cast_9.png-18c1f0ec2134f6337a9281b29b35eff2.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/No Effect Sprites/Death/::1765969704
-Bringer-of-Death_Death_1.png::CompressedTexture2D::1644009859221028018::1617352970::1765969704::1::::<><><>0<>0<>f8783d43280edb768064c15c1bce5f1c<>res://.godot/imported/Bringer-of-Death_Death_1.png-12c2fde0fd796ec86117f1e6092b9c60.ctex::
-Bringer-of-Death_Death_2.png::CompressedTexture2D::8873861808367820559::1617352970::1765969704::1::::<><><>0<>0<>12c290e26e48f32d2fd2cb0700b327f7<>res://.godot/imported/Bringer-of-Death_Death_2.png-d18f1bf98a2317aab391c7211ec925ea.ctex::
-Bringer-of-Death_Death_3.png::CompressedTexture2D::5464090161242583310::1617352970::1765969704::1::::<><><>0<>0<>8f944db51d7c6502b50a62d99f9fbc64<>res://.godot/imported/Bringer-of-Death_Death_3.png-0ea9d7ef4c2b7ecdafd155b25ad64fc0.ctex::
-Bringer-of-Death_Death_4.png::CompressedTexture2D::4454102068674720662::1617352970::1765969704::1::::<><><>0<>0<>e7855e35d36c75e6fc4591f6c32720ff<>res://.godot/imported/Bringer-of-Death_Death_4.png-f8b654b8b8f502e353d2dd3970f9c9a5.ctex::
-Bringer-of-Death_Death_5.png::CompressedTexture2D::5888440603438905998::1617352970::1765969704::1::::<><><>0<>0<>df7830ae895dc4585343f561baaaa49c<>res://.godot/imported/Bringer-of-Death_Death_5.png-f8b5095e8a8d171308dba2eff2e4ccdd.ctex::
-Bringer-of-Death_Death_6.png::CompressedTexture2D::8221395874154635357::1617352970::1765969704::1::::<><><>0<>0<>3a3b3f503bbabe1baab84316e1ea3448<>res://.godot/imported/Bringer-of-Death_Death_6.png-84ef434cd6b1f5bc8239b87fe518f3d4.ctex::
-Bringer-of-Death_Death_7.png::CompressedTexture2D::4054142545305061241::1617352970::1765969704::1::::<><><>0<>0<>7925131e6655adbff83d05104f6d9717<>res://.godot/imported/Bringer-of-Death_Death_7.png-88182409f698081dcc1b1e8d3c0c5526.ctex::
-Bringer-of-Death_Death_8.png::CompressedTexture2D::6641321951073513045::1617352970::1765969704::1::::<><><>0<>0<>5f670a04c7023d772ba8db96811e71e7<>res://.godot/imported/Bringer-of-Death_Death_8.png-52da0bec191cbbc88154061a8369c121.ctex::
-Bringer-of-Death_Death_9.png::CompressedTexture2D::2476185763091094730::1617352970::1765969704::1::::<><><>0<>0<>f180b388acedf845db95bc388fa80701<>res://.godot/imported/Bringer-of-Death_Death_9.png-a4d40882d60a9003776efd1095836792.ctex::
-Bringer-of-Death_Death_10.png::CompressedTexture2D::5622072969590041846::1617352970::1765969704::1::::<><><>0<>0<>3439183d76ed345db869fcd6ddcc6b6c<>res://.godot/imported/Bringer-of-Death_Death_10.png-64e0b0f01eb9195f113b0cf1a4cc89da.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/No Effect Sprites/Hurt/::1765969704
-Bringer-of-Death_Hurt_1.png::CompressedTexture2D::3649934742336018326::1617352962::1765969704::1::::<><><>0<>0<>f991104df83651099daf850de785f642<>res://.godot/imported/Bringer-of-Death_Hurt_1.png-807bcda6372671f122bc54720981aa84.ctex::
-Bringer-of-Death_Hurt_2.png::CompressedTexture2D::7838422316123508302::1617352962::1765969704::1::::<><><>0<>0<>172760a86ddc642d1cfb60cf7ccb68ff<>res://.godot/imported/Bringer-of-Death_Hurt_2.png-b4dadf02e8bfe76cb88ca8ed3412f511.ctex::
-Bringer-of-Death_Hurt_3.png::CompressedTexture2D::2535070195295601493::1617352962::1765969704::1::::<><><>0<>0<>5514c21b21c9697dd73e06f70c3d2914<>res://.godot/imported/Bringer-of-Death_Hurt_3.png-0fdc84f2babf0f8d80510ccee8b6cad6.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/No Effect Sprites/Spell/::1765969704
-Bringer-of-Death_Spell_1.png::CompressedTexture2D::7747716002954094396::1617352988::1765969704::1::::<><><>0<>0<>23bb52eb38650bdc10d70df6c3c8fa30<>res://.godot/imported/Bringer-of-Death_Spell_1.png-813f87b0cd618d99137b78979801bd54.ctex::
-Bringer-of-Death_Spell_2.png::CompressedTexture2D::5819112773853217471::1617352988::1765969704::1::::<><><>0<>0<>f130e5fb78f8dc8dc34bc50a9f5ef60b<>res://.godot/imported/Bringer-of-Death_Spell_2.png-c32d82328e7516b07908b7253e84fc49.ctex::
-Bringer-of-Death_Spell_3.png::CompressedTexture2D::7147604145418476574::1617352988::1765969704::1::::<><><>0<>0<>9df844e69a096c8e4effa03110cf13df<>res://.godot/imported/Bringer-of-Death_Spell_3.png-468b7e4977d9af5f738a1dc99403bc49.ctex::
-Bringer-of-Death_Spell_4.png::CompressedTexture2D::6790226550379866146::1617352988::1765969704::1::::<><><>0<>0<>0be80b831be643358eaf83c9e9dc8c22<>res://.godot/imported/Bringer-of-Death_Spell_4.png-8002413133f206c364e56c8d729890c5.ctex::
-Bringer-of-Death_Spell_5.png::CompressedTexture2D::2253654343470886425::1617352990::1765969704::1::::<><><>0<>0<>e8c4a9162d025b340ab3c08999cc121b<>res://.godot/imported/Bringer-of-Death_Spell_5.png-97bfcf33e1dc14638a523a7d5f5e9483.ctex::
-Bringer-of-Death_Spell_6.png::CompressedTexture2D::2635229510758781039::1617352990::1765969704::1::::<><><>0<>0<>33b33353fb8ac92dbd68e0f7c0c65b4d<>res://.godot/imported/Bringer-of-Death_Spell_6.png-3cb29624864d385b6bf28fd22976e5b3.ctex::
-Bringer-of-Death_Spell_7.png::CompressedTexture2D::8190507132802031341::1617352990::1765969704::1::::<><><>0<>0<>318c2246c5da32c985aba4ccf7871fb9<>res://.godot/imported/Bringer-of-Death_Spell_7.png-03051e821b919cf587b280af48692428.ctex::
-Bringer-of-Death_Spell_8.png::CompressedTexture2D::6989543154697990557::1617352990::1765969704::1::::<><><>0<>0<>71dc9c70d3bd768517afb629c29f8d87<>res://.godot/imported/Bringer-of-Death_Spell_8.png-953a1cac36268ccafbcd44adc94d443b.ctex::
-Bringer-of-Death_Spell_9.png::CompressedTexture2D::6285924056046111326::1617352990::1765969704::1::::<><><>0<>0<>e95767651581afb476d0ff2e0bfbe902<>res://.godot/imported/Bringer-of-Death_Spell_9.png-e93504d00fc7af32b458d8fd791645a2.ctex::
-Bringer-of-Death_Spell_10.png::CompressedTexture2D::8157874394278503985::1617352990::1765969704::1::::<><><>0<>0<>6e2c2b6eb192c2074e86bcd94da7a54b<>res://.godot/imported/Bringer-of-Death_Spell_10.png-3af3c2ddf5b2dd2ac31ce1ee9cf1313a.ctex::
-Bringer-of-Death_Spell_11.png::CompressedTexture2D::1912405644110088377::1617352990::1765969704::1::::<><><>0<>0<>6499ed5f56b4b7baafedb7607a5fb448<>res://.godot/imported/Bringer-of-Death_Spell_11.png-ecc752c8232d3bbc0bc624d7ec54742c.ctex::
-Bringer-of-Death_Spell_12.png::CompressedTexture2D::6177984192811793367::1617352990::1765969704::1::::<><><>0<>0<>e3841fe70faa5ad46ae59f32796dcb3c<>res://.godot/imported/Bringer-of-Death_Spell_12.png-fc4198c3c39e843a2b47938d94d4cb98.ctex::
-Bringer-of-Death_Spell_13.png::CompressedTexture2D::1782538514088551694::1617352990::1765969704::1::::<><><>0<>0<>0fde93ef6cd909243ef202326ae41cfa<>res://.godot/imported/Bringer-of-Death_Spell_13.png-ce0d0a69e5ac03eeca74490d76ddfe5e.ctex::
-Bringer-of-Death_Spell_14.png::CompressedTexture2D::1227822092358330864::1617352990::1765969704::1::::<><><>0<>0<>affede67ac2123e6886ab63cef8b129a<>res://.godot/imported/Bringer-of-Death_Spell_14.png-a620daf19b38f46647e6ec81f3cf6b46.ctex::
-Bringer-of-Death_Spell_15.png::CompressedTexture2D::1057447927023623549::1617352990::1765969704::1::::<><><>0<>0<>8d310e6d5191aad6b97acbaf3facbeba<>res://.godot/imported/Bringer-of-Death_Spell_15.png-9152d4620cee9a311a5bc3fffdd5bfc7.ctex::
-Bringer-of-Death_Spell_16.png::CompressedTexture2D::4797219650824871075::1617352990::1765969704::1::::<><><>0<>0<>ea1e23c52370248d6d46cecfdd263b75<>res://.godot/imported/Bringer-of-Death_Spell_16.png-124eff79cf4bd5413308f4f00753bd88.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Spell/::1765969704
-Bringer-of-Death_Spell_1.png::CompressedTexture2D::2596789568310337887::1617352782::1765969704::1::::<><><>0<>0<>341299d40045359cff7dd40a78affba7<>res://.godot/imported/Bringer-of-Death_Spell_1.png-c9c7a7313271b6e03939df21664d2711.ctex::
-Bringer-of-Death_Spell_2.png::CompressedTexture2D::3151802078443584723::1617352782::1765969704::1::::<><><>0<>0<>ac2bc2c07390c32ee7cc0a54b9cb3253<>res://.godot/imported/Bringer-of-Death_Spell_2.png-b5d8ec8ea41d1e76571ed2386ca4171a.ctex::
-Bringer-of-Death_Spell_3.png::CompressedTexture2D::3479974891620617138::1617352782::1765969704::1::::<><><>0<>0<>741fb973855b6aea8494eb7ae1a8202f<>res://.godot/imported/Bringer-of-Death_Spell_3.png-e90276169aca8817ee5cec5b0d585e5b.ctex::
-Bringer-of-Death_Spell_4.png::CompressedTexture2D::5130862923442075558::1617352782::1765969704::1::::<><><>0<>0<>34ade640cf1a9b828c5d7590787fe3a5<>res://.godot/imported/Bringer-of-Death_Spell_4.png-f7a95f432f4864b1d50979bc763f091b.ctex::
-Bringer-of-Death_Spell_5.png::CompressedTexture2D::1306072064098729548::1617352782::1765969704::1::::<><><>0<>0<>34a69164ba52cfafdf988effbc75f236<>res://.godot/imported/Bringer-of-Death_Spell_5.png-436b27e8211d7e6020abbfafedf9e145.ctex::
-Bringer-of-Death_Spell_6.png::CompressedTexture2D::7816362458877043423::1617352782::1765969704::1::::<><><>0<>0<>aa675e9f98d48232aac51e5f4be23cbd<>res://.godot/imported/Bringer-of-Death_Spell_6.png-7e867db0e28893602869880a06c397e0.ctex::
-Bringer-of-Death_Spell_7.png::CompressedTexture2D::7298915267433822722::1617352782::1765969704::1::::<><><>0<>0<>ecb9037d638e895c1ca3737e6a7442d1<>res://.godot/imported/Bringer-of-Death_Spell_7.png-3d41f94b671c58020b559424f35e48d2.ctex::
-Bringer-of-Death_Spell_8.png::CompressedTexture2D::6810999084128393749::1617352782::1765969704::1::::<><><>0<>0<>e15160dce62da9bbafba5828aecd5774<>res://.godot/imported/Bringer-of-Death_Spell_8.png-8486ac08c7797655ff8171621bb64f81.ctex::
-Bringer-of-Death_Spell_9.png::CompressedTexture2D::9062894665071665571::1617352782::1765969704::1::::<><><>0<>0<>bd3cf840ac8ff75831ab30aa4846a636<>res://.godot/imported/Bringer-of-Death_Spell_9.png-578bf52fdfaa3df2670d7bf71d8f34d5.ctex::
-Bringer-of-Death_Spell_10.png::CompressedTexture2D::319840551463978667::1617352782::1765969704::1::::<><><>0<>0<>b6c0617259b01e980e961fab1750d477<>res://.godot/imported/Bringer-of-Death_Spell_10.png-26fc9300b9a303250e652858d9ace74a.ctex::
-Bringer-of-Death_Spell_11.png::CompressedTexture2D::1250283176533704745::1617352782::1765969704::1::::<><><>0<>0<>3dc0607d05a41a39fcc88a5e3149e792<>res://.godot/imported/Bringer-of-Death_Spell_11.png-5ffe306b7a99a7ee6b23c0c48d480507.ctex::
-Bringer-of-Death_Spell_12.png::CompressedTexture2D::7889306925213617890::1617352782::1765969704::1::::<><><>0<>0<>27b72a2e7d23e5e7c726e25d29929367<>res://.godot/imported/Bringer-of-Death_Spell_12.png-2c007c470d0c9b86e6aeb18ebef54985.ctex::
-Bringer-of-Death_Spell_13.png::CompressedTexture2D::4887017575746827901::1617352782::1765969704::1::::<><><>0<>0<>6880a9a7e9bf2236f9a76ac38ee17f47<>res://.godot/imported/Bringer-of-Death_Spell_13.png-475d2ab5730d2e50e8df444e885920c6.ctex::
-Bringer-of-Death_Spell_14.png::CompressedTexture2D::8498484801000068182::1617352782::1765969704::1::::<><><>0<>0<>fc94c4d4b794fdbba5bcb3d45ad4b65d<>res://.godot/imported/Bringer-of-Death_Spell_14.png-ab12accbf127baaa6961df300fd57c37.ctex::
-Bringer-of-Death_Spell_15.png::CompressedTexture2D::5669550912962423306::1617352782::1765969704::1::::<><><>0<>0<>0284c35c0a818a21104f78b9399fb1c9<>res://.godot/imported/Bringer-of-Death_Spell_15.png-0a7998e87310cf378f51e1940cc23388.ctex::
-Bringer-of-Death_Spell_16.png::CompressedTexture2D::8577430622907667771::1617352782::1765969704::1::::<><><>0<>0<>05b14df3dcb884086e9eaf7281304761<>res://.godot/imported/Bringer-of-Death_Spell_16.png-e1dbfc44fcc8982d20709ba96b219587.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/Individual Sprite/Walk/::1765969704
-Bringer-of-Death_Walk_1.png::CompressedTexture2D::6764355205380014128::1617352722::1765969704::1::::<><><>0<>0<>1018b0f96d696116616151229a64b94d<>res://.godot/imported/Bringer-of-Death_Walk_1.png-d0af8a2b6d007f873022ed1d285916af.ctex::
-Bringer-of-Death_Walk_2.png::CompressedTexture2D::3851294844864659108::1617352722::1765969704::1::::<><><>0<>0<>f2bb9e4f036f90c8ae3ab4415376be5f<>res://.godot/imported/Bringer-of-Death_Walk_2.png-a3fd4135524e04b80d6d4498806b7e67.ctex::
-Bringer-of-Death_Walk_3.png::CompressedTexture2D::4279114622875006077::1617352724::1765969704::1::::<><><>0<>0<>9f7e1dd4de2dfdf1afa2703dd347695c<>res://.godot/imported/Bringer-of-Death_Walk_3.png-6346f4f5fd923ab6abf764b339ca8019.ctex::
-Bringer-of-Death_Walk_4.png::CompressedTexture2D::2332377616880078870::1617352724::1765969704::1::::<><><>0<>0<>4c851cc4962fa1e4bbc0f29a92a958b0<>res://.godot/imported/Bringer-of-Death_Walk_4.png-e5147c95ab102b01cc82ede51235fc2c.ctex::
-Bringer-of-Death_Walk_5.png::CompressedTexture2D::7506721590659627983::1617352724::1765969704::1::::<><><>0<>0<>17fbaef35f7233c6d98d534324fdd558<>res://.godot/imported/Bringer-of-Death_Walk_5.png-11f30a853eab626295d6623e540cbc8b.ctex::
-Bringer-of-Death_Walk_6.png::CompressedTexture2D::4464523186473153192::1617352724::1765969704::1::::<><><>0<>0<>ef4bad4a6206884959bb192887bdd06e<>res://.godot/imported/Bringer-of-Death_Walk_6.png-bd689a76dbe039fd051382f906d7d33e.ctex::
-Bringer-of-Death_Walk_7.png::CompressedTexture2D::1078959050766338195::1617352724::1765969704::1::::<><><>0<>0<>671f529519a7122ce6f7403262d91a62<>res://.godot/imported/Bringer-of-Death_Walk_7.png-6541590895874dcb9403cf71425b2248.ctex::
-Bringer-of-Death_Walk_8.png::CompressedTexture2D::8993277869598287423::1617352724::1765969704::1::::<><><>0<>0<>a5aae3ed2399947b5938228904ce07ad<>res://.godot/imported/Bringer-of-Death_Walk_8.png-d3df5b2053db0bc43e8e294a989fe6d3.ctex::
-::res://Sprites/Enemy/Bringer-Of-Death/SpriteSheet/::1765969704
-Bringer-of-Death-SpritSheet.png::CompressedTexture2D::2000045534354338419::1617352432::1765969704::1::::<><><>0<>0<>6e6fdae9194748c5f64102e4e57f548f<>res://.godot/imported/Bringer-of-Death-SpritSheet.png-d9b955071f69969ea994c178e9f9616e.ctex::
-Bringer-of-Death-SpritSheet_no-Effect.png::CompressedTexture2D::8482520843629251236::1617352512::1765969704::1::::<><><>0<>0<>d21e77382c97321a2f6a99137e178c4d<>res://.godot/imported/Bringer-of-Death-SpritSheet_no-Effect.png-6fecf6162f8e6d97c16533bd2d1c56bb.ctex::
-::res://Sprites/Enemy/NightBorne/::1765974768
-NightBorne.png::CompressedTexture2D::3238809655044625598::1618649248::1765974768::1::::<><><>0<>0<>e7e0935c56d65ff341042bcf25363dcd<>res://.godot/imported/NightBorne.png-8bba57dd20be6f83e6371b2fec59ae25.ctex::
-::res://Sprites/Enemy/Patrol/::1768388253
+::res://Sprites/::1768995045
+::res://Sprites/Character/::1768995048
+Attack 1.png::CompressedTexture2D::421201314713696087::1765531292::1768995048::1::::<><><>0<>0<>de6ed64194387bc2d499bfe776381da9<>res://.godot/imported/Attack 1.png-717ddf7c144725898638d1d09914795a.ctex::
+Attack 2.png::CompressedTexture2D::719012799416575946::1765531292::1768995048::1::::<><><>0<>0<>08f21e765fa9871496ee996f485d93c5<>res://.godot/imported/Attack 2.png-6bc1ecca600e6792228c16a62e03191e.ctex::
+Dash.png::CompressedTexture2D::8476130962418191942::1765531292::1768995048::1::::<><><>0<>0<>e23ca8283646b65b3b86d8b2ee7ea19c<>res://.godot/imported/Dash.png-ef9bf7306d113d2313a4a17476b7ed9e.ctex::
+Death.png::CompressedTexture2D::1804491615369973498::1765531292::1768995048::1::::<><><>0<>0<>32e36eeeda15ec2e95a5fc0feb51ec34<>res://.godot/imported/Death.png-a7fbafc47139cea0cb84a7f86754b65d.ctex::
+Fall.png::CompressedTexture2D::4077381337300525382::1765531292::1768995047::1::::<><><>0<>0<>9e8894d8b127bd30e29ecbc8111293f6<>res://.godot/imported/Fall.png-50470e0de7a149a638db3a54d71bf1f0.ctex::
+Hurt.png::CompressedTexture2D::323913048146232414::1765531292::1768995047::1::::<><><>0<>0<>712b3fc98e41ba45c9098f47ec57d2ac<>res://.godot/imported/Hurt.png-df0fdb48b8f5405870659dd98c9d8c28.ctex::
+idle.png::CompressedTexture2D::6770478175540997512::1765531292::1768995047::1::::<><><>0<>0<>8578a18f44cf1ec5741bdb18d81d0e14<>res://.godot/imported/idle.png-362ab61637250042ed04c29fe10c8cf3.ctex::
+Jump.png::CompressedTexture2D::7230177757211461117::1765531292::1768995047::1::::<><><>0<>0<>49b9ca925906063ef9a3d00571a618ec<>res://.godot/imported/Jump.png-1b2274fc762ccf36e6a6d6d6aa92b6a1.ctex::
+Run.png::CompressedTexture2D::8244897350935087550::1765531292::1768995048::1::::<><><>0<>0<>55ca9ba5e065c88d0fa4e50513881594<>res://.godot/imported/Run.png-eae8d5ab4bd87d1c4891b43294258ef2.ctex::
+::res://Sprites/Enemy/::1768994919
+::res://Sprites/Enemy/Crow/::1768995045
+::res://Sprites/Enemy/Crow/Animations/::1768994966
+crow_attack.png::CompressedTexture2D::3949949812074078339::1765531292::1768994966::1::::<><><>0<>0<>b516591f3b3c51358a8899bfd0ae94ad<>res://.godot/imported/crow_attack.png-0fa673f30a71fdfa43e030cfc83ef336.ctex::
+crow_damage.png::CompressedTexture2D::3431219006442879144::1765531292::1768994966::1::::<><><>0<>0<>58d958277f3f8f1356e1caa53607ac16<>res://.godot/imported/crow_damage.png-a9f8468a0df9f7327c0338b768c6d6c1.ctex::
+crow_death1.png::CompressedTexture2D::5466188514965671722::1765531292::1768994966::1::::<><><>0<>0<>036a0ad1719237b2b48bdc11fe3df86c<>res://.godot/imported/crow_death1.png-00491d67f6dbe11ae469308cdd8578b0.ctex::
+crow_death2.png::CompressedTexture2D::6348513009261165483::1765531292::1768994966::1::::<><><>0<>0<>7c8bc60b4fc6faecbb6b2f5444873dd7<>res://.godot/imported/crow_death2.png-67002bc20f41199c5feba68cb5f80a3c.ctex::
+crow_idle.png::CompressedTexture2D::6976734623026895525::1765531292::1768994966::1::::<><><>0<>0<>508c0ba21595354ccb34ce23be721648<>res://.godot/imported/crow_idle.png-7dcefb3e9fa84e51217e9f90e7acbef2.ctex::
+crow_jump.png::CompressedTexture2D::1658941027608972736::1765531292::1768994966::1::::<><><>0<>0<>ab3a01036fcd0a056e7cc8943481c448<>res://.godot/imported/crow_jump.png-456fc1aa9984caee1fcc1d17f3a37e95.ctex::
+crow_walk.png::CompressedTexture2D::4915708143008802273::1765531292::1768994966::1::::<><><>0<>0<>bd55b250d8b38f1e8f46cdaaf4563b2c<>res://.godot/imported/crow_walk.png-038b6269875579ff1f066e3dc934cdbd.ctex::
+::res://Sprites/Enemy/EnemyGiant/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/No BG/::1768994967
+frame0000.png::CompressedTexture2D::5895134022676202570::1765790096::1768994967::1::::<><><>0<>0<>9ad52baf5ce6bd554ea91fbe7cb2e97c<>res://.godot/imported/frame0000.png-d91ed5a7dbf5ee5eb1e89dfbcb34f35b.ctex::
+frame0001.png::CompressedTexture2D::4349826345919340611::1765790096::1768994967::1::::<><><>0<>0<>cdd319c49d40dc00ca7261672ed9ab54<>res://.godot/imported/frame0001.png-6803d86c0dfc66a7ca2e66a4d13c9699.ctex::
+frame0002.png::CompressedTexture2D::3961847893905435403::1765790096::1768994967::1::::<><><>0<>0<>888dad3c6ec8543c1575eccb5a675029<>res://.godot/imported/frame0002.png-a219bed92ac274cd27947f8ac970fb2a.ctex::
+frame0003.png::CompressedTexture2D::1095934786155513053::1765790096::1768994967::1::::<><><>0<>0<>f5254655627026b7b062b40047e35f99<>res://.godot/imported/frame0003.png-836d580a329cd9a6ce25c365481d82be.ctex::
+frame0004.png::CompressedTexture2D::7379084301846848565::1765790096::1768994967::1::::<><><>0<>0<>900e6eea4bc02f7ecb7bfa3fb0456dd5<>res://.godot/imported/frame0004.png-46886c8e7f46848d2d9cdd312a9c4162.ctex::
+frame0005.png::CompressedTexture2D::7788734583071651727::1765790096::1768994967::1::::<><><>0<>0<>3cf1b381dcd875eca00ec9c84479b68a<>res://.godot/imported/frame0005.png-71cd00fe4a15747d1fba27db833a4c9f.ctex::
+frame0006.png::CompressedTexture2D::4738490708591088954::1765790096::1768994967::1::::<><><>0<>0<>6625f6e5773a95a6a0bfaa5acffdd7d2<>res://.godot/imported/frame0006.png-1b088f4896c4137b943889e4ecadab30.ctex::
+frame0007.png::CompressedTexture2D::1072769238503100613::1765790096::1768994967::1::::<><><>0<>0<>c9b1eb6392b882d01fd1e063cd62f66d<>res://.godot/imported/frame0007.png-4b0c104bc9d2ed6dc74b3e152c20ee34.ctex::
+frame0008.png::CompressedTexture2D::4810141322058273111::1765790096::1768994967::1::::<><><>0<>0<>f2482ae14cb46230392f741afeac50bf<>res://.godot/imported/frame0008.png-02f2f5f07748caeb1aa4e67aef3f325d.ctex::
+frame0009.png::CompressedTexture2D::1372613584052381298::1765790096::1768994967::1::::<><><>0<>0<>e1fdc793c25775c344c01e2db45fd102<>res://.godot/imported/frame0009.png-e68caa636defced194aef50c5c2538bf.ctex::
+frame0010.png::CompressedTexture2D::6930479668631563152::1765790096::1768994966::1::::<><><>0<>0<>ac37af4d5b5db875f2806554f9fee60d<>res://.godot/imported/frame0010.png-3e1c7b0876f7eb52a817aabe6f8b6184.ctex::
+::res://Sprites/Enemy/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/With BG/::1768994967
+frame0000.png::CompressedTexture2D::7994063056350209376::1765790096::1768994967::1::::<><><>0<>0<>86c7ca48dcd2051597ccade309d605cd<>res://.godot/imported/frame0000.png-1c94ff38c4c95495ef912f2d1853cc7b.ctex::
+frame0001.png::CompressedTexture2D::2579293437231593845::1765790096::1768994966::1::::<><><>0<>0<>d6ef9428bb2daf87898a9c7c367a775f<>res://.godot/imported/frame0001.png-867e54df302472b0a3fb29396577fca3.ctex::
+frame0002.png::CompressedTexture2D::3151239202867239572::1765790096::1768994966::1::::<><><>0<>0<>29f38ecb1d83a0e32d714e3da80f376f<>res://.godot/imported/frame0002.png-f6f2253c2746b9af082aaf18640b58af.ctex::
+frame0003.png::CompressedTexture2D::1969382048986158410::1765790096::1768994967::1::::<><><>0<>0<>f1d883b0cbc2e5ea1901a6bfd80cfd31<>res://.godot/imported/frame0003.png-bd82d8fb590636146808a0fb649c7014.ctex::
+frame0004.png::CompressedTexture2D::2046786836954620167::1765790096::1768994967::1::::<><><>0<>0<>1450ca9150f376289212411ad23b0bfb<>res://.godot/imported/frame0004.png-cb68b7b2d9d38751b09b29a92d9e4b02.ctex::
+frame0005.png::CompressedTexture2D::8575626134125280446::1765790096::1768994967::1::::<><><>0<>0<>2533fcf270a21aa998cd95d4b8bbf9cb<>res://.godot/imported/frame0005.png-9c939f035b105d0a6114255d917db295.ctex::
+frame0006.png::CompressedTexture2D::5406787249035138325::1765790096::1768994967::1::::<><><>0<>0<>92317cb42b5ddfab99b174ebe88352db<>res://.godot/imported/frame0006.png-990101ce63b38eb35d2248cf234323b2.ctex::
+frame0007.png::CompressedTexture2D::8237952352804120676::1765790096::1768994967::1::::<><><>0<>0<>00b5db50400a56e405c9ce77dcd20a95<>res://.godot/imported/frame0007.png-dc85cdb2f9abc9158e434dc3cf3ae89f.ctex::
+frame0008.png::CompressedTexture2D::701321495456797818::1765790096::1768994967::1::::<><><>0<>0<>24b5c7db93f710fd1374f997c476a2d6<>res://.godot/imported/frame0008.png-019f9bbf4ff6eef9bc42492cc695e4d2.ctex::
+frame0009.png::CompressedTexture2D::5741702164277511183::1765790096::1768994967::1::::<><><>0<>0<>15f35e2157dc6c9835533c386427552c<>res://.godot/imported/frame0009.png-22a468dde0ca59aa0900900b49216529.ctex::
+frame0010.png::CompressedTexture2D::7874779871200673924::1765790096::1768994967::1::::<><><>0<>0<>7ef396fd9c001f19bfdc549250631372<>res://.godot/imported/frame0010.png-c4e1b30b8cf12076a3ca1346501603ed.ctex::
+::res://Sprites/Enemy/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/No BG/::1768994967
+frame0000.png::CompressedTexture2D::1739460787645743665::1765790096::1768994967::1::::<><><>0<>0<>f22ff04c9f820aead07adc47eca16351<>res://.godot/imported/frame0000.png-dd81011a1cafbfe5720b17af4b3a2c74.ctex::
+frame0001.png::CompressedTexture2D::3019620023433845325::1765790096::1768994967::1::::<><><>0<>0<>d4f351ef2af2435fed39328585d2ec7b<>res://.godot/imported/frame0001.png-f92f3bf18552bb2d94534f44bc51617e.ctex::
+frame0002.png::CompressedTexture2D::1065784819919408089::1765790096::1768994967::1::::<><><>0<>0<>18fa050910087a3da22ad643abcf5729<>res://.godot/imported/frame0002.png-8c2cce86a4024f996fef5faa493804aa.ctex::
+frame0003.png::CompressedTexture2D::5520551543897304162::1765790096::1768994967::1::::<><><>0<>0<>1fb68e86d51d7c0fd79b74fc27b42bfb<>res://.godot/imported/frame0003.png-588b3d3894c01db178e7fd838d3abe88.ctex::
+frame0004.png::CompressedTexture2D::3274778651569594043::1765790096::1768994967::1::::<><><>0<>0<>52007b07074e42f3b667125254f03b44<>res://.godot/imported/frame0004.png-511742042cf448babf150bda8fca6d8d.ctex::
+frame0005.png::CompressedTexture2D::3101741778454337560::1765790096::1768994967::1::::<><><>0<>0<>90aafe3c000387affe01934bd94db9cd<>res://.godot/imported/frame0005.png-0b13ce45fc067f0b75e39e0d549a032c.ctex::
+frame0006.png::CompressedTexture2D::7110175408364755790::1765790096::1768994967::1::::<><><>0<>0<>4d12bc697b4fb30b768dae9b6248c2e1<>res://.godot/imported/frame0006.png-af4f6756b5b76e608adc3b9114f5a5b9.ctex::
+frame0007.png::CompressedTexture2D::5616165266674910088::1765790096::1768994967::1::::<><><>0<>0<>aca9fde1d4f70d354c01b07d2a39cafb<>res://.godot/imported/frame0007.png-e906cc66fe7fbcea837654945d3c292d.ctex::
+frame0008.png::CompressedTexture2D::3424091596622919299::1765790096::1768994967::1::::<><><>0<>0<>e0990400b08f1c8477fd179beaea7974<>res://.godot/imported/frame0008.png-3bc6e4eba876e98ee2faa96abac934a4.ctex::
+frame0009.png::CompressedTexture2D::4307377908568273851::1765790096::1768994967::1::::<><><>0<>0<>970c5ad0c8d5de017bb165325f0fa16e<>res://.godot/imported/frame0009.png-db52feab99f0744a17f63712f8974dfa.ctex::
+::res://Sprites/Enemy/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/With BG/::1768994967
+frame0000.png::CompressedTexture2D::2218528115565330397::1765790096::1768994967::1::::<><><>0<>0<>beeda1b9156899a61d85cd6bca198b17<>res://.godot/imported/frame0000.png-99eac4838c194f176825264a93be69d6.ctex::
+frame0001.png::CompressedTexture2D::1069265689859579191::1765790096::1768994967::1::::<><><>0<>0<>d3ef806f5e037f0ec79b7b3abb5b77aa<>res://.godot/imported/frame0001.png-af8054c7d14832a1dbba8bc254919296.ctex::
+frame0002.png::CompressedTexture2D::8077193593793962055::1765790096::1768994967::1::::<><><>0<>0<>2f6c3ed3d78a0185b458b114d3d5e692<>res://.godot/imported/frame0002.png-5a972ba4b6c804c8c15dcf8c46d8ccc9.ctex::
+frame0003.png::CompressedTexture2D::4468638045754777108::1765790096::1768994967::1::::<><><>0<>0<>25574cd4d9b24ce6cd9ff81bcb3fd544<>res://.godot/imported/frame0003.png-0f3e902c4018cc0354a3396bf0d65599.ctex::
+frame0004.png::CompressedTexture2D::6601056778150625343::1765790096::1768994967::1::::<><><>0<>0<>2770422008cdbd3163ce35fe4550e5ec<>res://.godot/imported/frame0004.png-14dc7071a31fddae0e61d71b2943f74d.ctex::
+frame0005.png::CompressedTexture2D::5320035761308429868::1765790096::1768994967::1::::<><><>0<>0<>47ec8ac3f5249d47d2b6d81be44ece71<>res://.godot/imported/frame0005.png-bb4169864b4d751e0609f378c7368b98.ctex::
+frame0006.png::CompressedTexture2D::3201597229242306156::1765790096::1768994967::1::::<><><>0<>0<>9675f62c30a5a62cc54599b732f5c8fc<>res://.godot/imported/frame0006.png-edcc16324c499f1ae55fe811ea5b6760.ctex::
+frame0007.png::CompressedTexture2D::2924837852510466642::1765790096::1768994967::1::::<><><>0<>0<>211a9bf8df3ee185eec339eda1c1c040<>res://.godot/imported/frame0007.png-8701df698e8d3ee749d85c167c7c8e59.ctex::
+frame0008.png::CompressedTexture2D::6719389952415357154::1765790096::1768994967::1::::<><><>0<>0<>c5f9cfbef4bc0246de2ab4506ccd3309<>res://.godot/imported/frame0008.png-36cc900e3aedbd18c9e14b5792845bc1.ctex::
+frame0009.png::CompressedTexture2D::6960330873583554291::1765790096::1768994967::1::::<><><>0<>0<>abf30d92ba81c19596be9e116f88b2be<>res://.godot/imported/frame0009.png-636ca15064aca58c5f5c43420e1e3788.ctex::
+::res://Sprites/Enemy/EnemyGiant/Dash-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Dash-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Dash-MoonstoneKeeper-SUCART/No BG/::1768994967
+frame0000.png::CompressedTexture2D::8204787745519995182::1765790096::1768994967::1::::<><><>0<>0<>025d47ccf5d6c771eb0a4a1c1add75e0<>res://.godot/imported/frame0000.png-6fb8d24727391d643778273c5ef3fbe0.ctex::
+frame0001.png::CompressedTexture2D::5778096776182698783::1765790096::1768994967::1::::<><><>0<>0<>39c1e9d7318853bd41ce5355f9f0c698<>res://.godot/imported/frame0001.png-c82f7c51ed34d4989a84228e10539fe2.ctex::
+frame0002.png::CompressedTexture2D::4199309987582242867::1765790096::1768994967::1::::<><><>0<>0<>08db842b09865575a12a90b23e9b4a61<>res://.godot/imported/frame0002.png-66dfdd060ce56f9c6b98143044e96c1c.ctex::
+frame0003.png::CompressedTexture2D::1366154384195824603::1765790096::1768994967::1::::<><><>0<>0<>7ed6b5d23c1ad51a7d8b4827d3cdc966<>res://.godot/imported/frame0003.png-dd4cfb2c917035ff47a2ad9fd2c87e8b.ctex::
+frame0004.png::CompressedTexture2D::6308036868616538019::1765790096::1768994967::1::::<><><>0<>0<>1d1d1096709f2f08d144db40c56bddf8<>res://.godot/imported/frame0004.png-b3de588696fa6cbc3feba5d76307bb15.ctex::
+frame0005.png::CompressedTexture2D::2796467571509062423::1765790096::1768994967::1::::<><><>0<>0<>ebbda519ac218dcb50b79fee2fb9e2ef<>res://.godot/imported/frame0005.png-7263178c536b56de75055bdf31b1a752.ctex::
+frame0006.png::CompressedTexture2D::7399344052319801811::1765790096::1768994967::1::::<><><>0<>0<>96f1f09a20e925487ff92a95f4e91858<>res://.godot/imported/frame0006.png-135c33d327c9193625a2572f8f64c51d.ctex::
+frame0007.png::CompressedTexture2D::8492529715791347096::1765790096::1768994967::1::::<><><>0<>0<>e5a53ca7c97aedd687486bbc58043074<>res://.godot/imported/frame0007.png-0f141f6557c0050b6151aec9b602b3c0.ctex::
+frame0008.png::CompressedTexture2D::7733538347876189428::1765790096::1768994967::1::::<><><>0<>0<>fd4c5cd2644f8ecfba9bcd6fc5ab3525<>res://.godot/imported/frame0008.png-90f941740b16453f099f3b67f96a6d97.ctex::
+frame0009.png::CompressedTexture2D::2038764509465983341::1765790096::1768994967::1::::<><><>0<>0<>909df83a766ab3b0adf002250b553836<>res://.godot/imported/frame0009.png-398dc5544485d59936df89815db5e2c2.ctex::
+frame0010.png::CompressedTexture2D::4544931471966283096::1765790096::1768994967::1::::<><><>0<>0<>25c4db482011127c3e9442a8fbfee396<>res://.godot/imported/frame0010.png-2b9f55c3898466e1e50e420d2b5c994b.ctex::
+frame0011.png::CompressedTexture2D::4118389168357884713::1765790096::1768994967::1::::<><><>0<>0<>91868eed7831a3703c622651ceaed26a<>res://.godot/imported/frame0011.png-a7ef8d145da6d8f3974aa543dac32b5e.ctex::
+frame0012.png::CompressedTexture2D::871993613711504157::1765790096::1768994967::1::::<><><>0<>0<>1d76da248733d17f1a6d7602ec00691a<>res://.godot/imported/frame0012.png-7b005f35ceb25bc525aa0f85cbafa06e.ctex::
+frame0013.png::CompressedTexture2D::2843773326627993388::1765790096::1768994967::1::::<><><>0<>0<>0ef472be910b817186f813f3d5c20467<>res://.godot/imported/frame0013.png-22f10be0219dd57368b49b53845d1795.ctex::
+frame0014.png::CompressedTexture2D::1093620744208111009::1765790096::1768994967::1::::<><><>0<>0<>6a3ce04b893c52b6ed637e9d0347221e<>res://.godot/imported/frame0014.png-d1415cc41ccb9a6d67ce55e17c974c58.ctex::
+::res://Sprites/Enemy/EnemyGiant/Dash-MoonstoneKeeper-SUCART/With BG/::1768994967
+frame0000.png::CompressedTexture2D::2358431554806521904::1765790096::1768994967::1::::<><><>0<>0<>107b6866ad2e516ec26b0b6ef25d696e<>res://.godot/imported/frame0000.png-b4673dc2a52cbcc8639dad845f2c5f03.ctex::
+frame0001.png::CompressedTexture2D::5109220977514061383::1765790096::1768994967::1::::<><><>0<>0<>5519eb5555bacc0a02ea294619c08582<>res://.godot/imported/frame0001.png-eac3fdbfdeed24af4a0db50b8ee0a0db.ctex::
+frame0002.png::CompressedTexture2D::7435605072145648071::1765790096::1768994967::1::::<><><>0<>0<>623af1700e4bd72ebed1fb121d5eff30<>res://.godot/imported/frame0002.png-0baa805bab71f10298dbdf340ace4a6d.ctex::
+frame0003.png::CompressedTexture2D::6545925066712208226::1765790096::1768994967::1::::<><><>0<>0<>fa2998b293536964009142d30436f5bb<>res://.godot/imported/frame0003.png-18ea5b25e54a4a52e7f85dc72096d243.ctex::
+frame0004.png::CompressedTexture2D::8784176600310873344::1765790096::1768994967::1::::<><><>0<>0<>fd75527bad73eae9f37f2b97e05065fc<>res://.godot/imported/frame0004.png-693f144776de9ae09691e554472d535b.ctex::
+frame0005.png::CompressedTexture2D::8118552369777523936::1765790096::1768994967::1::::<><><>0<>0<>a6ce223a0b310f99891d2ca83966b4b7<>res://.godot/imported/frame0005.png-f4668588016b75b6f9ed32dca0a6cf9f.ctex::
+frame0006.png::CompressedTexture2D::1333861736142104173::1765790096::1768994967::1::::<><><>0<>0<>9b1a280d0dc04dfb0f0cd4e131d8f93b<>res://.godot/imported/frame0006.png-705234430d7cb31d3320daf8c476dc6d.ctex::
+frame0007.png::CompressedTexture2D::4672784061787920999::1765790096::1768994967::1::::<><><>0<>0<>90d4c61e96ad26e8bf4f4312c908c956<>res://.godot/imported/frame0007.png-269a6c9fe6de95ed16d1ac2fece604a3.ctex::
+frame0008.png::CompressedTexture2D::2840819906445671683::1765790096::1768994967::1::::<><><>0<>0<>bbde84dd7148e618f0fe88f3d05cd05b<>res://.godot/imported/frame0008.png-6427d9632c2185f0520a5f004d8f7d58.ctex::
+frame0009.png::CompressedTexture2D::8097889809322560654::1765790096::1768994967::1::::<><><>0<>0<>489d0284ebedfc8300ed0e383363f9d1<>res://.godot/imported/frame0009.png-6276d161299d14427dc02ebf9a761141.ctex::
+frame0010.png::CompressedTexture2D::5550413832410501615::1765790096::1768994967::1::::<><><>0<>0<>f92c46f7d262cc55f35d995f2b3113bc<>res://.godot/imported/frame0010.png-f8a4cce8240393bd6d5b140b02f38ad8.ctex::
+frame0011.png::CompressedTexture2D::4448676507734009675::1765790096::1768994967::1::::<><><>0<>0<>94e60f61524b83ee96221ab1e4454bd7<>res://.godot/imported/frame0011.png-da48a975f6d992909b70d298bde3591a.ctex::
+frame0012.png::CompressedTexture2D::6290165207467994057::1765790096::1768994967::1::::<><><>0<>0<>4780a7b475dc06a1963b44e8bff35e9d<>res://.godot/imported/frame0012.png-c3c524a65b4bbc1eafa760c1ec214ce9.ctex::
+frame0013.png::CompressedTexture2D::398358135224232826::1765790096::1768994967::1::::<><><>0<>0<>c12a0052ae5ffbb21f8f9b318adeeae7<>res://.godot/imported/frame0013.png-d4b79e2eeb3a62b940d137c84b3da9fe.ctex::
+frame0014.png::CompressedTexture2D::1736025886953277368::1765790096::1768994967::1::::<><><>0<>0<>0fb4b815180dbbdc79b179ef1c5c5711<>res://.godot/imported/frame0014.png-8ef082aa3193d8a5e50f76fbd4fb20d9.ctex::
+::res://Sprites/Enemy/EnemyGiant/Death-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Death-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Death-MoonstoneKeeper-SUCART/No BG/::1768994967
+frame0000.png::CompressedTexture2D::1766657505355100731::1765790096::1768994967::1::::<><><>0<>0<>61b9c0e12a756c6313ecfa02ce9da022<>res://.godot/imported/frame0000.png-c7dedd77a9dedcd35ec9fb208278ee18.ctex::
+frame0001.png::CompressedTexture2D::4912038520139853302::1765790096::1768994967::1::::<><><>0<>0<>82dd97c77e723657951df408a5c83f95<>res://.godot/imported/frame0001.png-42f09d4235424a1020be29f2de36d8ce.ctex::
+frame0002.png::CompressedTexture2D::5455843029609717622::1765790096::1768994967::1::::<><><>0<>0<>3bdb150bea5471fef4f6f38d14217c3c<>res://.godot/imported/frame0002.png-b4d2a8eb7c135a873e576be26b322af4.ctex::
+frame0003.png::CompressedTexture2D::6484656932262305308::1765790096::1768994967::1::::<><><>0<>0<>72d790582780631f88652b618466d840<>res://.godot/imported/frame0003.png-f7ed7c9cdbc5b7f827313e14c4ea7652.ctex::
+frame0004.png::CompressedTexture2D::7176365643411791218::1765790096::1768994967::1::::<><><>0<>0<>06c264d0e5bf7abeaa4309c2a58f59b0<>res://.godot/imported/frame0004.png-dbbb1dacb345020b5d666d8a3962d4c2.ctex::
+frame0005.png::CompressedTexture2D::1397083929917359434::1765790096::1768994967::1::::<><><>0<>0<>ced2a91be38e232c392d2890ca3344ad<>res://.godot/imported/frame0005.png-c20e264eb90ae6c28d957ffba174ee96.ctex::
+frame0006.png::CompressedTexture2D::4874037976502429889::1765790096::1768994967::1::::<><><>0<>0<>9accdee60c8cbf9a18f16f675f2af81b<>res://.godot/imported/frame0006.png-aed75d2bcf17f7d4dc11178895605c4c.ctex::
+frame0007.png::CompressedTexture2D::7656080577699537681::1765790096::1768994967::1::::<><><>0<>0<>a3bf889f585332e8f1a68a132afd26be<>res://.godot/imported/frame0007.png-edff6499336f8c21b3160f1cea09b715.ctex::
+frame0008.png::CompressedTexture2D::6377267179470494885::1765790096::1768994967::1::::<><><>0<>0<>a3e92ceba8a7f37d78b42c8582b5501c<>res://.godot/imported/frame0008.png-ff4f6d0a4024736126a0af8df7013260.ctex::
+frame0009.png::CompressedTexture2D::8083245152258049315::1765790096::1768994967::1::::<><><>0<>0<>1910f6411ebee7cfd6e627a3576a9423<>res://.godot/imported/frame0009.png-75e327e6b9626824a97d738531afe70a.ctex::
+frame0010.png::CompressedTexture2D::143258500414267141::1765790096::1768994967::1::::<><><>0<>0<>f45c18d84344e9999231d2742f06305b<>res://.godot/imported/frame0010.png-b1301d04335d36feb7cd8d9b0e57e75d.ctex::
+frame0011.png::CompressedTexture2D::5344192425548491328::1765790096::1768994967::1::::<><><>0<>0<>24847e74c895f9c5d90313aa5d3f3eda<>res://.godot/imported/frame0011.png-72f264b13ba4b7b96ff15dd88653d1a6.ctex::
+frame0012.png::CompressedTexture2D::4840213275498768322::1765790096::1768994967::1::::<><><>0<>0<>ebad51167107500f5201e6c16d7cd8ad<>res://.godot/imported/frame0012.png-2baeaa4d5b71acc60021623a99886d1d.ctex::
+frame0013.png::CompressedTexture2D::5492602520257216468::1765790096::1768994967::1::::<><><>0<>0<>f256bd8946f32dee942eccd965ecd48a<>res://.godot/imported/frame0013.png-d0a2d298cac4c4c260773583270f7a24.ctex::
+frame0014.png::CompressedTexture2D::4235802164360442551::1765790096::1768994967::1::::<><><>0<>0<>c623737d62b5981263ea568c381352a0<>res://.godot/imported/frame0014.png-184a9cea846e7253a25ef9b74d210627.ctex::
+frame0015.png::CompressedTexture2D::3166300462284469450::1765790096::1768994967::1::::<><><>0<>0<>7364bbbbdd737cbbc10fe8fe8d4e3874<>res://.godot/imported/frame0015.png-f7b89d49ce8a584f2c8bba1ab9137c6c.ctex::
+frame0016.png::CompressedTexture2D::812381434501466912::1765790096::1768994967::1::::<><><>0<>0<>7b7813ae315c8614da325920b8f941ca<>res://.godot/imported/frame0016.png-36bc216bb5b303d602b607b07aa42605.ctex::
+frame0017.png::CompressedTexture2D::2974519318227495331::1765790096::1768994967::1::::<><><>0<>0<>6e324afabc936d9d46682a050b3519a0<>res://.godot/imported/frame0017.png-b55023f792e6f4847e1237561b524bd7.ctex::
+frame0018.png::CompressedTexture2D::7545295841193091657::1765790096::1768994967::1::::<><><>0<>0<>c68be5e42df8a1dadc0da3c6d9c4cf2b<>res://.godot/imported/frame0018.png-ffec32396f79502668ff14e67e5a474d.ctex::
+::res://Sprites/Enemy/EnemyGiant/Death-MoonstoneKeeper-SUCART/With BG/::1768994967
+frame0000.png::CompressedTexture2D::5015674968951286130::1765790096::1768994967::1::::<><><>0<>0<>62481b5861e1b62560eeb41979897871<>res://.godot/imported/frame0000.png-01c6379ad40bf04e0fcb9ffaba527d9b.ctex::
+frame0001.png::CompressedTexture2D::9186317766793205388::1765790096::1768994967::1::::<><><>0<>0<>790bdfcf4ce60ea433dfe8654bb602ef<>res://.godot/imported/frame0001.png-38e29ed558f15338c9f4507da2c1f7a7.ctex::
+frame0002.png::CompressedTexture2D::3032304321273779072::1765790096::1768994967::1::::<><><>0<>0<>b67eb2058cb5d08e87cdbf0428933539<>res://.godot/imported/frame0002.png-d51b4a0ead3da56b06926d02684f785c.ctex::
+frame0003.png::CompressedTexture2D::7641268909871605141::1765790096::1768994967::1::::<><><>0<>0<>9c524b97f9a78a0d69f0312fdc88c281<>res://.godot/imported/frame0003.png-a69668f6ffcf288e2491cac31648a057.ctex::
+frame0004.png::CompressedTexture2D::5986609982026844967::1765790096::1768994967::1::::<><><>0<>0<>c895f399c8bb7e1b5ff1916222bd72f2<>res://.godot/imported/frame0004.png-9b17c64da318fda2b84120c5ca278363.ctex::
+frame0005.png::CompressedTexture2D::8114406616957038374::1765790096::1768994967::1::::<><><>0<>0<>87002f51904f9c670fac10676b5979a0<>res://.godot/imported/frame0005.png-c4752d130fcf9715658d5618fb2a237c.ctex::
+frame0006.png::CompressedTexture2D::4643274303745449867::1765790096::1768994967::1::::<><><>0<>0<>d3620d7b81da3bc4ce37f131799e599c<>res://.godot/imported/frame0006.png-a980e8c3f437c5146bdc00009e9f7c1b.ctex::
+frame0007.png::CompressedTexture2D::591227314389341455::1765790096::1768994967::1::::<><><>0<>0<>6fc754bab7b24bafcf3c90f0cabf63de<>res://.godot/imported/frame0007.png-65eeef40dda8f2e397625bb91c1ec2ad.ctex::
+frame0008.png::CompressedTexture2D::7413718353067039175::1765790096::1768994967::1::::<><><>0<>0<>8029dd764d529385a97ef955edbfe0e4<>res://.godot/imported/frame0008.png-675f1f692d1fe0c12320276647ead414.ctex::
+frame0009.png::CompressedTexture2D::6770013538544965075::1765790096::1768994967::1::::<><><>0<>0<>0b895504dfcf77172e14fd913ad681cb<>res://.godot/imported/frame0009.png-36fe1c93555c020c2f4193e2c9d453a6.ctex::
+frame0010.png::CompressedTexture2D::651571643664461685::1765790096::1768994967::1::::<><><>0<>0<>017fa4bc19e3358516c8b03cb73df14e<>res://.godot/imported/frame0010.png-b316342c50b485dfb8587277a7b651fa.ctex::
+frame0011.png::CompressedTexture2D::6644481395416020733::1765790096::1768994967::1::::<><><>0<>0<>b4d1a0bfbb0d7a376bf743ca63e4cf05<>res://.godot/imported/frame0011.png-6d8f43de24da1a66561ea86e9b78f350.ctex::
+frame0012.png::CompressedTexture2D::1536958361634199926::1765790096::1768994967::1::::<><><>0<>0<>8436dcf3ec72616e009eee40cdc5c53b<>res://.godot/imported/frame0012.png-bbca4c9dd836c70a307b24a3bf6bddcb.ctex::
+frame0013.png::CompressedTexture2D::8487398270412093122::1765790096::1768994967::1::::<><><>0<>0<>e1168c18d85bdf2f5ed37110ece9d2a3<>res://.godot/imported/frame0013.png-be7506c4347a243d1145958c49d8c0ea.ctex::
+frame0014.png::CompressedTexture2D::5396207887424284517::1765790096::1768994967::1::::<><><>0<>0<>f682bc6e0e0c0a14d41ddc0e707cc3aa<>res://.godot/imported/frame0014.png-cdd0c5064049c1ceae2984154c700af5.ctex::
+frame0015.png::CompressedTexture2D::1986884240119886032::1765790096::1768994966::1::::<><><>0<>0<>4f29b5878e4f59408d557d49c1294bf4<>res://.godot/imported/frame0015.png-2895a5baa36b95176457511710097a58.ctex::
+frame0016.png::CompressedTexture2D::6328528174178562767::1765790096::1768994966::1::::<><><>0<>0<>7eb87b12c8dc049788797790c6790e66<>res://.godot/imported/frame0016.png-0f0f482527df647df83be5c31aad6cd8.ctex::
+frame0017.png::CompressedTexture2D::2012300004158022235::1765790096::1768994966::1::::<><><>0<>0<>4d3c5eca85af8f2f2287330a326b0eee<>res://.godot/imported/frame0017.png-d29032be272943f1b4873b13ef6132c2.ctex::
+frame0018.png::CompressedTexture2D::8834898856901866811::1765790096::1768994966::1::::<><><>0<>0<>fbb84f9f984430935c9a4bd51fa8bfc4<>res://.godot/imported/frame0018.png-e914439760e29b019be7677e834c04b9.ctex::
+::res://Sprites/Enemy/EnemyGiant/Hit-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Hit-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Hit-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::114146179861334946::1765790096::1768994966::1::::<><><>0<>0<>6940e91e7df1c9f062b75c4505826a59<>res://.godot/imported/frame0000.png-c06bd5b80e95ab58b8364046869deed2.ctex::
+frame0001.png::CompressedTexture2D::6799841110295623623::1765790096::1768994966::1::::<><><>0<>0<>984145b6ae68a055fe40f5c43415f77f<>res://.godot/imported/frame0001.png-c78193b86edb9be97d3867adfd2ad877.ctex::
+frame0002.png::CompressedTexture2D::3351034728668563055::1765790096::1768994966::1::::<><><>0<>0<>f1a10ef07ad6ca9b475ee94397415397<>res://.godot/imported/frame0002.png-8466e04337b1c594f7577af65576be3f.ctex::
+::res://Sprites/Enemy/EnemyGiant/Hit-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::2673624783075515260::1765790096::1768994966::1::::<><><>0<>0<>934303f376f48894ba83194f4b900e7c<>res://.godot/imported/frame0000.png-f0913bcb639c0e5d53739a74b2a10f82.ctex::
+frame0001.png::CompressedTexture2D::7885097354321365712::1765790096::1768994966::1::::<><><>0<>0<>3646ad2c41041ffc42ffec7ff80804a4<>res://.godot/imported/frame0001.png-07fa4ce38323f4939cf2e386ad7db5a2.ctex::
+frame0002.png::CompressedTexture2D::6972547771026836426::1765790096::1768994966::1::::<><><>0<>0<>1d6ecd712eba9ce7300403331404f93c<>res://.godot/imported/frame0002.png-2ae0843d19a3b9ff4788c5ef34867e8c.ctex::
+::res://Sprites/Enemy/EnemyGiant/Idle-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Idle-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Idle-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::2094185105338856330::1765790096::1768994966::1::::<><><>0<>0<>17ef87b8a1584b97af553bd0b4b9c62f<>res://.godot/imported/frame0000.png-ab60b4be4fb01eaf6379bf8434d0a5d2.ctex::
+frame0001.png::CompressedTexture2D::7989125661655182291::1765790096::1768994966::1::::<><><>0<>0<>d55626a43f4ec1f8033e4d57c467fba3<>res://.godot/imported/frame0001.png-f67a43b0b73dddc64890f77ecf090bb7.ctex::
+frame0002.png::CompressedTexture2D::5384863420823160672::1765790096::1768994966::1::::<><><>0<>0<>ca009518967a950b3a0f937fe6eaf909<>res://.godot/imported/frame0002.png-3af7df2840fe4e56f5290850dfac7f9f.ctex::
+frame0003.png::CompressedTexture2D::2031985317747507704::1765790096::1768994966::1::::<><><>0<>0<>7055dcb52878fcf3d676e82b5c9dff1d<>res://.godot/imported/frame0003.png-88b24e9d6d9c0f53b0a8ab7b037af67f.ctex::
+frame0004.png::CompressedTexture2D::5837541749392460168::1765790096::1768994966::1::::<><><>0<>0<>e8c207087e665e2b60b886ad0d6bbc98<>res://.godot/imported/frame0004.png-ce613dded00924570514e45616e64feb.ctex::
+frame0005.png::CompressedTexture2D::3628631365625622507::1765790096::1768994966::1::::<><><>0<>0<>bfd9b99d0b136d2cdc56e5dfc5ec0e50<>res://.godot/imported/frame0005.png-30836839568dae30e9b5d3e67ea4df94.ctex::
+frame0006.png::CompressedTexture2D::2591505227754036482::1765790096::1768994966::1::::<><><>0<>0<>1b54c484b6745c4db2c1b18bfa677d92<>res://.godot/imported/frame0006.png-ab719189f7ab191fc36ed765806ebe96.ctex::
+frame0007.png::CompressedTexture2D::5748970280685927316::1765790096::1768994966::1::::<><><>0<>0<>3f7c5c78e5bb6f4528322f4ccb9ece30<>res://.godot/imported/frame0007.png-07e78724c3875256455eafba7c5f8132.ctex::
+frame0008.png::CompressedTexture2D::6870722248649245114::1765790096::1768994966::1::::<><><>0<>0<>5d9b42fe6335c758dade6d8cb0b50157<>res://.godot/imported/frame0008.png-39ed0f22f62538397153974e64159e7e.ctex::
+frame0009.png::CompressedTexture2D::4416247030732317094::1765790096::1768994966::1::::<><><>0<>0<>cf1faf05a0c13d00bd2d0b987e118695<>res://.godot/imported/frame0009.png-0b1a0ab1b31132e223292f33d1160c06.ctex::
+frame0010.png::CompressedTexture2D::7207748098028086485::1765790096::1768994966::1::::<><><>0<>0<>b37cb24b2e94d3855d33cb8e52b5635d<>res://.godot/imported/frame0010.png-117842698a184aec521b23b7df0b2151.ctex::
+frame0011.png::CompressedTexture2D::7678091349772689597::1765790096::1768994966::1::::<><><>0<>0<>1804786176f0af64fa5b2bbf86610266<>res://.godot/imported/frame0011.png-478237492b701b578a815c7798357c04.ctex::
+frame0012.png::CompressedTexture2D::3382166529468355675::1765790096::1768994966::1::::<><><>0<>0<>6fb7dd0efb187d6a12b56f0394db5efa<>res://.godot/imported/frame0012.png-fe47d1685cf166612ff1a30a02215881.ctex::
+frame0013.png::CompressedTexture2D::1964169825508433248::1765790096::1768994966::1::::<><><>0<>0<>d431fa3e7e06ff74d6cc8caadef0885d<>res://.godot/imported/frame0013.png-2e7bb490beb0d8974c78fdded185c9a0.ctex::
+frame0014.png::CompressedTexture2D::869388424068762571::1765790096::1768994966::1::::<><><>0<>0<>f069556fb65afe2c2e90bd210928fb83<>res://.godot/imported/frame0014.png-bbbb56e3d8393fca18b6eba5ec7c67da.ctex::
+frame0015.png::CompressedTexture2D::6894838371993978579::1765790096::1768994966::1::::<><><>0<>0<>41f1212ceed719172e8bdd73d83e9eab<>res://.godot/imported/frame0015.png-2e283fa78c22504139e269ba29c0e7a6.ctex::
+frame0016.png::CompressedTexture2D::8265200448523783983::1765790096::1768994966::1::::<><><>0<>0<>7854279b077acb5959639f59dc928635<>res://.godot/imported/frame0016.png-80147a8cd34702e3dc4e9eb1ab26af5b.ctex::
+::res://Sprites/Enemy/EnemyGiant/Idle-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::2735102576797984866::1765790096::1768994966::1::::<><><>0<>0<>897777deb72dc0fdc75b6f2b81052e6a<>res://.godot/imported/frame0000.png-2dd22855eb77be291dc44a5ad071e223.ctex::
+frame0001.png::CompressedTexture2D::4394295450266784188::1765790096::1768994966::1::::<><><>0<>0<>0dda3101164fc0f9bb666ea622b77270<>res://.godot/imported/frame0001.png-ddc90fe3d18a7af651c3de9f2c1ac3e3.ctex::
+frame0002.png::CompressedTexture2D::7448760523036569089::1765790096::1768994966::1::::<><><>0<>0<>b21ba664b052853861ca20ad10c6914f<>res://.godot/imported/frame0002.png-c59838f97100a535256aff946b79ec22.ctex::
+frame0003.png::CompressedTexture2D::1933723574561629776::1765790096::1768994966::1::::<><><>0<>0<>1495ec4273233e72fd4977d86347cdc6<>res://.godot/imported/frame0003.png-a3ed41d6bc9017c2a2b4a5b0c3334325.ctex::
+frame0004.png::CompressedTexture2D::4946887883022177114::1765790096::1768994966::1::::<><><>0<>0<>db5e99575a87c9ffbee45e7ad0f9d447<>res://.godot/imported/frame0004.png-2edac0b9817c7e199e7067f9aa58bb7b.ctex::
+frame0005.png::CompressedTexture2D::6854901598538313867::1765790096::1768994966::1::::<><><>0<>0<>3d2ed75f99b40d9d07d13c6c1956ff92<>res://.godot/imported/frame0005.png-7bc3f4528d91de0c9fb8b41a7a6c2e92.ctex::
+frame0006.png::CompressedTexture2D::5875644499395149713::1765790096::1768994966::1::::<><><>0<>0<>79048aa232ea4938b94a0c8b0934ae8c<>res://.godot/imported/frame0006.png-47babee5c8c0f978c0a9b33cb22346fb.ctex::
+frame0007.png::CompressedTexture2D::6351056840990871627::1765790096::1768994966::1::::<><><>0<>0<>61e1a71c969d2d4e55652fa46bd594a8<>res://.godot/imported/frame0007.png-bd1101dbdba3b86be9c0fb9b62b2afcd.ctex::
+frame0008.png::CompressedTexture2D::1601799037496933646::1765790096::1768994966::1::::<><><>0<>0<>16117c7122b5394c6ed7afcf62e059f4<>res://.godot/imported/frame0008.png-0df5418ef9a2d5780a84373f52385e8a.ctex::
+frame0009.png::CompressedTexture2D::6456508514841012696::1765790096::1768994966::1::::<><><>0<>0<>2eb5f62376dfc52bef1600c7d0e780d8<>res://.godot/imported/frame0009.png-188e73ca14c7fbc54976506d823d4906.ctex::
+frame0010.png::CompressedTexture2D::4050294666578628782::1765790096::1768994966::1::::<><><>0<>0<>bb90bb1a6aafd22d8c3ae00b5de2f7d1<>res://.godot/imported/frame0010.png-c914bdacdc823e940689e6eb459d1f6a.ctex::
+frame0011.png::CompressedTexture2D::2598166896421577571::1765790096::1768994966::1::::<><><>0<>0<>ad3bbd4384e19a51a27f2a686654ba7e<>res://.godot/imported/frame0011.png-0962d28bd61fec1219e2e9c493ea1750.ctex::
+frame0012.png::CompressedTexture2D::9007162999744038227::1765790096::1768994966::1::::<><><>0<>0<>a7037e2a22b395d62ef5cccaadca2ef6<>res://.godot/imported/frame0012.png-eb07fef8c0426328dd3c88c02b4b6ba0.ctex::
+frame0013.png::CompressedTexture2D::2073480559583702919::1765790096::1768994966::1::::<><><>0<>0<>06cf02ac35408f30144cc339f8eaf4f9<>res://.godot/imported/frame0013.png-0758a733b5886da91767b4babc6365fe.ctex::
+frame0014.png::CompressedTexture2D::4852318391340618773::1765790096::1768994966::1::::<><><>0<>0<>a113f2a7c69411135823bd7a75bf5c03<>res://.godot/imported/frame0014.png-c684aa4313baf1cb22677c9c384d5e4f.ctex::
+frame0015.png::CompressedTexture2D::665327748803891126::1765790096::1768994966::1::::<><><>0<>0<>4c7aedd812b0ca3e8f5db9d57b7dd674<>res://.godot/imported/frame0015.png-c4ab187687035d5e8b6e932ce6f60a28.ctex::
+frame0016.png::CompressedTexture2D::369080940403998015::1765790096::1768994966::1::::<><><>0<>0<>05fdd34a6219176c48b8cf6a9817cd90<>res://.godot/imported/frame0016.png-dda9a1e413e4e5ffd0bbaa1425a34bf1.ctex::
+::res://Sprites/Enemy/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::6679740027819607715::1765790096::1768994966::1::::<><><>0<>0<>b1882ccb30eaea571055984a521a7cab<>res://.godot/imported/frame0000.png-498fc626726d3161ed207ae2760e2487.ctex::
+frame0001.png::CompressedTexture2D::2428978027958185832::1765790096::1768994966::1::::<><><>0<>0<>d3ec76c502412e6dd8459b36c22e2e65<>res://.godot/imported/frame0001.png-6d3d6bb5d753f82a0d9403f05d9ce4e3.ctex::
+frame0002.png::CompressedTexture2D::9020152636487737056::1765790096::1768994966::1::::<><><>0<>0<>32b53579c36d656ac6e0b8884b8d8b11<>res://.godot/imported/frame0002.png-6e11236b04acf75622f585a2e7b3546a.ctex::
+::res://Sprites/Enemy/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::2222279422819868193::1765790096::1768994966::1::::<><><>0<>0<>49965e828989f205310fafe5d31560a1<>res://.godot/imported/frame0000.png-90f36b63af32bc8893bc2ed3b910ff46.ctex::
+frame0001.png::CompressedTexture2D::4348484251944778919::1765790096::1768994966::1::::<><><>0<>0<>4676881260405eb293acfd5eaeae7044<>res://.godot/imported/frame0001.png-dcd896389a4eea9ce6df49e284e6a314.ctex::
+frame0002.png::CompressedTexture2D::8155642122765590005::1765790096::1768994966::1::::<><><>0<>0<>715d3b0ac6423940d8207b60dc416fae<>res://.godot/imported/frame0002.png-f7895e165c2ddee6534e6cf84baa8b66.ctex::
+::res://Sprites/Enemy/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::615750224921104470::1765790096::1768994966::1::::<><><>0<>0<>c133328554df74952e27286c6f93ee02<>res://.godot/imported/frame0000.png-0e6973f4529339002ac4518e86b006f3.ctex::
+frame0001.png::CompressedTexture2D::2046072205319091901::1765790096::1768994966::1::::<><><>0<>0<>3a90ba91e957b63b275e18b51e4bc0d9<>res://.godot/imported/frame0001.png-4cef72ff8fcd65f1875bafb8b93399a6.ctex::
+frame0002.png::CompressedTexture2D::9095748044901514369::1765790096::1768994966::1::::<><><>0<>0<>446c0ba657a2b89a4c7078324e318931<>res://.godot/imported/frame0002.png-8676711812cc3c5ec4c047b1bf7fad3f.ctex::
+frame0003.png::CompressedTexture2D::5934111721099823842::1765790096::1768994966::1::::<><><>0<>0<>458e02df1e89dc01c43afcfe24aff5b2<>res://.godot/imported/frame0003.png-fc290d3ab0325441d81a6a1b24957b60.ctex::
+frame0004.png::CompressedTexture2D::2075419395039895111::1765790096::1768994966::1::::<><><>0<>0<>50249f1ba82127f5132a7cd8a24ee742<>res://.godot/imported/frame0004.png-764c80c5ed2c27eb91475cf07e4512a8.ctex::
+::res://Sprites/Enemy/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::7203832431862540343::1765790096::1768994966::1::::<><><>0<>0<>37a8eda8b0e22c006d6e1f7376daf570<>res://.godot/imported/frame0000.png-9a56646c2a1778956395d197cfdc12a7.ctex::
+frame0001.png::CompressedTexture2D::342759340690374853::1765790096::1768994966::1::::<><><>0<>0<>a060705b01e2d62b7805daa838e20a3b<>res://.godot/imported/frame0001.png-355f32e0262014a0d5803704d972bff8.ctex::
+frame0002.png::CompressedTexture2D::978853997602352834::1765790096::1768994966::1::::<><><>0<>0<>6bcd63c26112ddaf338d96fad8012bcf<>res://.godot/imported/frame0002.png-8dae343730fa5ac609c5b4988c25a6f3.ctex::
+frame0003.png::CompressedTexture2D::1253771337073976612::1765790096::1768994966::1::::<><><>0<>0<>5929761fa2a2c61e45768900d2ee3543<>res://.godot/imported/frame0003.png-84fb2dd15d20d294f774f5bd728ea694.ctex::
+frame0004.png::CompressedTexture2D::8795774710357419012::1765790096::1768994966::1::::<><><>0<>0<>9b8ad35f9081ac67c96c13ca81f00b8e<>res://.godot/imported/frame0004.png-a636d129bf34dd2639239d5380cdd68a.ctex::
+frame0005.png::CompressedTexture2D::4620379060074619610::1765790096::1768994966::1::::<><><>0<>0<>c7caa72d05c9f73a2fb470bab71eb23a<>res://.godot/imported/frame0005.png-450e54b08668bded44aea9528ed5d715.ctex::
+::res://Sprites/Enemy/EnemyGiant/Land-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Land-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Land-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::6856256001885008305::1765790096::1768994966::1::::<><><>0<>0<>d4a9b9f27389a7916e349bbae616f696<>res://.godot/imported/frame0000.png-3618175c58bc6064162b06c10f60f522.ctex::
+frame0001.png::CompressedTexture2D::4732787624982580420::1765790096::1768994966::1::::<><><>0<>0<>db7feda884312adfe6d61c8e5fe58201<>res://.godot/imported/frame0001.png-163e124a9cb42c063004a350d0ef5cc9.ctex::
+frame0002.png::CompressedTexture2D::3990221040191975154::1765790096::1768994966::1::::<><><>0<>0<>36781a02ccaead71d1fcf73f1654743d<>res://.godot/imported/frame0002.png-35a5236a19c7e3c1171cfbc3a9495195.ctex::
+frame0003.png::CompressedTexture2D::6692582014315159900::1765790096::1768994966::1::::<><><>0<>0<>b4f1a80bf795f80ec5813c91d8e375ba<>res://.godot/imported/frame0003.png-3414aac8299b0e84635e3dfc3d023668.ctex::
+::res://Sprites/Enemy/EnemyGiant/Land-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::7768626964449336210::1765790096::1768994966::1::::<><><>0<>0<>2a68392ea448dd1271bac8fb6b1852fb<>res://.godot/imported/frame0000.png-2cad6df9dea8953cbd09faf366eff42f.ctex::
+frame0001.png::CompressedTexture2D::8009952601318798158::1765790096::1768994966::1::::<><><>0<>0<>c4f8bd3283e616215bf32208f18043db<>res://.godot/imported/frame0001.png-9c13601887ae82318253d22afbf6be47.ctex::
+frame0002.png::CompressedTexture2D::4330463758267191567::1765790096::1768994966::1::::<><><>0<>0<>6f2e95269f0f480abf3dd1544d8603a0<>res://.godot/imported/frame0002.png-a87d475586dc1825980e4fbbc83b77b7.ctex::
+frame0003.png::CompressedTexture2D::2781691140714595033::1765790096::1768994966::1::::<><><>0<>0<>8199f9323b8aedd00c4b17b873c82cfb<>res://.godot/imported/frame0003.png-9fd378d900b1cc8fe0dab94ce8ac635c.ctex::
+::res://Sprites/Enemy/EnemyGiant/Portraits-MoonstoneKeeper-SUCART/::1768994966
+Facing_Down.png::CompressedTexture2D::1051073984772683213::1765790096::1768994966::1::::<><><>0<>0<>27249df279d7e94fabda5b8193f61412<>res://.godot/imported/Facing_Down.png-9cbbcd14fd4843848f224066ad2dc747.ctex::
+Facing_Straight.png::CompressedTexture2D::5459582734348990372::1765790096::1768994966::1::::<><><>0<>0<>2e2c0cfc5705e24f1a0d851176a7f1d9<>res://.godot/imported/Facing_Straight.png-2175418cfb951405e003757c90091c85.ctex::
+Facing_Up.png::CompressedTexture2D::1607420088775292464::1765790096::1768994966::1::::<><><>0<>0<>b1918948f296035f27ac73765af66061<>res://.godot/imported/Facing_Up.png-45c87f90a980365b62832ff887ddd097.ctex::
+::res://Sprites/Enemy/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::8693717646262775351::1765790096::1768994966::1::::<><><>0<>0<>21620a90404d0f2be57c5ee40aad3160<>res://.godot/imported/frame0000.png-a7f963bd06e8a2472ef5ef48dda61eda.ctex::
+frame0001.png::CompressedTexture2D::1283704031703540690::1765790096::1768994966::1::::<><><>0<>0<>e89a42cd753d02ec4b54fc45312194b5<>res://.godot/imported/frame0001.png-960bb24076a491f81b92afe68aab83ff.ctex::
+frame0002.png::CompressedTexture2D::1409756444745427758::1765790096::1768994966::1::::<><><>0<>0<>a4ae13cfc5e2a41a8a1f5552a0feccaf<>res://.godot/imported/frame0002.png-a8e256ef519d4ddc3cee6cb1373f900f.ctex::
+frame0003.png::CompressedTexture2D::3501754626508953541::1765790096::1768994966::1::::<><><>0<>0<>f97c851ae5179e6010a433e3c3d9efb1<>res://.godot/imported/frame0003.png-3dabb1a03ad0b6f14d3b5655fff65511.ctex::
+frame0004.png::CompressedTexture2D::2394820602820498124::1765790096::1768994966::1::::<><><>0<>0<>6e0401aad97aec0c063ebd5f0417ccc6<>res://.godot/imported/frame0004.png-53dd6050008e9f2e23c83d2679087e98.ctex::
+frame0005.png::CompressedTexture2D::2325957332962581324::1765790096::1768994966::1::::<><><>0<>0<>50a094586b6818c5ace7a5f3e67d98c5<>res://.godot/imported/frame0005.png-798bb109788210aa854bf350a62a5b9c.ctex::
+::res://Sprites/Enemy/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::8142199813161986802::1765790096::1768994966::1::::<><><>0<>0<>b4703fbf497f14ce1f1eb63a4cb5b6e0<>res://.godot/imported/frame0000.png-64e35fe656ff5452c579cbcf07a9b3b2.ctex::
+frame0001.png::CompressedTexture2D::5303342610443838::1765790096::1768994966::1::::<><><>0<>0<>3073552623fc1823ec38e473fb27e9c9<>res://.godot/imported/frame0001.png-3ac8329895e655c0e249155dd099ab8f.ctex::
+frame0002.png::CompressedTexture2D::3708300563424807554::1765790096::1768994966::1::::<><><>0<>0<>ddd4dad4e54a60071b7a9ce73bf7ca58<>res://.godot/imported/frame0002.png-05fe47b99e211be1f2986ac2af0a7ca8.ctex::
+frame0003.png::CompressedTexture2D::2058304704662615409::1765790096::1768994966::1::::<><><>0<>0<>55c065eac83794ac0b8c87ada4ea1f9c<>res://.godot/imported/frame0003.png-45987ccb7cbb7ab8e6569a7522cb818a.ctex::
+frame0004.png::CompressedTexture2D::5817416321837390428::1765790096::1768994966::1::::<><><>0<>0<>23982e010b5d54bf1a0d36b540ced1cb<>res://.godot/imported/frame0004.png-448cbabc813ae944e9b89c189070c90a.ctex::
+frame0005.png::CompressedTexture2D::633525277668780291::1765790096::1768994966::1::::<><><>0<>0<>cd68f18211333f2fe19cefa6ff11593d<>res://.godot/imported/frame0005.png-ea8c3ca435bbf576c68f395d76faa0e8.ctex::
+::res://Sprites/Enemy/EnemyGiant/Run-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Run-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Run-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::8727581130050511100::1765790096::1768994966::1::::<><><>0<>0<>c9ce35434e3d31348f2b372dd0ef1b7b<>res://.godot/imported/frame0000.png-ffb9c63bc17d97216109387d1da9fb61.ctex::
+frame0001.png::CompressedTexture2D::4601072881545128907::1765790096::1768994966::1::::<><><>0<>0<>bf52ed1e0f3edb09319a082274dabe65<>res://.godot/imported/frame0001.png-b1ca76db48bde6f003ac4a95232135e5.ctex::
+frame0002.png::CompressedTexture2D::3453235387939953633::1765790096::1768994966::1::::<><><>0<>0<>b6fd356f6605e89c0f544684de371e70<>res://.godot/imported/frame0002.png-6c5f78fc02cb43530d283dce643ab6f1.ctex::
+frame0003.png::CompressedTexture2D::6831951278326949143::1765790096::1768994966::1::::<><><>0<>0<>fd1c3bac9070520d47d23a82f96e0f81<>res://.godot/imported/frame0003.png-2f37f895c405cc09845987657e68e051.ctex::
+frame0004.png::CompressedTexture2D::2263425314607939582::1765790096::1768994966::1::::<><><>0<>0<>41223e1abcc37f0dd02f9ea797abe373<>res://.godot/imported/frame0004.png-61de8e36b5a8258550c5f96109f30380.ctex::
+frame0005.png::CompressedTexture2D::439027181200149017::1765790096::1768994966::1::::<><><>0<>0<>7592590cd8524af3dedd71f547202382<>res://.godot/imported/frame0005.png-c53fd3bd564dc3da29b32936221b66c9.ctex::
+::res://Sprites/Enemy/EnemyGiant/Run-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::3920325671309881473::1765790096::1768994966::1::::<><><>0<>0<>029537d9e14757b6e69d15bd1d7a2c21<>res://.godot/imported/frame0000.png-648f158e0cc17ebf582b7150c1b1bd52.ctex::
+frame0001.png::CompressedTexture2D::8355536029985694698::1765790096::1768994966::1::::<><><>0<>0<>815819ed1f6c3270dcd76cd4b741fae0<>res://.godot/imported/frame0001.png-fb4a75ef5cb8c0a991a9d2c8e1e9d5ee.ctex::
+frame0002.png::CompressedTexture2D::685050530323316741::1765790096::1768994966::1::::<><><>0<>0<>fb36e9d277437df41e1f602a793a864b<>res://.godot/imported/frame0002.png-b708934182913fadfefcce438a007e6a.ctex::
+frame0003.png::CompressedTexture2D::5289807070594741521::1765790096::1768994966::1::::<><><>0<>0<>03781a201bd0e320de07beb523e4460a<>res://.godot/imported/frame0003.png-c3d68c1eed78980c01faeee996042118.ctex::
+frame0004.png::CompressedTexture2D::1714345213115611330::1765790096::1768994966::1::::<><><>0<>0<>a6e62889f1e3dd2863ece5086c3104e0<>res://.godot/imported/frame0004.png-9b7c0c2ff2d433f2abcce6c2f92c8a07.ctex::
+frame0005.png::CompressedTexture2D::6860006095413886408::1765790096::1768994966::1::::<><><>0<>0<>31684368348716f587a503b0f96fb56f<>res://.godot/imported/frame0005.png-50c8f4364752e41748d927b1e8cbc0ab.ctex::
+::res://Sprites/Enemy/EnemyGiant/Walk-MoonstoneKeeper-SUCART/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Walk-MoonstoneKeeper-SUCART/GIF/::1765790096
+::res://Sprites/Enemy/EnemyGiant/Walk-MoonstoneKeeper-SUCART/No BG/::1768994966
+frame0000.png::CompressedTexture2D::8584613369193213675::1765790096::1768994966::1::::<><><>0<>0<>c86af77ba98f6cee97f7282ac4e3e618<>res://.godot/imported/frame0000.png-fdc0b71172fbca18f02dc1d7fe26f433.ctex::
+frame0001.png::CompressedTexture2D::6218270412353437218::1765790096::1768994966::1::::<><><>0<>0<>49898602cad5414025cff41754a7839f<>res://.godot/imported/frame0001.png-26884da54335b4282d330435d28606cc.ctex::
+frame0002.png::CompressedTexture2D::6446904398909234005::1765790096::1768994966::1::::<><><>0<>0<>b43811534ea07f16b7122d0a73cd7ca0<>res://.godot/imported/frame0002.png-ac0ddf6553e885b7ef5e74a67ab0732f.ctex::
+frame0003.png::CompressedTexture2D::6558185016230601633::1765790096::1768994966::1::::<><><>0<>0<>62c5c33d5e68f52b7ca99d3f042b8fd7<>res://.godot/imported/frame0003.png-9f6a3b47b120bc15153e7d16761dca19.ctex::
+frame0004.png::CompressedTexture2D::5618973438761264780::1765790096::1768994966::1::::<><><>0<>0<>ac7cae2ec11ec3c79ffe3f0c6147ca2d<>res://.godot/imported/frame0004.png-cc51348fcd4afe3156d0fc27f0e8b3ef.ctex::
+frame0005.png::CompressedTexture2D::8317798777506972237::1765790096::1768994966::1::::<><><>0<>0<>133226006de71fa7ff131d97646d5591<>res://.godot/imported/frame0005.png-85e5b1c0d60413ec2b05592faf0058ef.ctex::
+frame0006.png::CompressedTexture2D::3353762657095069531::1765790096::1768994966::1::::<><><>0<>0<>f5551a58b7d7ce762079b8efbfe7c5e5<>res://.godot/imported/frame0006.png-9851e3bcd7836d692cc967a125f7f384.ctex::
+frame0007.png::CompressedTexture2D::3363390146607210253::1765790096::1768994966::1::::<><><>0<>0<>ee6ff3cd938f3254b18bc270a6e614bc<>res://.godot/imported/frame0007.png-e7daa2a12b3725889e6e7a65ff5aeec3.ctex::
+frame0008.png::CompressedTexture2D::1403368299873433173::1765790096::1768994966::1::::<><><>0<>0<>652567051d15379eef235d309044fef5<>res://.godot/imported/frame0008.png-2e9f77518032073559d28855f7f0b473.ctex::
+frame0009.png::CompressedTexture2D::5645458967458010398::1765790096::1768994966::1::::<><><>0<>0<>20cb31dabf7518fd6bef40a3e87093ee<>res://.godot/imported/frame0009.png-af56a8dd1dd1880fe99c889deb2c8885.ctex::
+frame0010.png::CompressedTexture2D::314774889257567128::1765790096::1768994966::1::::<><><>0<>0<>dc89a1a83bbee490ccf7a4339f92872d<>res://.godot/imported/frame0010.png-05b266e0bad9adbfe8ce14cb81f21bc4.ctex::
+frame0011.png::CompressedTexture2D::2680051113921569892::1765790096::1768994966::1::::<><><>0<>0<>7288ca68bb223765a1181055f35fe897<>res://.godot/imported/frame0011.png-fc3616d645b0f8793b07d6635b9a3aa2.ctex::
+::res://Sprites/Enemy/EnemyGiant/Walk-MoonstoneKeeper-SUCART/With BG/::1768994966
+frame0000.png::CompressedTexture2D::2646997283282093949::1765790096::1768994966::1::::<><><>0<>0<>8f85480f528369c721836f2df708a487<>res://.godot/imported/frame0000.png-221aba558be2d575acd1991143efca09.ctex::
+frame0001.png::CompressedTexture2D::6447047794164860667::1765790096::1768994966::1::::<><><>0<>0<>e546956bc010b7b49541b2db230069a2<>res://.godot/imported/frame0001.png-6c0d81237ec06035a22978dbe3c00085.ctex::
+frame0002.png::CompressedTexture2D::8602409565978770629::1765790096::1768994966::1::::<><><>0<>0<>54abdfba0928649c720bbe631c455c1a<>res://.godot/imported/frame0002.png-bdc439d77eb1036aa9952a11e8191130.ctex::
+frame0003.png::CompressedTexture2D::3577170389291415036::1765790096::1768994966::1::::<><><>0<>0<>b2ff630bdf020231e8a63b2d2e63b1c6<>res://.godot/imported/frame0003.png-7a9eb8049412cd754caaca56f27ebe5a.ctex::
+frame0004.png::CompressedTexture2D::4068580038124367437::1765790096::1768994966::1::::<><><>0<>0<>aedf5ac900e2b1b5fb0de887e43be02f<>res://.godot/imported/frame0004.png-3bba30dd6831391370cc3f3beca1c282.ctex::
+frame0005.png::CompressedTexture2D::7965521252194730025::1765790096::1768994966::1::::<><><>0<>0<>539524e1cf3e2092503c9f6814b8ac47<>res://.godot/imported/frame0005.png-4f53042461024f3a04829b385e9dc9f8.ctex::
+frame0006.png::CompressedTexture2D::5356669890412361727::1765790096::1768994966::1::::<><><>0<>0<>b4c477c62cbd5f2a4380f9e839b2dc04<>res://.godot/imported/frame0006.png-e19cc5fc1d9e85b53893604330ce3f99.ctex::
+frame0007.png::CompressedTexture2D::1777839046718539115::1765790096::1768994966::1::::<><><>0<>0<>4f06da6ad6410e476c4abff9f141825e<>res://.godot/imported/frame0007.png-023d8ddf74adc7222ff57fb1d8da250f.ctex::
+frame0008.png::CompressedTexture2D::680022862560278188::1765790096::1768994966::1::::<><><>0<>0<>19285809f78320c1fab7c2ee526630c4<>res://.godot/imported/frame0008.png-fa6055840d0f628cb40249c6e8311dad.ctex::
+frame0009.png::CompressedTexture2D::7306993595202468653::1765790096::1768994966::1::::<><><>0<>0<>121abb8f42eed7dd29126df91c00d81d<>res://.godot/imported/frame0009.png-830c18d9679e517aa5eba6d2fe1347db.ctex::
+frame0010.png::CompressedTexture2D::8644964131711195852::1765790096::1768994966::1::::<><><>0<>0<>26e0f4e1b155efe7673fda8d3a90d358<>res://.godot/imported/frame0010.png-00eaa6ae980a550b41c9b666e292cd9e.ctex::
+frame0011.png::CompressedTexture2D::1500631187046615554::1765790096::1768994966::1::::<><><>0<>0<>8043df63b53c5976016b6cdec009e917<>res://.godot/imported/frame0011.png-52a9a3b3c15b5b5ca84c266c59580295.ctex::
+::res://Sprites/Enemy/Executioner/::1768994967
+LOGO.png::CompressedTexture2D::6503182193143940831::1765531292::1768994967::1::::<><><>0<>0<>f23c28bbe8f7026a8e2a54cec47b063d<>res://.godot/imported/LOGO.png-64fc86553e82dee8e3c95bb1c8797cbd.ctex::
+state.gd::GDScript::3162203750901237753::1765531292::0::1::::State<>Node2D<><>0<>0<><>::
+::res://Sprites/Enemy/Executioner/Anims/::1768994967
+attacking.png::CompressedTexture2D::8511575558079276302::1765531292::1768994967::1::::<><><>0<>0<>1e92f75dff58c5a919d704adbbb18ba0<>res://.godot/imported/attacking.png-98a62d49b83df09b7e0b71f06dde54fe.ctex::
+death.png::CompressedTexture2D::8670834993814861596::1765531292::1768994967::1::::<><><>0<>0<>1296da334bb2cb3029cf70248a6da72f<>res://.godot/imported/death.png-6e04ca1ec1b789cf96d5a5ffde8d4514.ctex::
+idle2.png::CompressedTexture2D::5971262099983210216::1765531292::1768994967::1::::<><><>0<>0<>c049ce3031b1af6a1ef388aecbff223c<>res://.godot/imported/idle2.png-24949a366c81067955b06e676a05c25c.ctex::
+idle.png::CompressedTexture2D::884685549590600697::1765531292::1768994967::1::::<><><>0<>0<>f669b8e487df60801cf609a1636b3d9a<>res://.godot/imported/idle.png-ba3df5ad6a41a9c7c97c07c73a2f7599.ctex::
+skill1.png::CompressedTexture2D::7439664637755962814::1765531292::1768994967::1::::<><><>0<>0<>f8b440447e000317742b93e0dcd53360<>res://.godot/imported/skill1.png-f3a49437fb94884409a37f7a23c45b4e.ctex::
+summon.png::CompressedTexture2D::29882600395062806::1765531292::1768994967::1::::<><><>0<>0<>94995873b67917347a7dc49fd4234c04<>res://.godot/imported/summon.png-d9cb1f69ca2d991fbc9c96c9385a72af.ctex::
+summonAppear.png::CompressedTexture2D::293734619481241955::1765531292::1768994967::1::::<><><>0<>0<>6dd486cf792ca2a49f0bc79b0af49dc4<>res://.godot/imported/summonAppear.png-9071ec2bacaf821c2c9152679e2b73f6.ctex::
+summonDeath.png::CompressedTexture2D::5798768505612413672::1765531292::1768994967::1::::<><><>0<>0<>a46c810f7d5576966246a3580292cf18<>res://.godot/imported/summonDeath.png-13cb97b1df06efcf2e3a57c35ad50954.ctex::
+summonIdle.png::CompressedTexture2D::4197522962420046952::1765531292::1768994967::1::::<><><>0<>0<>6551b81463c1e11883dd40b4cfd026b8<>res://.godot/imported/summonIdle.png-fbbcc50f610699beecc460ce4c435e54.ctex::
+::res://Sprites/Enemy/Patrol/::1768994870
 ::res://Sprites/Enemy/Patrol/PatrolEnemy/::1768388253
 ::res://Sprites/Enemy/Patrol/PatrolEnemy/SHADOW Series - The Shadowed Wetlands Boss v1.1/::1758911874
 ::res://Sprites/Enemy/Patrol/PatrolEnemy/SHADOW Series - The Shadowed Wetlands Boss v1.1/Sprite Sheet/::1768388277
@@ -243,347 +407,53 @@ end-Attack 3.png::CompressedTexture2D::2072920117038404145::1759074719::17683882
 hit.png::CompressedTexture2D::2791059892189174438::1758912420::1768388276::1::::<><><>0<>0<>08a8e6cd0c8485404c35ba69f9703d0a<>res://.godot/imported/hit.png-6c69954186e035d5a4dd1fb9da9fc798.ctex::
 mid-Attack 3.png::CompressedTexture2D::4930712441740607441::1759074600::1768388277::1::::<><><>0<>0<>73caf40bf8623b80132012351d1bc4a6<>res://.godot/imported/mid-Attack 3.png-d5e3cc6ddb81c041729a9668c3b6c6ee.ctex::
 Pre-Attack 3.png::CompressedTexture2D::7576642429957875187::1758912338::1768388277::1::::<><><>0<>0<>8dceb1594de6430e9f40d17526c68b4b<>res://.godot/imported/Pre-Attack 3.png-402319080e318e21dd1ef73806a3ff0d.ctex::
-::res://Sprites/EnemyGiant/::1765790096
-::res://Sprites/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::5895134022676202570::1765790096::1765790096::1::::<><><>0<>0<>75e2533ac212587bf3ec170a17512bbb<>res://.godot/imported/frame0000.png-89d51381932450b7d3296b3516787864.ctex::
-frame0001.png::CompressedTexture2D::4349826345919340611::1765790096::1765790096::1::::<><><>0<>0<>9c1756b2d536cd779cba42a42842a384<>res://.godot/imported/frame0001.png-5648caca576fdb16eedb298c69feabf2.ctex::
-frame0002.png::CompressedTexture2D::3961847893905435403::1765790096::1765790096::1::::<><><>0<>0<>3404c3a146bc4d3ae22868528d3fc05f<>res://.godot/imported/frame0002.png-136ec854716b6d55006e2973a606a4bf.ctex::
-frame0003.png::CompressedTexture2D::1095934786155513053::1765790096::1765790096::1::::<><><>0<>0<>c9e900d7745060bfbdc26b9200738035<>res://.godot/imported/frame0003.png-b1f69bd7021f30190a3e093126eb3ccd.ctex::
-frame0004.png::CompressedTexture2D::7379084301846848565::1765790096::1765790096::1::::<><><>0<>0<>c921613239ce5348daac48881c4ea9c4<>res://.godot/imported/frame0004.png-aae0844f4769a8764588e58643c78357.ctex::
-frame0005.png::CompressedTexture2D::7788734583071651727::1765790096::1765790096::1::::<><><>0<>0<>cadba807f1f47ab62c4be77cff84da86<>res://.godot/imported/frame0005.png-d89c3663af0095591f51206daab31475.ctex::
-frame0006.png::CompressedTexture2D::4738490708591088954::1765790096::1765790096::1::::<><><>0<>0<>9539f4a35f9e3dfde120401459618e7b<>res://.godot/imported/frame0006.png-ac9610e4e0dc7c329d0bea7f6b8897f6.ctex::
-frame0007.png::CompressedTexture2D::1072769238503100613::1765790096::1765790096::1::::<><><>0<>0<>22034543aa388177b7fc20687ce26bae<>res://.godot/imported/frame0007.png-8633cbfaf0040b010abcf50f224c98c8.ctex::
-frame0008.png::CompressedTexture2D::4810141322058273111::1765790096::1765790096::1::::<><><>0<>0<>1d84225ab128937e95d7103ba4ed6b98<>res://.godot/imported/frame0008.png-bdf0d4730e1db1a24b64815fb448c25a.ctex::
-frame0009.png::CompressedTexture2D::1372613584052381298::1765790096::1765790096::1::::<><><>0<>0<>f8741abb59bbf9486c029648a8203e7b<>res://.godot/imported/frame0009.png-6b54ef3a3391e0bee427baf8aadbc122.ctex::
-frame0010.png::CompressedTexture2D::6930479668631563152::1765790096::1765790096::1::::<><><>0<>0<>722b5cf9094c107c265ef7241b0b88af<>res://.godot/imported/frame0010.png-e2b1d798a2e1583bdb0a82dfe8023c77.ctex::
-::res://Sprites/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::7994063056350209376::1765790096::1765790096::1::::<><><>0<>0<>f650ad1689ed07b468e248e6c47db5c0<>res://.godot/imported/frame0000.png-f61d8ec4d708aaccc796717b49640a37.ctex::
-frame0001.png::CompressedTexture2D::2579293437231593845::1765790096::1765790096::1::::<><><>0<>0<>7223e62d48ab70a700d903fe48bcd04b<>res://.godot/imported/frame0001.png-6a96a5783086b23898b6e3f8e2a19ed2.ctex::
-frame0002.png::CompressedTexture2D::3151239202867239572::1765790096::1765790096::1::::<><><>0<>0<>28d700dd72d23c2e9a743d5119ee8fbd<>res://.godot/imported/frame0002.png-c99c74752afa3aae58e6db6d60c9bc9b.ctex::
-frame0003.png::CompressedTexture2D::1969382048986158410::1765790096::1765790096::1::::<><><>0<>0<>de3109d0b5ed1126f7b5df200909d143<>res://.godot/imported/frame0003.png-0039e7d56171ede8b73f3bed10c86f9b.ctex::
-frame0004.png::CompressedTexture2D::2046786836954620167::1765790096::1765790096::1::::<><><>0<>0<>e266e18a1f506e038feeedeb4afa03d3<>res://.godot/imported/frame0004.png-b11fd74e62b8913fe3c76644a29f5610.ctex::
-frame0005.png::CompressedTexture2D::8575626134125280446::1765790096::1765790096::1::::<><><>0<>0<>50854c4469ca8260df9939fbee4cdd94<>res://.godot/imported/frame0005.png-5a25a456aab95519479605c20ac8e77f.ctex::
-frame0006.png::CompressedTexture2D::5406787249035138325::1765790096::1765790096::1::::<><><>0<>0<>158d74c6f1edec42bd88a32bb4ec5bd2<>res://.godot/imported/frame0006.png-03fd42ffeb91e08b79e085e67e74e276.ctex::
-frame0007.png::CompressedTexture2D::8237952352804120676::1765790096::1765790096::1::::<><><>0<>0<>cf8a624249614056b2164084ce307794<>res://.godot/imported/frame0007.png-4b13709ee9e6675d10c11d243f9701bf.ctex::
-frame0008.png::CompressedTexture2D::701321495456797818::1765790096::1765790096::1::::<><><>0<>0<>366dd498354932a34ad11aca1f07e57a<>res://.godot/imported/frame0008.png-870005b695fd2dc59412599e90ade513.ctex::
-frame0009.png::CompressedTexture2D::5741702164277511183::1765790096::1765790096::1::::<><><>0<>0<>36cd456874beae77371d94ef615c3e66<>res://.godot/imported/frame0009.png-d24684d6c01df853f4c33702fd30834c.ctex::
-frame0010.png::CompressedTexture2D::7874779871200673924::1765790096::1765790096::1::::<><><>0<>0<>26cd6def1a81cf879d94189d8163cced<>res://.godot/imported/frame0010.png-9a81ba31f8fc903ef9fd38e1731a3bf8.ctex::
-::res://Sprites/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::1739460787645743665::1765790096::1765790096::1::::<><><>0<>0<>7d2721acce181e9e2c4367cef6673003<>res://.godot/imported/frame0000.png-013b311dfa3e0740a2ed7e72acb40430.ctex::
-frame0001.png::CompressedTexture2D::3019620023433845325::1765790096::1765790096::1::::<><><>0<>0<>d238291d8e0aab8ca34a3b5903b8c3b4<>res://.godot/imported/frame0001.png-7b2cfa921d54f94a618794e73381e709.ctex::
-frame0002.png::CompressedTexture2D::1065784819919408089::1765790096::1765790096::1::::<><><>0<>0<>95830b61afd2501fe1ee28ceaac2a4da<>res://.godot/imported/frame0002.png-fb95dbcca2d8528d9bf7c9c6e1f6a6a8.ctex::
-frame0003.png::CompressedTexture2D::5520551543897304162::1765790096::1765790096::1::::<><><>0<>0<>66c07e2b1da18a6afb99b4afc7ff94db<>res://.godot/imported/frame0003.png-3e9aee3c43162cdeb7ea8d09e249386a.ctex::
-frame0004.png::CompressedTexture2D::3274778651569594043::1765790096::1765790096::1::::<><><>0<>0<>61ea624d42110bb275d2cba7eedf48e0<>res://.godot/imported/frame0004.png-417e55dff88e2017b4176301add7a94a.ctex::
-frame0005.png::CompressedTexture2D::3101741778454337560::1765790096::1765790096::1::::<><><>0<>0<>551266cbdb95c4426f4ab9420dcd2ec1<>res://.godot/imported/frame0005.png-4cd85ac75e79ee0d39be9dfb6324e7d9.ctex::
-frame0006.png::CompressedTexture2D::7110175408364755790::1765790096::1765790096::1::::<><><>0<>0<>47607e1e6f4902dc367f2ca05fa691ae<>res://.godot/imported/frame0006.png-8426f62fcbc61ab086f1beb8a71fe50d.ctex::
-frame0007.png::CompressedTexture2D::5616165266674910088::1765790096::1765790096::1::::<><><>0<>0<>bfdefcf89d5eba37eeaf9f4de6d058b2<>res://.godot/imported/frame0007.png-570d9563256ac28473d5fff29beedc83.ctex::
-frame0008.png::CompressedTexture2D::3424091596622919299::1765790096::1765790096::1::::<><><>0<>0<>2d40a53f4ba1c16d608acd75eb5788ca<>res://.godot/imported/frame0008.png-f24543c228afe53757aec2418ef773eb.ctex::
-frame0009.png::CompressedTexture2D::4307377908568273851::1765790096::1765790096::1::::<><><>0<>0<>7c3f6a4e3a03abdd9f90cbd492eed44a<>res://.godot/imported/frame0009.png-433b0bda79868166ad9d0e2964c9cd33.ctex::
-::res://Sprites/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::2218528115565330397::1765790096::1765790096::1::::<><><>0<>0<>969cf500cfbf27349f6163b3f3237e32<>res://.godot/imported/frame0000.png-cf68c97229aaaf74e65937a34f1a624c.ctex::
-frame0001.png::CompressedTexture2D::1069265689859579191::1765790096::1765790096::1::::<><><>0<>0<>1e073c7c2d9d07296856b3b09816ebc8<>res://.godot/imported/frame0001.png-719d0be2c1c3cbd7709128cd47ba9511.ctex::
-frame0002.png::CompressedTexture2D::8077193593793962055::1765790096::1765790096::1::::<><><>0<>0<>22c1be4be389cf5540e8379efe5d8639<>res://.godot/imported/frame0002.png-fead3872c1b9d63b4fdd5f2f77ef4dcf.ctex::
-frame0003.png::CompressedTexture2D::4468638045754777108::1765790096::1765790096::1::::<><><>0<>0<>e8e4ed4a20d55be5c9cd67927669e825<>res://.godot/imported/frame0003.png-fda44cfa8d2c7d2e1d62be27927de220.ctex::
-frame0004.png::CompressedTexture2D::6601056778150625343::1765790096::1765790096::1::::<><><>0<>0<>c62859932140e982b22893dfa9d8f4fb<>res://.godot/imported/frame0004.png-fd15262360bcaaa092ae9ebdda6f2062.ctex::
-frame0005.png::CompressedTexture2D::5320035761308429868::1765790096::1765790096::1::::<><><>0<>0<>265c20150e9a37a123c6e7f5cf2e76f8<>res://.godot/imported/frame0005.png-d9f914b89f715efab2f5763b417492b1.ctex::
-frame0006.png::CompressedTexture2D::3201597229242306156::1765790096::1765790096::1::::<><><>0<>0<>a3b4b5103ac9dfe17be5786efe0eefc4<>res://.godot/imported/frame0006.png-a3fa4f8a6ddf7c2306965a4c7b18693f.ctex::
-frame0007.png::CompressedTexture2D::2924837852510466642::1765790096::1765790096::1::::<><><>0<>0<>70d3f8b12a44d5038958fe5ac4891348<>res://.godot/imported/frame0007.png-975558a3cf7bf6b09a6ce38c850d615c.ctex::
-frame0008.png::CompressedTexture2D::6719389952415357154::1765790096::1765790096::1::::<><><>0<>0<>e185c8b4bfb25cfccc32ea1994f788fa<>res://.godot/imported/frame0008.png-41082c94564f735cc08fc910c5779221.ctex::
-frame0009.png::CompressedTexture2D::6960330873583554291::1765790096::1765790096::1::::<><><>0<>0<>0d8af48b5e161d18dde373a531ee07d7<>res://.godot/imported/frame0009.png-2e9d32fd72ee8c5ea0ab53bb75838e84.ctex::
-::res://Sprites/EnemyGiant/Dash-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Dash-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Dash-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::8204787745519995182::1765790096::1765790096::1::::<><><>0<>0<>e3d796a6e32b182241b0f5530f7294b5<>res://.godot/imported/frame0000.png-2960e418818ed5cf677b6fc539f2eb1c.ctex::
-frame0001.png::CompressedTexture2D::5778096776182698783::1765790096::1765790096::1::::<><><>0<>0<>2b6ce7d9bfdcfb0cfacd0756c8763f46<>res://.godot/imported/frame0001.png-7d0dbaacbc9fceca4bc669dc0a0f4520.ctex::
-frame0002.png::CompressedTexture2D::4199309987582242867::1765790096::1765790096::1::::<><><>0<>0<>250929375d47974c847d68923b5bd57b<>res://.godot/imported/frame0002.png-5e51879d2dfed63f88985b5689393c3b.ctex::
-frame0003.png::CompressedTexture2D::1366154384195824603::1765790096::1765790096::1::::<><><>0<>0<>600ba442db6e34daf8b7aef394929a29<>res://.godot/imported/frame0003.png-fdea15f291a0220c239d305b04bf004e.ctex::
-frame0004.png::CompressedTexture2D::6308036868616538019::1765790096::1765790096::1::::<><><>0<>0<>2763268057e08dce5ef2a94b4c180816<>res://.godot/imported/frame0004.png-9ce3663aadbf1922f15e445b1205420b.ctex::
-frame0005.png::CompressedTexture2D::2796467571509062423::1765790096::1765790096::1::::<><><>0<>0<>fc54c54627c3a75eeb9bec7ba919ad83<>res://.godot/imported/frame0005.png-3a801ea3e5dfae1193fcf3e02e8c1bc8.ctex::
-frame0006.png::CompressedTexture2D::7399344052319801811::1765790096::1765790096::1::::<><><>0<>0<>a52c56c6cb6fb2b5130b03305c156478<>res://.godot/imported/frame0006.png-38480ceb8b080053ba55c6b4ac756718.ctex::
-frame0007.png::CompressedTexture2D::8492529715791347096::1765790096::1765790096::1::::<><><>0<>0<>0d5bdb0318ad0a9c6e88c1e2cd765890<>res://.godot/imported/frame0007.png-4a85172e80c22d48c5c6359c93662c13.ctex::
-frame0008.png::CompressedTexture2D::7733538347876189428::1765790096::1765790096::1::::<><><>0<>0<>3232ca1c7276706af391059a4aafda7d<>res://.godot/imported/frame0008.png-4356c37391a28dc2f3323d14ccce14e2.ctex::
-frame0009.png::CompressedTexture2D::2038764509465983341::1765790096::1765790096::1::::<><><>0<>0<>ebe23208940ce4b29d67bb6c9bcf811b<>res://.godot/imported/frame0009.png-73064b7783b03d4e59ee3f22c14c063f.ctex::
-frame0010.png::CompressedTexture2D::4544931471966283096::1765790096::1765790096::1::::<><><>0<>0<>0eb5978cbff917c50691db70f36ec72f<>res://.godot/imported/frame0010.png-7a469af62286c541aab6414c1c2f176f.ctex::
-frame0011.png::CompressedTexture2D::4118389168357884713::1765790096::1765790096::1::::<><><>0<>0<>7a34517d819284208df0608266e87378<>res://.godot/imported/frame0011.png-a10072783eb10b6a3621defe2eb5b01b.ctex::
-frame0012.png::CompressedTexture2D::871993613711504157::1765790096::1765790096::1::::<><><>0<>0<>de083a7b9ecda70f1822b9bf5e8ef2ca<>res://.godot/imported/frame0012.png-411d9b7f4afcc6d79eca75849162211c.ctex::
-frame0013.png::CompressedTexture2D::2843773326627993388::1765790096::1765790096::1::::<><><>0<>0<>b5672a324413d99c465e8f7cf769f7c1<>res://.godot/imported/frame0013.png-0d8280c1bdc8deea4954966993cb3b42.ctex::
-frame0014.png::CompressedTexture2D::1093620744208111009::1765790096::1765790096::1::::<><><>0<>0<>47b879099766955a91de9bbdd567fe67<>res://.godot/imported/frame0014.png-dae89c64ebed242f829a05ee80d72d32.ctex::
-::res://Sprites/EnemyGiant/Dash-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::2358431554806521904::1765790096::1765790096::1::::<><><>0<>0<>369ca101c9e77256217662e51f6b9be0<>res://.godot/imported/frame0000.png-69b3350b6d6b6558e6f7cbdbd2ec0f3f.ctex::
-frame0001.png::CompressedTexture2D::5109220977514061383::1765790096::1765790096::1::::<><><>0<>0<>1204ccd5cbb41136b4c3fdd6f0fa0a85<>res://.godot/imported/frame0001.png-f791fa41360d08ec5d42fbd29edd8e4d.ctex::
-frame0002.png::CompressedTexture2D::7435605072145648071::1765790096::1765790096::1::::<><><>0<>0<>5e0c2c0797fd50efee87edaf2e2a6756<>res://.godot/imported/frame0002.png-9bc45436cc9dfde175e0d6055ae700bd.ctex::
-frame0003.png::CompressedTexture2D::6545925066712208226::1765790096::1765790096::1::::<><><>0<>0<>ff71bcf3fe152addde6f89e3bc80af75<>res://.godot/imported/frame0003.png-39b0f3b662a59de4ff07102b6fc51437.ctex::
-frame0004.png::CompressedTexture2D::8784176600310873344::1765790096::1765790096::1::::<><><>0<>0<>474404fcc5bb7d777a3507ea1115efcd<>res://.godot/imported/frame0004.png-9bca3da746c160df4d53a76fdb8fba1c.ctex::
-frame0005.png::CompressedTexture2D::8118552369777523936::1765790096::1765790096::1::::<><><>0<>0<>3e2c59309c6be70595d6ab5285f54e2b<>res://.godot/imported/frame0005.png-abd7e7c56bc8b3776bcc0628732ddeab.ctex::
-frame0006.png::CompressedTexture2D::1333861736142104173::1765790096::1765790096::1::::<><><>0<>0<>4db088328f453bb89a6e12b39666f5bc<>res://.godot/imported/frame0006.png-0096e68dbdff4cec94dc3d583fd7ca00.ctex::
-frame0007.png::CompressedTexture2D::4672784061787920999::1765790096::1765790096::1::::<><><>0<>0<>70a2c7cad4b383e826d1c1fc74681c9b<>res://.godot/imported/frame0007.png-a1f380344d51b0ca698fe5b6169a4aac.ctex::
-frame0008.png::CompressedTexture2D::2840819906445671683::1765790096::1765790096::1::::<><><>0<>0<>e22395011f5e7b00827f81cd2fed4708<>res://.godot/imported/frame0008.png-b128ea8342a3e111aabbb7a598972073.ctex::
-frame0009.png::CompressedTexture2D::8097889809322560654::1765790096::1765790096::1::::<><><>0<>0<>5f0385d57e3effdef848931216246ce2<>res://.godot/imported/frame0009.png-1dcd62506225b2151f3337724cae3b17.ctex::
-frame0010.png::CompressedTexture2D::5550413832410501615::1765790096::1765790096::1::::<><><>0<>0<>d20753a0c5b300094253427e80011c7c<>res://.godot/imported/frame0010.png-ba58d0c762c5484c99292119318736a5.ctex::
-frame0011.png::CompressedTexture2D::4448676507734009675::1765790096::1765790096::1::::<><><>0<>0<>5cc84fc8df30c5d74b1b796768c0b95e<>res://.godot/imported/frame0011.png-d22d440eea35a0f4b3d181c09152468c.ctex::
-frame0012.png::CompressedTexture2D::6290165207467994057::1765790096::1765790096::1::::<><><>0<>0<>46cc9ab7dac438fb8d283fea69f60fc7<>res://.godot/imported/frame0012.png-5791bf9ee4bdde6d75febcbb84bc2d0c.ctex::
-frame0013.png::CompressedTexture2D::398358135224232826::1765790096::1765790096::1::::<><><>0<>0<>110344ea8857171f71ab2f618f45ae8a<>res://.godot/imported/frame0013.png-e8086575aa5cb1e7484283e79b0ac51a.ctex::
-frame0014.png::CompressedTexture2D::1736025886953277368::1765790096::1765790096::1::::<><><>0<>0<>a081b92665094c3f395352abb95fc636<>res://.godot/imported/frame0014.png-44d206b449a8dbc347dc10a675759f98.ctex::
-::res://Sprites/EnemyGiant/Death-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Death-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Death-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::1766657505355100731::1765790096::1765790096::1::::<><><>0<>0<>f10457cb5d52b3f44aef806f7a9dc54b<>res://.godot/imported/frame0000.png-f9d7bc8888326fc8c6103a1662dc135b.ctex::
-frame0001.png::CompressedTexture2D::4912038520139853302::1765790096::1765790096::1::::<><><>0<>0<>a1c6c3778560bcc202a48de8ae6108ec<>res://.godot/imported/frame0001.png-1aec7cfb76b7732c380ca15fb8d377c2.ctex::
-frame0002.png::CompressedTexture2D::5455843029609717622::1765790096::1765790096::1::::<><><>0<>0<>ad69447954e06639da25a1d01b85bce5<>res://.godot/imported/frame0002.png-628d869f3f542eca0ab1fe5107750afa.ctex::
-frame0003.png::CompressedTexture2D::6484656932262305308::1765790096::1765790096::1::::<><><>0<>0<>7688411a40858f7149f9209342bc6321<>res://.godot/imported/frame0003.png-dfed3939e1080192d5b89934d3e2a018.ctex::
-frame0004.png::CompressedTexture2D::7176365643411791218::1765790096::1765790096::1::::<><><>0<>0<>8ed4fedaceed1727bdc53034d9bd6ea9<>res://.godot/imported/frame0004.png-c4a361d059461b3b2cd94b85b6259ad6.ctex::
-frame0005.png::CompressedTexture2D::1397083929917359434::1765790096::1765790096::1::::<><><>0<>0<>557726427a7404244f9e8e07a2ec1602<>res://.godot/imported/frame0005.png-1e136485ae76749de373a56352430d5a.ctex::
-frame0006.png::CompressedTexture2D::4874037976502429889::1765790096::1765790096::1::::<><><>0<>0<>f642d4505519c08935f05a2a1091a766<>res://.godot/imported/frame0006.png-370dd6cdd27acf7e1248c4bd23d4ef03.ctex::
-frame0007.png::CompressedTexture2D::7656080577699537681::1765790096::1765790096::1::::<><><>0<>0<>867792a2d044dad8b18a3007909eecea<>res://.godot/imported/frame0007.png-a0ff600712f89a09961c4c0b8d6fd9cb.ctex::
-frame0008.png::CompressedTexture2D::6377267179470494885::1765790096::1765790096::1::::<><><>0<>0<>8f5abb0da9404972ce9582eed9bff886<>res://.godot/imported/frame0008.png-89b2bc453f3cce3bd8b3edef060a42a1.ctex::
-frame0009.png::CompressedTexture2D::8083245152258049315::1765790096::1765790096::1::::<><><>0<>0<>69af78f4c5880d2124fe61fe445c9d31<>res://.godot/imported/frame0009.png-7ac0259cacec2b0df37348faf9137125.ctex::
-frame0010.png::CompressedTexture2D::143258500414267141::1765790096::1765790096::1::::<><><>0<>0<>4fce5699f27f4dd9f6437da994fb9935<>res://.godot/imported/frame0010.png-fc52131adab5fa60c0c1f838593fce7b.ctex::
-frame0011.png::CompressedTexture2D::5344192425548491328::1765790096::1765790096::1::::<><><>0<>0<>95260cdb183a657b3758f51958bac04b<>res://.godot/imported/frame0011.png-5cb40b7f11962e0c8b8805d255d8e266.ctex::
-frame0012.png::CompressedTexture2D::4840213275498768322::1765790096::1765790096::1::::<><><>0<>0<>d16bf0d3b24af9ba52779ea73b39c51e<>res://.godot/imported/frame0012.png-cdf0750eca2ad80748f1835e47a0a2da.ctex::
-frame0013.png::CompressedTexture2D::5492602520257216468::1765790096::1765790096::1::::<><><>0<>0<>30e701203109584e58c8be7fa80b9f83<>res://.godot/imported/frame0013.png-186e5de8bff7412107f7f9aec7572992.ctex::
-frame0014.png::CompressedTexture2D::4235802164360442551::1765790096::1765790096::1::::<><><>0<>0<>6368bb99cbe0ccba89eada4a91e82020<>res://.godot/imported/frame0014.png-092fc4be26226064be7ebfde929656e3.ctex::
-frame0015.png::CompressedTexture2D::3166300462284469450::1765790096::1765790096::1::::<><><>0<>0<>c1415d77893737ea8f01c97b506e3b55<>res://.godot/imported/frame0015.png-2aa05f934e92fd1f7528e77069508658.ctex::
-frame0016.png::CompressedTexture2D::812381434501466912::1765790096::1765790096::1::::<><><>0<>0<>f360aa12677e092b1adc401f816600d7<>res://.godot/imported/frame0016.png-735ca4125257160728c3dd7d4ce08cb0.ctex::
-frame0017.png::CompressedTexture2D::2974519318227495331::1765790096::1765790096::1::::<><><>0<>0<>87465f2b6abfd8bc06014d0f2889f90a<>res://.godot/imported/frame0017.png-605558b8b6bb05295e1062bcb0396e94.ctex::
-frame0018.png::CompressedTexture2D::7545295841193091657::1765790096::1765790096::1::::<><><>0<>0<>90793253f1d5fda6c7a4cb0ae2f8adbf<>res://.godot/imported/frame0018.png-2770edea0991eb6e637383cf971e25de.ctex::
-::res://Sprites/EnemyGiant/Death-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::5015674968951286130::1765790096::1765790096::1::::<><><>0<>0<>ae3120636dead00fdd74ace9f0b7063b<>res://.godot/imported/frame0000.png-77a9735384555eef131bd3a7048f0bcb.ctex::
-frame0001.png::CompressedTexture2D::9186317766793205388::1765790096::1765790096::1::::<><><>0<>0<>6a9f731928502e7c6975faec9bde23d2<>res://.godot/imported/frame0001.png-82ccd6a8e86e040d6b14b36441f613ed.ctex::
-frame0002.png::CompressedTexture2D::3032304321273779072::1765790096::1765790096::1::::<><><>0<>0<>ffe2fa5182120cb887a1d3439985d96d<>res://.godot/imported/frame0002.png-bdc6f30ff0130f36d0025613acca1b24.ctex::
-frame0003.png::CompressedTexture2D::7641268909871605141::1765790096::1765790096::1::::<><><>0<>0<>f3444880b1c6285ba76a7c4a2d8fc4fc<>res://.godot/imported/frame0003.png-f16310a1e0529a2e1fd8a6d1f29d023d.ctex::
-frame0004.png::CompressedTexture2D::5986609982026844967::1765790096::1765790096::1::::<><><>0<>0<>8d1e5081af3eb96211ce9e103f45c816<>res://.godot/imported/frame0004.png-7e7b65bf9bcb2f259e15f10634d60322.ctex::
-frame0005.png::CompressedTexture2D::8114406616957038374::1765790096::1765790096::1::::<><><>0<>0<>c0b59c27c6f8713fad7436fe3ce29919<>res://.godot/imported/frame0005.png-90cbc1a7ed52fe082042afc67570e54a.ctex::
-frame0006.png::CompressedTexture2D::4643274303745449867::1765790096::1765790096::1::::<><><>0<>0<>fd080f0d0149bdad20182f97ac2e62f8<>res://.godot/imported/frame0006.png-3fe0e9fcdd2f7991e053966fb1a086fa.ctex::
-frame0007.png::CompressedTexture2D::591227314389341455::1765790096::1765790096::1::::<><><>0<>0<>a3323df532b0ccc6f39fa0585e92425a<>res://.godot/imported/frame0007.png-98bac008034bf1ad6dfb735afa28975c.ctex::
-frame0008.png::CompressedTexture2D::7413718353067039175::1765790096::1765790096::1::::<><><>0<>0<>f62e43406b0a741dce848b186940f843<>res://.godot/imported/frame0008.png-f9b7bbfec8f14ce9c08445556cdace9b.ctex::
-frame0009.png::CompressedTexture2D::6770013538544965075::1765790096::1765790096::1::::<><><>0<>0<>39a070875c52bd67ec80b7690e24cfc8<>res://.godot/imported/frame0009.png-0e5234fd1a7425de287dc52c161e6eeb.ctex::
-frame0010.png::CompressedTexture2D::651571643664461685::1765790096::1765790096::1::::<><><>0<>0<>85d3242f1bfa07be513b2c89d6b7997d<>res://.godot/imported/frame0010.png-f94a69d75cb1812815f732e05e5e749e.ctex::
-frame0011.png::CompressedTexture2D::6644481395416020733::1765790096::1765790096::1::::<><><>0<>0<>a27aeb949ad9296a2dc82a3800f17f41<>res://.godot/imported/frame0011.png-0cbfddf4f74012eaf5c93dcdd9ad47e9.ctex::
-frame0012.png::CompressedTexture2D::1536958361634199926::1765790096::1765790096::1::::<><><>0<>0<>3205c007b3321c2dfff9cf5113a16d4c<>res://.godot/imported/frame0012.png-e6688980d039a2661917585d90d3351e.ctex::
-frame0013.png::CompressedTexture2D::8487398270412093122::1765790096::1765790096::1::::<><><>0<>0<>ff50980158e28606073bb3d3ddc3b2ea<>res://.godot/imported/frame0013.png-237265fe01930a10034bd7f92ca24c6f.ctex::
-frame0014.png::CompressedTexture2D::5396207887424284517::1765790096::1765790096::1::::<><><>0<>0<>7e435edb86060ce498d07607c243bf90<>res://.godot/imported/frame0014.png-b86cc59035b289c6b95df6681c670ba8.ctex::
-frame0015.png::CompressedTexture2D::1986884240119886032::1765790096::1765790096::1::::<><><>0<>0<>306494d42a086fb3b2014096dc7e684d<>res://.godot/imported/frame0015.png-4678eed16edd9ad84b5c1124025d10a5.ctex::
-frame0016.png::CompressedTexture2D::6328528174178562767::1765790096::1765790096::1::::<><><>0<>0<>eb5bd3957fdd9b90a5386b0345a79e56<>res://.godot/imported/frame0016.png-22767b7e84086b18c28b6f64f66fe88f.ctex::
-frame0017.png::CompressedTexture2D::2012300004158022235::1765790096::1765790096::1::::<><><>0<>0<>84875d6522ce8b01e51ab07f4b4e0d52<>res://.godot/imported/frame0017.png-4959410950d89d0cd2a6b5b4bb504fa2.ctex::
-frame0018.png::CompressedTexture2D::8834898856901866811::1765790096::1765790096::1::::<><><>0<>0<>2bab096cad03d5d741de6d3fc823b82f<>res://.godot/imported/frame0018.png-295b660f7f5085df2da4504e73153c85.ctex::
-::res://Sprites/EnemyGiant/Hit-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Hit-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Hit-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::114146179861334946::1765790096::1765790096::1::::<><><>0<>0<>a78a13cad8aea73a7485763c417fd152<>res://.godot/imported/frame0000.png-c5198051e22026404f5a40b10d4eaafc.ctex::
-frame0001.png::CompressedTexture2D::6799841110295623623::1765790096::1765790096::1::::<><><>0<>0<>ef34ecf5e18fad00ab76849cc123176d<>res://.godot/imported/frame0001.png-0fd0cb67f9c68e4cbf30766c3a33a6b6.ctex::
-frame0002.png::CompressedTexture2D::3351034728668563055::1765790096::1765790096::1::::<><><>0<>0<>bc9891d1a306feede8481502b84dc66e<>res://.godot/imported/frame0002.png-2573b07ac330abee275667b6afd8d2e1.ctex::
-::res://Sprites/EnemyGiant/Hit-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::2673624783075515260::1765790096::1765790096::1::::<><><>0<>0<>930bc17ca33ee9f9019d749b77f7eb13<>res://.godot/imported/frame0000.png-a66dcda11719270336669a92575a1ec7.ctex::
-frame0001.png::CompressedTexture2D::7885097354321365712::1765790096::1765790096::1::::<><><>0<>0<>bcae95797f2b65d13fab3d74e7c5b75b<>res://.godot/imported/frame0001.png-3e0ee834e6f7ca2f7f190a19a4afb70e.ctex::
-frame0002.png::CompressedTexture2D::6972547771026836426::1765790096::1765790096::1::::<><><>0<>0<>90fbebb10c2a05fcbcf21620291c6b8a<>res://.godot/imported/frame0002.png-afb605d243d5dbce3512b4ed6fc7aa15.ctex::
-::res://Sprites/EnemyGiant/Idle-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Idle-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Idle-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::2094185105338856330::1765790096::1765790096::1::::<><><>0<>0<>59e340a61aeae510eb65a04daf857360<>res://.godot/imported/frame0000.png-e1fc7c30749e2190495a0d4c183f95c1.ctex::
-frame0001.png::CompressedTexture2D::7989125661655182291::1765790096::1765790096::1::::<><><>0<>0<>d028118b9083bb4c90889c9469c505e4<>res://.godot/imported/frame0001.png-9b90e55080b7fa42db3b069ca8fd7b4e.ctex::
-frame0002.png::CompressedTexture2D::5384863420823160672::1765790096::1765790096::1::::<><><>0<>0<>909f8fcca26b28cdb53d9b8ac1777997<>res://.godot/imported/frame0002.png-200f1e75774e8020cd82728343dcf1e8.ctex::
-frame0003.png::CompressedTexture2D::2031985317747507704::1765790096::1765790096::1::::<><><>0<>0<>4e0383028e8ac48716108ecef693a05e<>res://.godot/imported/frame0003.png-cb9e0d3da05ca18343995c3f9fc931fd.ctex::
-frame0004.png::CompressedTexture2D::5837541749392460168::1765790096::1765790096::1::::<><><>0<>0<>6df2c692327828de98b988dd9a464eb2<>res://.godot/imported/frame0004.png-aa261b80b73cfd5b4d0d40ce17469893.ctex::
-frame0005.png::CompressedTexture2D::3628631365625622507::1765790096::1765790096::1::::<><><>0<>0<>52d7d53575ee7838d223c5e3fc116093<>res://.godot/imported/frame0005.png-d4b8c14ad64d6347da09cfa38ddd5461.ctex::
-frame0006.png::CompressedTexture2D::2591505227754036482::1765790096::1765790096::1::::<><><>0<>0<>90516fff4426f7493fc74ba23e7eb127<>res://.godot/imported/frame0006.png-af7c094ebae6b1c08365d10574f9a01d.ctex::
-frame0007.png::CompressedTexture2D::5748970280685927316::1765790096::1765790096::1::::<><><>0<>0<>36a76017be34aa1185c26a206b4bc515<>res://.godot/imported/frame0007.png-2d7ba378a5c2436b3678670ca19583ec.ctex::
-frame0008.png::CompressedTexture2D::6870722248649245114::1765790096::1765790096::1::::<><><>0<>0<>d31c3bc5fc694889c439ff9538b46059<>res://.godot/imported/frame0008.png-cb25e5b2dd487b2fab54608c46a91911.ctex::
-frame0009.png::CompressedTexture2D::4416247030732317094::1765790096::1765790096::1::::<><><>0<>0<>c0efee33eac08d51269b237d6cbea5f0<>res://.godot/imported/frame0009.png-f432b3d9fcfcdf6180f39e84c24cced3.ctex::
-frame0010.png::CompressedTexture2D::7207748098028086485::1765790096::1765790096::1::::<><><>0<>0<>c8e00dc5fda3ce9b0f17cd021e4e4677<>res://.godot/imported/frame0010.png-eb0457275edaad9b92c2de812ed4f73a.ctex::
-frame0011.png::CompressedTexture2D::7678091349772689597::1765790096::1765790096::1::::<><><>0<>0<>cec1000f6f8ed7734aecd1477973920f<>res://.godot/imported/frame0011.png-fd8d94b66c5a04fe51d584afbe632283.ctex::
-frame0012.png::CompressedTexture2D::3382166529468355675::1765790096::1765790096::1::::<><><>0<>0<>9686aaf4a2c884aec2cee84d929cf541<>res://.godot/imported/frame0012.png-05582ab82af6035d87af0cbf283c60c0.ctex::
-frame0013.png::CompressedTexture2D::1964169825508433248::1765790096::1765790096::1::::<><><>0<>0<>5b8f064d88869f9d486e66defe1af3f0<>res://.godot/imported/frame0013.png-2d898ca4393800016ed3eeabf2163a46.ctex::
-frame0014.png::CompressedTexture2D::869388424068762571::1765790096::1765790096::1::::<><><>0<>0<>66664b5fae0da414b383dfb0b07fe2b3<>res://.godot/imported/frame0014.png-d78ae998e3268ca0b4bac4c2160fe46b.ctex::
-frame0015.png::CompressedTexture2D::6894838371993978579::1765790096::1765790096::1::::<><><>0<>0<>a081e287feced4bacab03e7bb12ed630<>res://.godot/imported/frame0015.png-88e287abe64d0a867499606e3bfcf84a.ctex::
-frame0016.png::CompressedTexture2D::8265200448523783983::1765790096::1765790096::1::::<><><>0<>0<>c4390b7145f9580d0ab91447a03e0df0<>res://.godot/imported/frame0016.png-af63c680bc2de7640c395c6477bf32d7.ctex::
-::res://Sprites/EnemyGiant/Idle-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::2735102576797984866::1765790096::1765790096::1::::<><><>0<>0<>8ec8ff72d519b645a7165687a496b57d<>res://.godot/imported/frame0000.png-4df15d87c4e142ff83dc7a2e667904f3.ctex::
-frame0001.png::CompressedTexture2D::4394295450266784188::1765790096::1765790096::1::::<><><>0<>0<>517b07a1411ab0a184ed9f887a3c5412<>res://.godot/imported/frame0001.png-e7bff816933436abf9c6348ca8eab7e5.ctex::
-frame0002.png::CompressedTexture2D::7448760523036569089::1765790096::1765790096::1::::<><><>0<>0<>caca124b184116f89bae5cbf8d532fe7<>res://.godot/imported/frame0002.png-496c8fa7a9b4c40d9f5ac88c4b6429a8.ctex::
-frame0003.png::CompressedTexture2D::1933723574561629776::1765790096::1765790096::1::::<><><>0<>0<>25dab152aedff156971fcf5df790b398<>res://.godot/imported/frame0003.png-26adef4957fa6315ceaaface72e763b8.ctex::
-frame0004.png::CompressedTexture2D::4946887883022177114::1765790096::1765790096::1::::<><><>0<>0<>dbb98e34650be6ca5d6d03ebaf8d070b<>res://.godot/imported/frame0004.png-c47d831cfba7914471e808a17cf82e9e.ctex::
-frame0005.png::CompressedTexture2D::6854901598538313867::1765790096::1765790096::1::::<><><>0<>0<>3522cecd9e1079757e3c2f9562e0e780<>res://.godot/imported/frame0005.png-0f8718e42a2b8417b255c6df22a78304.ctex::
-frame0006.png::CompressedTexture2D::5875644499395149713::1765790096::1765790096::1::::<><><>0<>0<>9ccd1828d95bfd630e7e780d9a7dbebd<>res://.godot/imported/frame0006.png-69b1b13a891d560cfc4867fe94474aa5.ctex::
-frame0007.png::CompressedTexture2D::6351056840990871627::1765790096::1765790096::1::::<><><>0<>0<>b5fa567f5ba4291a2810ab90ea3142dc<>res://.godot/imported/frame0007.png-c31e751750e984c5d5d81713f808252b.ctex::
-frame0008.png::CompressedTexture2D::1601799037496933646::1765790096::1765790096::1::::<><><>0<>0<>b459968331a23a54e1f1ef0145b741c5<>res://.godot/imported/frame0008.png-e02254c682b98d8305eba2719d6b0d32.ctex::
-frame0009.png::CompressedTexture2D::6456508514841012696::1765790096::1765790096::1::::<><><>0<>0<>6668376b389b6289732d39099258a7ce<>res://.godot/imported/frame0009.png-21270d1ecd954bff154d9cb75b87403e.ctex::
-frame0010.png::CompressedTexture2D::4050294666578628782::1765790096::1765790096::1::::<><><>0<>0<>a335ab19e2650c6cbe2e56aa1392eae3<>res://.godot/imported/frame0010.png-5caa196256d2da4a49bdcc342e0662a8.ctex::
-frame0011.png::CompressedTexture2D::2598166896421577571::1765790096::1765790096::1::::<><><>0<>0<>7159965c79c301f036268fbd0688b227<>res://.godot/imported/frame0011.png-ca458b8e7cd81b3a241e1404b448057c.ctex::
-frame0012.png::CompressedTexture2D::9007162999744038227::1765790096::1765790096::1::::<><><>0<>0<>c4fbd1dd79a71964f1d91163707ef898<>res://.godot/imported/frame0012.png-2b53acfdc938a3f7e8678266b6b726d4.ctex::
-frame0013.png::CompressedTexture2D::2073480559583702919::1765790096::1765790096::1::::<><><>0<>0<>09f3e534609b276b9e78eaeea2563463<>res://.godot/imported/frame0013.png-1e6cb29ee95578ebc7bf6972688fff4f.ctex::
-frame0014.png::CompressedTexture2D::4852318391340618773::1765790096::1765790096::1::::<><><>0<>0<>79d643c8a86e30b570a9d4bcc027fd96<>res://.godot/imported/frame0014.png-304f515116a627976cf2ca8957df75cd.ctex::
-frame0015.png::CompressedTexture2D::665327748803891126::1765790096::1765790096::1::::<><><>0<>0<>0365564dfe28713a6732f54775078c2d<>res://.godot/imported/frame0015.png-86b330d3a0c93f073e96f62cd8647c13.ctex::
-frame0016.png::CompressedTexture2D::369080940403998015::1765790096::1765790096::1::::<><><>0<>0<>936ff3787c730e05f1fb4977503adbc4<>res://.godot/imported/frame0016.png-40834dbf07097455b845945fc7b2d0eb.ctex::
-::res://Sprites/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::6679740027819607715::1765790096::1765790096::1::::<><><>0<>0<>c83c98e111a20128a04c5f9ac7711d7c<>res://.godot/imported/frame0000.png-2825aec2a78c114e9e1cd7c970656030.ctex::
-frame0001.png::CompressedTexture2D::2428978027958185832::1765790096::1765790096::1::::<><><>0<>0<>c4225d90e6f45f8933a3bfc172de02e8<>res://.godot/imported/frame0001.png-2a80d1e0e95311f8ea467f415248d921.ctex::
-frame0002.png::CompressedTexture2D::9020152636487737056::1765790096::1765790096::1::::<><><>0<>0<>ae42638d37ad646cc3caeea9b91bb949<>res://.godot/imported/frame0002.png-cf851d077b1e108ba7361a94a826c7c2.ctex::
-::res://Sprites/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::2222279422819868193::1765790096::1765790096::1::::<><><>0<>0<>34cbd77cb4ec878a9b1c174faf35664b<>res://.godot/imported/frame0000.png-c1752a6c4586ae4353a7f71cadebe5c8.ctex::
-frame0001.png::CompressedTexture2D::4348484251944778919::1765790096::1765790096::1::::<><><>0<>0<>116c2ba2ed59463da3b412f6e86a714e<>res://.godot/imported/frame0001.png-831685f3895c3c490888b8eee1549247.ctex::
-frame0002.png::CompressedTexture2D::8155642122765590005::1765790096::1765790096::1::::<><><>0<>0<>0bfecf9afb12f90996a90eaae310f6e4<>res://.godot/imported/frame0002.png-e1a83690ae59fa8eb2d45233e9162a12.ctex::
-::res://Sprites/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::615750224921104470::1765790096::1765790096::1::::<><><>0<>0<>ee664edeffb04cf21da069b49df9a85b<>res://.godot/imported/frame0000.png-040c63273bcb575382bd77e4601f618f.ctex::
-frame0001.png::CompressedTexture2D::2046072205319091901::1765790096::1765790096::1::::<><><>0<>0<>e55b24f86589808239494e74b1e09f28<>res://.godot/imported/frame0001.png-b12dc50d22eb266395d99e1887c5295f.ctex::
-frame0002.png::CompressedTexture2D::9095748044901514369::1765790096::1765790096::1::::<><><>0<>0<>cbf17b8af75640f007a148c1cb0ed335<>res://.godot/imported/frame0002.png-8390c14ecb311d597033fb1ea0c9bc9f.ctex::
-frame0003.png::CompressedTexture2D::5934111721099823842::1765790096::1765790096::1::::<><><>0<>0<>eba0c385de98a9f153c1f5b02434848a<>res://.godot/imported/frame0003.png-2d9ee40100297e6a689b046b6df7ae96.ctex::
-frame0004.png::CompressedTexture2D::2075419395039895111::1765790096::1765790096::1::::<><><>0<>0<>34c637f36227c715ea881b17b964c590<>res://.godot/imported/frame0004.png-00ea4e9c09ab3fa0353d69835c47144a.ctex::
-::res://Sprites/EnemyGiant/Jump Start-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::7203832431862540343::1765790096::1765790096::1::::<><><>0<>0<>ded86564fcbfb205e5149e84e8258653<>res://.godot/imported/frame0000.png-f04cf920e1faa1fd8d4a36134db509fa.ctex::
-frame0001.png::CompressedTexture2D::342759340690374853::1765790096::1765790096::1::::<><><>0<>0<>c71cee238ada1243667c2f0c63beeea4<>res://.godot/imported/frame0001.png-301b78b02b67a74b5552a7891b7fdfe9.ctex::
-frame0002.png::CompressedTexture2D::978853997602352834::1765790096::1765790096::1::::<><><>0<>0<>851ded3a9bcd376a9cd313d4a7ae75a3<>res://.godot/imported/frame0002.png-200b29c892af23c064e39505cdb13f4a.ctex::
-frame0003.png::CompressedTexture2D::1253771337073976612::1765790096::1765790096::1::::<><><>0<>0<>3c3112c0b7ead983a88bbbcdc908f829<>res://.godot/imported/frame0003.png-34b28330c4f720614b608c3799ca357b.ctex::
-frame0004.png::CompressedTexture2D::8795774710357419012::1765790096::1765790096::1::::<><><>0<>0<>6a68f3849a8de15ba0b63bb81a11d37f<>res://.godot/imported/frame0004.png-d1cde48d1f7e94367843ed44c049605d.ctex::
-frame0005.png::CompressedTexture2D::4620379060074619610::1765790096::1765790096::1::::<><><>0<>0<>cd664a440e62f2d5901f75a77a5d6e7f<>res://.godot/imported/frame0005.png-0741eda518d7c8630fefd28b7980146a.ctex::
-::res://Sprites/EnemyGiant/Land-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Land-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Land-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::6856256001885008305::1765790096::1765790096::1::::<><><>0<>0<>f75184fb35ad4ffd4f0ff90ec18834df<>res://.godot/imported/frame0000.png-e9cc5a3d94a050775ed84ce1d478c004.ctex::
-frame0001.png::CompressedTexture2D::4732787624982580420::1765790096::1765790096::1::::<><><>0<>0<>a2b04ef8794738f6ce232319ca7bd248<>res://.godot/imported/frame0001.png-ca85d9495bfe07756095b58602d36289.ctex::
-frame0002.png::CompressedTexture2D::3990221040191975154::1765790096::1765790096::1::::<><><>0<>0<>f3038d9c43ce38156e687b38574fd5c4<>res://.godot/imported/frame0002.png-985711d88adf3280e8c2b7d5746b0b2c.ctex::
-frame0003.png::CompressedTexture2D::6692582014315159900::1765790096::1765790096::1::::<><><>0<>0<>72997bc96fa57cb2db01aef6b4c08826<>res://.godot/imported/frame0003.png-6628b4db5e18b4e17c9cb097e1699dd3.ctex::
-::res://Sprites/EnemyGiant/Land-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::7768626964449336210::1765790096::1765790096::1::::<><><>0<>0<>5e751cbcb45f3ff2d23bc6ac23dbd2c0<>res://.godot/imported/frame0000.png-76f2649d489526fe3db4f2da9b697b08.ctex::
-frame0001.png::CompressedTexture2D::8009952601318798158::1765790096::1765790096::1::::<><><>0<>0<>42ccbbfa6e6798641fbd92f8185f6a61<>res://.godot/imported/frame0001.png-3007c9ea359e10a199373e89c9467819.ctex::
-frame0002.png::CompressedTexture2D::4330463758267191567::1765790096::1765790096::1::::<><><>0<>0<>ad3eba9af1a72920bb8684c0bbe16852<>res://.godot/imported/frame0002.png-c386ed3061e2c177eea5cb7df68b9a87.ctex::
-frame0003.png::CompressedTexture2D::2781691140714595033::1765790096::1765790096::1::::<><><>0<>0<>cc31148befe3389309741b76f508ca09<>res://.godot/imported/frame0003.png-610e336fb11766e28df57aedeb140780.ctex::
-::res://Sprites/EnemyGiant/Portraits-MoonstoneKeeper-SUCART/::1765790096
-Facing_Down.png::CompressedTexture2D::1051073984772683213::1765790096::1765790096::1::::<><><>0<>0<>04ca47c61b8eb0e9a9dd854eb98441d8<>res://.godot/imported/Facing_Down.png-0e3f4616bc38be10fb951c0c0570e049.ctex::
-Facing_Straight.png::CompressedTexture2D::5459582734348990372::1765790096::1765790096::1::::<><><>0<>0<>6107f3dba3f93ec93b46377f84cdb772<>res://.godot/imported/Facing_Straight.png-a765d9744af613ed89dde1c69003c0bd.ctex::
-Facing_Up.png::CompressedTexture2D::1607420088775292464::1765790096::1765790096::1::::<><><>0<>0<>56a4646161c1c34466fef2b347b53096<>res://.godot/imported/Facing_Up.png-6f09375fd8e3746aa27449f486a9b2cb.ctex::
-::res://Sprites/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::8693717646262775351::1765790096::1765790096::1::::<><><>0<>0<>a6809a52fb5ec6f70a39c232f1278f92<>res://.godot/imported/frame0000.png-7c720cfd855f01d1e7cdfba610318666.ctex::
-frame0001.png::CompressedTexture2D::1283704031703540690::1765790096::1765790096::1::::<><><>0<>0<>1cdf54277b7a820fffac028b794d98bc<>res://.godot/imported/frame0001.png-d67787442d9dc2a8b12ad8080721f74c.ctex::
-frame0002.png::CompressedTexture2D::1409756444745427758::1765790096::1765790096::1::::<><><>0<>0<>e251db7c3f3c1265fa935facbd46bb84<>res://.godot/imported/frame0002.png-e625a90d0962554a90be4289a367b32e.ctex::
-frame0003.png::CompressedTexture2D::3501754626508953541::1765790096::1765790096::1::::<><><>0<>0<>66ec322f54a578ff27cf95e2a0fa06af<>res://.godot/imported/frame0003.png-63ad2e243055d6d0dd96c0db668c9718.ctex::
-frame0004.png::CompressedTexture2D::2394820602820498124::1765790096::1765790096::1::::<><><>0<>0<>e22033650dbbb5c31a489a876cedc3fc<>res://.godot/imported/frame0004.png-b6e5c271abd4f2045d3dd5b5d6a1a230.ctex::
-frame0005.png::CompressedTexture2D::2325957332962581324::1765790096::1765790096::1::::<><><>0<>0<>629274b027613fbfd8a5024200350b90<>res://.godot/imported/frame0005.png-7555760d1776bc34974a48ec60dad1ff.ctex::
-::res://Sprites/EnemyGiant/Run Alt-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::8142199813161986802::1765790096::1765790096::1::::<><><>0<>0<>df64fbbe0a6cc39521c29718b2bdb4ef<>res://.godot/imported/frame0000.png-7e6d8f261c22750895279b79dce2be09.ctex::
-frame0001.png::CompressedTexture2D::5303342610443838::1765790096::1765790096::1::::<><><>0<>0<>411de557bb9ffdf669de697da1e2520a<>res://.godot/imported/frame0001.png-f26c95c01299d840bb579c6130b3a9e5.ctex::
-frame0002.png::CompressedTexture2D::3708300563424807554::1765790096::1765790096::1::::<><><>0<>0<>5e4ea18e44eff5c831ed2dffa307db02<>res://.godot/imported/frame0002.png-e7eb9cf23c1191db2e0a2ad28118d3f6.ctex::
-frame0003.png::CompressedTexture2D::2058304704662615409::1765790096::1765790096::1::::<><><>0<>0<>92b657fdbcc41bffe852160b5feb256f<>res://.godot/imported/frame0003.png-7a5632294ccdafa61cbfe7521808c184.ctex::
-frame0004.png::CompressedTexture2D::5817416321837390428::1765790096::1765790096::1::::<><><>0<>0<>e649c00fe74de6f84470b556c18441d1<>res://.godot/imported/frame0004.png-df09d85d5e80317931dbbd7a93586fa4.ctex::
-frame0005.png::CompressedTexture2D::633525277668780291::1765790096::1765790096::1::::<><><>0<>0<>626a181b43da09a7db0b3468c0eea529<>res://.godot/imported/frame0005.png-92af74696a1f79d95fb7e11cf7e9076f.ctex::
-::res://Sprites/EnemyGiant/Run-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Run-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Run-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::8727581130050511100::1765790096::1765790096::1::::<><><>0<>0<>43273ec10b9e0630f19dcd5f0bab52aa<>res://.godot/imported/frame0000.png-4ee6ab63bcf71b94422bc36963375b86.ctex::
-frame0001.png::CompressedTexture2D::4601072881545128907::1765790096::1765790096::1::::<><><>0<>0<>e5bc048733fdf6f2d0307570d713389e<>res://.godot/imported/frame0001.png-730468b289cbc9c8928bff2da76de25f.ctex::
-frame0002.png::CompressedTexture2D::3453235387939953633::1765790096::1765790096::1::::<><><>0<>0<>4e99f5560ea5cb3a9b0cdfe9c6e03840<>res://.godot/imported/frame0002.png-8a6559352288d7865fab31b100c32550.ctex::
-frame0003.png::CompressedTexture2D::6831951278326949143::1765790096::1765790096::1::::<><><>0<>0<>421c7a1624d9d93993cfcb2b798fb421<>res://.godot/imported/frame0003.png-0c3a8bf3859369807e04f3830d397726.ctex::
-frame0004.png::CompressedTexture2D::2263425314607939582::1765790096::1765790096::1::::<><><>0<>0<>5b6f5272bbe4375dc689dbda90fa06e5<>res://.godot/imported/frame0004.png-c21715d3c3ef3c08c7b37a158ae26975.ctex::
-frame0005.png::CompressedTexture2D::439027181200149017::1765790096::1765790096::1::::<><><>0<>0<>a4ebca3552aabc143e5efb741b94c6d8<>res://.godot/imported/frame0005.png-366ed5aed280f9acab58327370a4ff44.ctex::
-::res://Sprites/EnemyGiant/Run-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::3920325671309881473::1765790096::1765790096::1::::<><><>0<>0<>d769711b182d84424490a3c68db41902<>res://.godot/imported/frame0000.png-e623fe1567206964ee78d7dcb8c64995.ctex::
-frame0001.png::CompressedTexture2D::8355536029985694698::1765790096::1765790096::1::::<><><>0<>0<>bdfe0e5f00d1727fb81227bb449cde84<>res://.godot/imported/frame0001.png-7b2e6eb0655015870df9b8ebc0ccb82a.ctex::
-frame0002.png::CompressedTexture2D::685050530323316741::1765790096::1765790096::1::::<><><>0<>0<>6ba2206a03ee6971ff3a18407a0f8a10<>res://.godot/imported/frame0002.png-72fabe5336822f4b59e6194312a21385.ctex::
-frame0003.png::CompressedTexture2D::5289807070594741521::1765790096::1765790096::1::::<><><>0<>0<>4cb2e34d2af03fc77d33f20202c10d6c<>res://.godot/imported/frame0003.png-dd875434fcec2e776ed4d6b4b8d592b4.ctex::
-frame0004.png::CompressedTexture2D::1714345213115611330::1765790096::1765790096::1::::<><><>0<>0<>db1b0bf98ccd402527d189011740e983<>res://.godot/imported/frame0004.png-afdfad3dc8a3af384c7a3a23af124fc5.ctex::
-frame0005.png::CompressedTexture2D::6860006095413886408::1765790096::1765790096::1::::<><><>0<>0<>8419797e0f0a31f88a2c743653948689<>res://.godot/imported/frame0005.png-051fc153e61e643a21f69cf7226d9fbb.ctex::
-::res://Sprites/EnemyGiant/Walk-MoonstoneKeeper-SUCART/::1765790096
-::res://Sprites/EnemyGiant/Walk-MoonstoneKeeper-SUCART/GIF/::1765790096
-::res://Sprites/EnemyGiant/Walk-MoonstoneKeeper-SUCART/No BG/::1765790096
-frame0000.png::CompressedTexture2D::8584613369193213675::1765790096::1765790096::1::::<><><>0<>0<>b2e27091dabc66d43d8400ff95a45ba9<>res://.godot/imported/frame0000.png-7e71b506244f0798e28e244d8c4ee5db.ctex::
-frame0001.png::CompressedTexture2D::6218270412353437218::1765790096::1765790096::1::::<><><>0<>0<>2ef4a2be0c2b4cb129927ab0d8540376<>res://.godot/imported/frame0001.png-943d7022bb9aa88384e5f33d04ec4b8f.ctex::
-frame0002.png::CompressedTexture2D::6446904398909234005::1765790096::1765790096::1::::<><><>0<>0<>5bca6ffd1a4c6e35c6aa7107b7ec4928<>res://.godot/imported/frame0002.png-e88f06f807accb6a84b0805afb71200f.ctex::
-frame0003.png::CompressedTexture2D::6558185016230601633::1765790096::1765790096::1::::<><><>0<>0<>7d4b0aa5dff4ca52f1c4ed638b260988<>res://.godot/imported/frame0003.png-e22d5b157d3b37d23f65f96539925aa7.ctex::
-frame0004.png::CompressedTexture2D::5618973438761264780::1765790096::1765790096::1::::<><><>0<>0<>f91b74bc5d639b9b3994b63d66bcb6bd<>res://.godot/imported/frame0004.png-46d66d6346facce1e91510ddce59eb45.ctex::
-frame0005.png::CompressedTexture2D::8317798777506972237::1765790096::1765790096::1::::<><><>0<>0<>90cae3e7a02faa427a060c8d9ca4b0f8<>res://.godot/imported/frame0005.png-64848b25f2fbd5d7a5fe96ec6d3a67b6.ctex::
-frame0006.png::CompressedTexture2D::3353762657095069531::1765790096::1765790096::1::::<><><>0<>0<>d0a060fd5aa39f059f60883124f345e0<>res://.godot/imported/frame0006.png-a733bafd16ffb8a7f7c6d4d078d5586e.ctex::
-frame0007.png::CompressedTexture2D::3363390146607210253::1765790096::1765790096::1::::<><><>0<>0<>c4f829bfe5f4bb69a3c7610bf4a80fe6<>res://.godot/imported/frame0007.png-56c40ae42fb3bb8452c386c53092f71b.ctex::
-frame0008.png::CompressedTexture2D::1403368299873433173::1765790096::1765790096::1::::<><><>0<>0<>e2b00e5de508b20aba28878796a7b68b<>res://.godot/imported/frame0008.png-fc3ade2e72328c47caeb5ef8f6112eed.ctex::
-frame0009.png::CompressedTexture2D::5645458967458010398::1765790096::1765790096::1::::<><><>0<>0<>00bce458352e2d1ff53326c4b4434353<>res://.godot/imported/frame0009.png-ef33110f23c1ccb0433fbba656b44aa2.ctex::
-frame0010.png::CompressedTexture2D::314774889257567128::1765790096::1765790096::1::::<><><>0<>0<>a7ace8064f9445bd067c0f05f5c5626a<>res://.godot/imported/frame0010.png-68a166fc3accc5462fb5372dcce81df2.ctex::
-frame0011.png::CompressedTexture2D::2680051113921569892::1765790096::1765790096::1::::<><><>0<>0<>a50578514bf93df35d684fc2c4fe1d9a<>res://.godot/imported/frame0011.png-8f8580189a006c556a463edd168d5a87.ctex::
-::res://Sprites/EnemyGiant/Walk-MoonstoneKeeper-SUCART/With BG/::1765790096
-frame0000.png::CompressedTexture2D::2646997283282093949::1765790096::1765790096::1::::<><><>0<>0<>76e643ce09f90062efeb81eb6d7804d2<>res://.godot/imported/frame0000.png-a3e5513d6ad19d09cdec69449ea5a29a.ctex::
-frame0001.png::CompressedTexture2D::6447047794164860667::1765790096::1765790096::1::::<><><>0<>0<>2d3636d1ba0d3bfaecff3c93d6d8e141<>res://.godot/imported/frame0001.png-cfa750d47b8c9066d2876d951d41443e.ctex::
-frame0002.png::CompressedTexture2D::8602409565978770629::1765790096::1765790096::1::::<><><>0<>0<>41a61be8a6fdc0668f14867da3a83c45<>res://.godot/imported/frame0002.png-c5b0e0acf04636762a1d44ca4ac371db.ctex::
-frame0003.png::CompressedTexture2D::3577170389291415036::1765790096::1765790096::1::::<><><>0<>0<>dc73be741f1d40376d88734657afc146<>res://.godot/imported/frame0003.png-977418c826e9b0fdc00299de44ae2ba5.ctex::
-frame0004.png::CompressedTexture2D::4068580038124367437::1765790096::1765790096::1::::<><><>0<>0<>354b30f72774156d3c910fc4f0d28ec9<>res://.godot/imported/frame0004.png-0cd06a3f32a15c32f1166efd424b3a73.ctex::
-frame0005.png::CompressedTexture2D::7965521252194730025::1765790096::1765790096::1::::<><><>0<>0<>9b5b530735a31b16772a2b5cab81a361<>res://.godot/imported/frame0005.png-2c30586eab840c4be07149cffa62db48.ctex::
-frame0006.png::CompressedTexture2D::5356669890412361727::1765790096::1765790096::1::::<><><>0<>0<>9e5057ebb17686a2349fac06a5bc2f15<>res://.godot/imported/frame0006.png-6ca5e217c4f46376a2c1c68f008a4e99.ctex::
-frame0007.png::CompressedTexture2D::1777839046718539115::1765790096::1765790096::1::::<><><>0<>0<>08cb04f2b00acdca46da6cac3f8e7a56<>res://.godot/imported/frame0007.png-8680ccc1dedec633f735a05ff652fb4c.ctex::
-frame0008.png::CompressedTexture2D::680022862560278188::1765790096::1765790096::1::::<><><>0<>0<>762fef6d99580d944ceb79b396564790<>res://.godot/imported/frame0008.png-ab0d8c3633fda59196d48a4b67012a6f.ctex::
-frame0009.png::CompressedTexture2D::7306993595202468653::1765790096::1765790096::1::::<><><>0<>0<>bc13815e92d7e337328574a66eaa09ae<>res://.godot/imported/frame0009.png-4f6a1fbfe6bf6d696cfeba7b4c00ca13.ctex::
-frame0010.png::CompressedTexture2D::8644964131711195852::1765790096::1765790096::1::::<><><>0<>0<>cf7a0676f988ff33b8c3015181b3bfe9<>res://.godot/imported/frame0010.png-c8deda63c3cf57316c91131f0ee2075f.ctex::
-frame0011.png::CompressedTexture2D::1500631187046615554::1765790096::1765790096::1::::<><><>0<>0<>4d33d2618a214c070729194e60e26677<>res://.godot/imported/frame0011.png-38c2c8346d255a17da4df55fa3aaa70b.ctex::
-::res://Sprites/Executioner/::1765531292
-LOGO.png::CompressedTexture2D::6503182193143940831::1765531292::1765531292::1::::<><><>0<>0<>cdc65402da64d5e5572b6730724a48fa<>res://.godot/imported/LOGO.png-eb119c0d4c820c1e7373a0d0f2fcf6a3.ctex::
-state.gd::GDScript::3162203750901237753::1765531292::0::1::::State<>Node2D<><>0<>0<><>::
-::res://Sprites/Executioner/Anims/::1765531292
-attacking.png::CompressedTexture2D::8511575558079276302::1765531292::1765531292::1::::<><><>0<>0<>142fd695f890434db9ab7bad53bd4ef4<>res://.godot/imported/attacking.png-6fc02303e0db69060ed2c871c6624d55.ctex::
-death.png::CompressedTexture2D::8670834993814861596::1765531292::1765531292::1::::<><><>0<>0<>0a5d8d1b8bd22e76274a60a9f8d89121<>res://.godot/imported/death.png-0b6d170d50c8596fe2d904cb1cc75096.ctex::
-idle2.png::CompressedTexture2D::5971262099983210216::1765531292::1765531292::1::::<><><>0<>0<>602d89bf8b8989440bb30b86b470d176<>res://.godot/imported/idle2.png-ded796973bbbc1fe3a58b8b26dd5e69a.ctex::
-idle.png::CompressedTexture2D::884685549590600697::1765531292::1765531292::1::::<><><>0<>0<>6a22acadada2a24d620050cad946ed56<>res://.godot/imported/idle.png-de1a08db9f97fc82376b95975265fa38.ctex::
-skill1.png::CompressedTexture2D::7439664637755962814::1765531292::1765531292::1::::<><><>0<>0<>ff1c1af2780a8427899d84458fabf78f<>res://.godot/imported/skill1.png-032e8e854fd42ee84b5a8852cb3b221a.ctex::
-summon.png::CompressedTexture2D::29882600395062806::1765531292::1765531292::1::::<><><>0<>0<>2737c49e6db47b8003d7ca4369e3ab1c<>res://.godot/imported/summon.png-5c1ff905bf64ef8805cee6e970b449da.ctex::
-summonAppear.png::CompressedTexture2D::293734619481241955::1765531292::1765531292::1::::<><><>0<>0<>558e95e2a6903fa1544d5a59c7572db6<>res://.godot/imported/summonAppear.png-a1ac88cffd5c52e22048617ea717f181.ctex::
-summonDeath.png::CompressedTexture2D::5798768505612413672::1765531292::1765531292::1::::<><><>0<>0<>398735737c6edbf906f5ae836f9a66bf<>res://.godot/imported/summonDeath.png-e87e342b1d497256d58e774671e43176.ctex::
-summonIdle.png::CompressedTexture2D::4197522962420046952::1765531292::1765531292::1::::<><><>0<>0<>f93aafecec37054a545afc24b4385fd4<>res://.godot/imported/summonIdle.png-6a8f584ec1e97d33aadce47e400d3dc9.ctex::
-::res://Sprites/NewCharacter/::1765531292
-::res://Sprites/NewCharacter/DarkSamuraiAssets/::1765531292
-DarkSamurai (64x64).png::CompressedTexture2D::1117206109895599562::1765531292::1765531292::1::::<><><>0<>0<>329dbe7049e39c624a64034085451333<>res://.godot/imported/DarkSamurai (64x64).png-f5920a0b8ef9dae697a6593b640bd452.ctex::
-Fall.png::CompressedTexture2D::5337626247850045877::1765531292::1765531292::1::::<><><>0<>0<>0749125568369e393fdcb38027d1f669<>res://.godot/imported/Fall.png-8cb57f143df8695479b6907ad71cbe8f.ctex::
-Idle.png::CompressedTexture2D::9016547788863178770::1765531292::1765531292::1::::<><><>0<>0<>7cc34f5c068110cd931bee69c8cee11a<>res://.godot/imported/Idle.png-da7b5e44140f26e364e3d61ae5e2d827.ctex::
-Jump.png::CompressedTexture2D::3363889650299622570::1765531292::1765531292::1::::<><><>0<>0<>a69efc9be12d89df63b1c346ab71ea72<>res://.godot/imported/Jump.png-993d585bec3eaa87e9792fae9307293c.ctex::
-Walk.png::CompressedTexture2D::8750512957282748023::1765531292::1765531292::1::::<><><>0<>0<>1f79aa634ef5f2d37fc7f134242713a8<>res://.godot/imported/Walk.png-736ad462515357c6810b4d424ae3ac47.ctex::
-::res://Sprites/Portal/::1768303241
-::res://Sprites/Portal/pixelartportal/::1768302758
-sprite-sheet.png::CompressedTexture2D::7125108150054595500::1726236720::1768302758::1::::<><><>0<>0<>aa22ee4d3cc725307cb8d2744c177b91<>res://.godot/imported/sprite-sheet.png-cf641edfdd261765f28433dd14304e44.ctex::
+::res://Sprites/Enemy/Portal/::1768303241
+::res://Sprites/Enemy/Portal/pixelartportal/::1768994966
+sprite-sheet.png::CompressedTexture2D::7125108150054595500::1726236720::1768994966::1::::<><><>0<>0<>3868d277e1d378b19f25cfae393033b5<>res://.godot/imported/sprite-sheet.png-337c483bae0f87614774e383edda632a.ctex::
 Thank you!.txt::TextFile::-1::1698432028::0::1::::<><><>0<>0<><>::
-::res://Sprites/Portal/pixelartportal/Frames/::1768302758
-portal1_frame_1.png::CompressedTexture2D::2736973558773109247::1726226458::1768302758::1::::<><><>0<>0<>fa23887b9abfd16804ed41d0e4641d2f<>res://.godot/imported/portal1_frame_1.png-9779af077588aa77b6b4a2ef0e201d62.ctex::
-portal1_frame_2.png::CompressedTexture2D::903951838895153679::1726226464::1768302758::1::::<><><>0<>0<>9ab5ec473b98d57761f58286faa628f9<>res://.godot/imported/portal1_frame_2.png-7a91a4dc4d72c7199df3eafa56a66aa0.ctex::
-portal1_frame_3.png::CompressedTexture2D::3823286401879538041::1726226470::1768302758::1::::<><><>0<>0<>467c82c1db1b4cb897b7d192e5778cab<>res://.godot/imported/portal1_frame_3.png-31620e4b1a77f2709501b5417eb332cb.ctex::
-portal1_frame_4.png::CompressedTexture2D::8639276164282908355::1726226476::1768302758::1::::<><><>0<>0<>5dca935b375a3b1d838a289167c16a59<>res://.godot/imported/portal1_frame_4.png-ab19ec3d4720332d657c15544fac1b91.ctex::
-portal1_frame_5.png::CompressedTexture2D::6844203694669646369::1726226482::1768302758::1::::<><><>0<>0<>15fe42d1b4da8d48a6187a05aeaa534d<>res://.godot/imported/portal1_frame_5.png-f7fbf783dfe1e34f8050feb6b27758a7.ctex::
-portal1_frame_6.png::CompressedTexture2D::3067223012872050409::1726226488::1768302758::1::::<><><>0<>0<>2b000503bce1c1e20e3b0836227ad443<>res://.godot/imported/portal1_frame_6.png-91c4a9c62c0211d314ee6f4ad5bb4b66.ctex::
-portal1_frame_7.png::CompressedTexture2D::3232259756523470835::1726226494::1768302758::1::::<><><>0<>0<>68b0bfb42e3461dbd21ca61e1028bb49<>res://.godot/imported/portal1_frame_7.png-e4db498eafce1b9d5e3bdfe4760dca50.ctex::
-::res://Sprites/Twins/::1765531292
-perla.png::CompressedTexture2D::4856995781348911214::1765531292::1765531292::1::::<><><>0<>0<>e8d2a5b396e82a7972cae610480f8d60<>res://.godot/imported/perla.png-34b3672d8927a7b3dbac9bd723fd7bcb.ctex::
-::res://Sprites/Twins/Idle/::1765531292
-frame0000.png::CompressedTexture2D::6175932219615624145::1765531292::1765531292::1::::<><><>0<>0<>52076dc83b287a888193ed7a2a04860d<>res://.godot/imported/frame0000.png-01d3c42cb8a8b59a52a80f37a76f5c19.ctex::
-frame0001.png::CompressedTexture2D::1558581078837646466::1765531292::1765531292::1::::<><><>0<>0<>c5693cf104ab6ce0f776156ab168b722<>res://.godot/imported/frame0001.png-f2f31762211102ea5d496415d7096cd2.ctex::
-frame0002.png::CompressedTexture2D::894861211627232339::1765531292::1765531292::1::::<><><>0<>0<>3e219a7f94a2867ec5795cb09c9da454<>res://.godot/imported/frame0002.png-d8722b6dba367b30f483a03a07a26636.ctex::
-frame0003.png::CompressedTexture2D::7166844606120079808::1765531292::1765531292::1::::<><><>0<>0<>4f12da034707124322a4057626377bbc<>res://.godot/imported/frame0003.png-fa7311aa10866bd81ff15ca086969cb9.ctex::
-frame0004.png::CompressedTexture2D::1315722489683623470::1765531292::1765531292::1::::<><><>0<>0<>ad6da1e1393bf2a9be94e494d17d063f<>res://.godot/imported/frame0004.png-562d38ad6dcbb1354b585441235ab2b3.ctex::
-frame0005.png::CompressedTexture2D::5620998847493441168::1765531292::1765531292::1::::<><><>0<>0<>7874d13dd9517ea41950c4a4d8c4246d<>res://.godot/imported/frame0005.png-d46269ab36501dd34b434102682091f5.ctex::
-frame0006.png::CompressedTexture2D::545904450681814662::1765531292::1765531292::1::::<><><>0<>0<>d305b1e6e28079961d410c4d9b4c3a0f<>res://.godot/imported/frame0006.png-e7048e292a5198f93987a8c5ec37902d.ctex::
-frame0007.png::CompressedTexture2D::1913157210521908012::1765531292::1765531292::1::::<><><>0<>0<>78232ac21b0bcc3d30f04e4493c800e2<>res://.godot/imported/frame0007.png-05ee00ccb4a25859c31947bb2df15543.ctex::
-frame0008.png::CompressedTexture2D::2765564902416941326::1765531292::1765531292::1::::<><><>0<>0<>c10ad930b24d1efbe7b71a3347830d6d<>res://.godot/imported/frame0008.png-7c7358c6e2ae23ac013925999c4a63d8.ctex::
-frame0009.png::CompressedTexture2D::7539009218721501980::1765531292::1765531292::1::::<><><>0<>0<>5bfd9ed878076ed520776b8a3bc67a43<>res://.godot/imported/frame0009.png-80acaf079ad2f5162c0adf1fb3119772.ctex::
-frame0010.png::CompressedTexture2D::6978464756329763862::1765531292::1765531292::1::::<><><>0<>0<>acc51bc6f910e60e57d1027b3934bba2<>res://.godot/imported/frame0010.png-be657e5e5bbdcf63c972a7e0ebf6aea9.ctex::
-frame0011.png::CompressedTexture2D::7409038978064051895::1765531292::1765531292::1::::<><><>0<>0<>288e04f44c37a69115bce5782758dbf1<>res://.godot/imported/frame0011.png-5db0196691762216452a4b95b18237a6.ctex::
-frame0012.png::CompressedTexture2D::8084820035214061175::1765531292::1765531292::1::::<><><>0<>0<>5d2a7be2ed3c1ea4a93002176599db95<>res://.godot/imported/frame0012.png-6b344317ad2e8663dde8062c3ceda857.ctex::
-frame0013.png::CompressedTexture2D::459646529586386458::1765531292::1765531292::1::::<><><>0<>0<>0dab20f0d55f5227a78d530b4e2dc3ed<>res://.godot/imported/frame0013.png-159629deda794b97edc1ee65c337e1c2.ctex::
-frame0014.png::CompressedTexture2D::87353397137989946::1765531292::1765531292::1::::<><><>0<>0<>ab98fead1c5116b7a39397ae5e207f7c<>res://.godot/imported/frame0014.png-ae595e467559a873eb22b3b1799d99a8.ctex::
-frame0015.png::CompressedTexture2D::2678072580037446704::1765531292::1765531292::1::::<><><>0<>0<>4b7e1b86ecb9b54dece6321b2cb6c411<>res://.godot/imported/frame0015.png-3a18552ce67ef416cf07d578d5c71da4.ctex::
-frame0016.png::CompressedTexture2D::3594431550020224333::1765531292::1765531292::1::::<><><>0<>0<>ec448ce6d97c08100ade64a0a7378ba8<>res://.godot/imported/frame0016.png-8e6fee9e680a42aff7f303c75d1355f3.ctex::
-::res://Sprites/Twins/Walk/::1765531292
-frame0000.png::CompressedTexture2D::7489383146939029148::1765531292::1765531292::1::::<><><>0<>0<>f3e7ee19460c5ab3340fada79d3ec924<>res://.godot/imported/frame0000.png-308c0de2ddf736b77cd20a24c2d1606d.ctex::
-frame0001.png::CompressedTexture2D::5817600848862020833::1765531292::1765531292::1::::<><><>0<>0<>fa1cfd5d809df11583fc0e6c81d6025f<>res://.godot/imported/frame0001.png-b536e4baa597f3b0b8e531fab34f75fc.ctex::
-frame0002.png::CompressedTexture2D::1468882072476515392::1765531292::1765531292::1::::<><><>0<>0<>f9fa672823dc24d7cdd0805875bf74df<>res://.godot/imported/frame0002.png-b064e6f31a031aa905e47fbbc1128e21.ctex::
-frame0003.png::CompressedTexture2D::2278683205571178191::1765531292::1765531292::1::::<><><>0<>0<>10e5c840005da881b2fc4ca84465ca80<>res://.godot/imported/frame0003.png-1b6370ff97987a0495cf7a86972e35e4.ctex::
-frame0004.png::CompressedTexture2D::6934655458917759201::1765531292::1765531292::1::::<><><>0<>0<>e8bfd4cdff85a0ad5d246e3e2472d9bd<>res://.godot/imported/frame0004.png-cb7536865631ac27e9df5e5caa1596aa.ctex::
-frame0005.png::CompressedTexture2D::1543658814103437705::1765531292::1765531292::1::::<><><>0<>0<>9dbe79b67305f11c079f15cf833a2fba<>res://.godot/imported/frame0005.png-96c1d4545b5cee9329067eff86e24b41.ctex::
-frame0006.png::CompressedTexture2D::3771659126266634599::1765531292::1765531292::1::::<><><>0<>0<>fd7223e47c80361e7f3e0072e6e78ec7<>res://.godot/imported/frame0006.png-82a2919a3ad0ae85682ea3d69b9b604c.ctex::
-frame0007.png::CompressedTexture2D::2767175828224966750::1765531292::1765531292::1::::<><><>0<>0<>74fcf3a10f55d6bc377e514893c3c59d<>res://.godot/imported/frame0007.png-e5574e2847a20007573c09a81c8e34e8.ctex::
-frame0008.png::CompressedTexture2D::7040508487856703737::1765531292::1765531292::1::::<><><>0<>0<>41803576edd15bb6acc408237d5b3fc9<>res://.godot/imported/frame0008.png-675866162f78610341ec13156ed3d478.ctex::
-frame0009.png::CompressedTexture2D::6942488087216510505::1765531292::1765531292::1::::<><><>0<>0<>7323edeb5eb05226a9b2f43232fd2681<>res://.godot/imported/frame0009.png-2b556d6cc36b4310532660bc6ac91fa8.ctex::
-frame0010.png::CompressedTexture2D::1871466392370287947::1765531292::1765531292::1::::<><><>0<>0<>797b3eb8d5a6fe3af02285a953b579b0<>res://.godot/imported/frame0010.png-0c789055b8ea83c3b3a1d86bc601bea6.ctex::
-frame0011.png::CompressedTexture2D::8530245481825854790::1765531292::1765531292::1::::<><><>0<>0<>6dfe2ca0e90bcdf3aecfc98bcdcaefb4<>res://.godot/imported/frame0011.png-c1740c8e16a45593f952db34165cedff.ctex::
+::res://Sprites/Enemy/Portal/pixelartportal/Frames/::1768994966
+portal1_frame_1.png::CompressedTexture2D::2736973558773109247::1726226458::1768994966::1::::<><><>0<>0<>c850884aa9242c79292120b348b8f2c8<>res://.godot/imported/portal1_frame_1.png-20d77c9d1554fa91493c591fad60680f.ctex::
+portal1_frame_2.png::CompressedTexture2D::903951838895153679::1726226464::1768994966::1::::<><><>0<>0<>22b00481ad6dc9e898e548bf3a5608df<>res://.godot/imported/portal1_frame_2.png-eb87276597ed6f106157e350e19be375.ctex::
+portal1_frame_3.png::CompressedTexture2D::3823286401879538041::1726226470::1768994966::1::::<><><>0<>0<>a3154312025f7ffe5af114c8d85d0228<>res://.godot/imported/portal1_frame_3.png-c5e657563f892314ff6ceb04ca022924.ctex::
+portal1_frame_4.png::CompressedTexture2D::8639276164282908355::1726226476::1768994966::1::::<><><>0<>0<>aa806c208f3ef251b2587162b789c2ec<>res://.godot/imported/portal1_frame_4.png-8fea204374eb9ca3a5a17e8737d37669.ctex::
+portal1_frame_5.png::CompressedTexture2D::6844203694669646369::1726226482::1768994966::1::::<><><>0<>0<>bdb6da68943464114fdf4b8ee35c27f1<>res://.godot/imported/portal1_frame_5.png-3015a17971023830060fc4c3afd20c8f.ctex::
+portal1_frame_6.png::CompressedTexture2D::3067223012872050409::1726226488::1768994966::1::::<><><>0<>0<>2e61fc3dcfd031f42a9ebe7ccf901435<>res://.godot/imported/portal1_frame_6.png-19dc3aa20f71e11fa375c4675805a717.ctex::
+portal1_frame_7.png::CompressedTexture2D::3232259756523470835::1726226494::1768994966::1::::<><><>0<>0<>a6c9e538af68ad1527aa099ccad80e8a<>res://.godot/imported/portal1_frame_7.png-796b6e65effd7627261abdb388f6e067.ctex::
+::res://Sprites/Enemy/Sicklezeep/::1768994967
+sickle_sheet.png::CompressedTexture2D::525663224833814829::1726388650::1768994967::1::::<><><>0<>0<>622e1ff3a5af11c4356de0f6849fa674<>res://.godot/imported/sickle_sheet.png-0856c7a138101512436e72e8748b1327.ctex::
+::res://Sprites/Enemy/Twins/::1768994967
+perla.png::CompressedTexture2D::4856995781348911214::1765531292::1768994967::1::::<><><>0<>0<>494a493de3d49d67e49356bbdb8c607c<>res://.godot/imported/perla.png-7fe33837119cf0837a5534f3411ea74e.ctex::
+::res://Sprites/Enemy/Twins/Idle/::1768994967
+frame0000.png::CompressedTexture2D::6175932219615624145::1765531292::1768994967::1::::<><><>0<>0<>fa5fe57ad6fd31506f21edb981ef733d<>res://.godot/imported/frame0000.png-a4908386d92e9763b4efc81867c1f5bf.ctex::
+frame0001.png::CompressedTexture2D::1558581078837646466::1765531292::1768994967::1::::<><><>0<>0<>5eb920e001302c238063ca0ae7cdec40<>res://.godot/imported/frame0001.png-67ac35b8f00d78a675586b5572c937a3.ctex::
+frame0002.png::CompressedTexture2D::894861211627232339::1765531292::1768994967::1::::<><><>0<>0<>de13b8a0e1165d30b52ca30c09a2786b<>res://.godot/imported/frame0002.png-5254a6c983befb050c1c23f9fe6b6c48.ctex::
+frame0003.png::CompressedTexture2D::7166844606120079808::1765531292::1768994967::1::::<><><>0<>0<>32eabd0ef51e361a99ef84e55ee5e165<>res://.godot/imported/frame0003.png-7fa06a9c71a78be5c7731fe3c140736f.ctex::
+frame0004.png::CompressedTexture2D::1315722489683623470::1765531292::1768994967::1::::<><><>0<>0<>bc777fc0b305d8f09c485802e2715862<>res://.godot/imported/frame0004.png-c3da5c56c8d0db4147f95c6965215140.ctex::
+frame0005.png::CompressedTexture2D::5620998847493441168::1765531292::1768994967::1::::<><><>0<>0<>ef4b7d4f94c5e60cabea9da6688846b6<>res://.godot/imported/frame0005.png-1f4a0bc5dab2661c58de9e86b16c59a1.ctex::
+frame0006.png::CompressedTexture2D::545904450681814662::1765531292::1768994967::1::::<><><>0<>0<>ed394c09f80f6ae9ed5f25cedb4bd42e<>res://.godot/imported/frame0006.png-17aba61879f057d754b37378debbdb7f.ctex::
+frame0007.png::CompressedTexture2D::1913157210521908012::1765531292::1768994967::1::::<><><>0<>0<>dddf122c640e403f35d62af4f166fe15<>res://.godot/imported/frame0007.png-e44dc60a6cbef9621f949ba13b27adcd.ctex::
+frame0008.png::CompressedTexture2D::2765564902416941326::1765531292::1768994967::1::::<><><>0<>0<>ab69a8e3fe31a16c2dc0a8bc85b102f6<>res://.godot/imported/frame0008.png-14d84e92315d4c22518079b8ecc2ac7e.ctex::
+frame0009.png::CompressedTexture2D::7539009218721501980::1765531292::1768994967::1::::<><><>0<>0<>afdc10ff89b55c9d22abaf86520f3fe0<>res://.godot/imported/frame0009.png-01dba812604afb097c9019534b703f1b.ctex::
+frame0010.png::CompressedTexture2D::6978464756329763862::1765531292::1768994967::1::::<><><>0<>0<>038102f22d50172327a9e50bbf26431e<>res://.godot/imported/frame0010.png-61223fd9bfe19907274b955ca94705a4.ctex::
+frame0011.png::CompressedTexture2D::7409038978064051895::1765531292::1768994967::1::::<><><>0<>0<>5d713a91fedca7f0fe5fdaac8dd2c2c5<>res://.godot/imported/frame0011.png-b2b7355a6a2d13500b6180d8618a64bb.ctex::
+frame0012.png::CompressedTexture2D::8084820035214061175::1765531292::1768994967::1::::<><><>0<>0<>962f5547de1a23f1705a8e24d2d7285c<>res://.godot/imported/frame0012.png-4ac46c9bc4f7fa175c42d95186a922a8.ctex::
+frame0013.png::CompressedTexture2D::459646529586386458::1765531292::1768994967::1::::<><><>0<>0<>8111eaa978b8d75ff547ceea15eb5d6a<>res://.godot/imported/frame0013.png-2e67f0af743744e68bddee53f442d0a2.ctex::
+frame0014.png::CompressedTexture2D::87353397137989946::1765531292::1768994967::1::::<><><>0<>0<>32b09e039b8aa33c959f89e872c3e639<>res://.godot/imported/frame0014.png-10c3067d082f7b01c020c3603fa95bb5.ctex::
+frame0015.png::CompressedTexture2D::2678072580037446704::1765531292::1768994967::1::::<><><>0<>0<>9e22276d0531ae319a1def90d28e2376<>res://.godot/imported/frame0015.png-08a084325d12b3bd515e3ecc7f43263e.ctex::
+frame0016.png::CompressedTexture2D::3594431550020224333::1765531292::1768994967::1::::<><><>0<>0<>845e5e9b600d02a95f64c8454702cbca<>res://.godot/imported/frame0016.png-59be356f573d0f1cf46540268ff2c237.ctex::
+::res://Sprites/Enemy/Twins/Walk/::1768994967
+frame0000.png::CompressedTexture2D::7489383146939029148::1765531292::1768994967::1::::<><><>0<>0<>192d669224d1a28583c3d49f77578274<>res://.godot/imported/frame0000.png-ce4eabbd9673bbc27347c3d6ca6684e0.ctex::
+frame0001.png::CompressedTexture2D::5817600848862020833::1765531292::1768994967::1::::<><><>0<>0<>30fde825389335551cd50fb80c2d3b83<>res://.godot/imported/frame0001.png-2107b06da13f5d8642fe140965fb58ba.ctex::
+frame0002.png::CompressedTexture2D::1468882072476515392::1765531292::1768994967::1::::<><><>0<>0<>88230b5e88a2c05c4382e43092266091<>res://.godot/imported/frame0002.png-0fee02001233f9f146230df3e85ee618.ctex::
+frame0003.png::CompressedTexture2D::2278683205571178191::1765531292::1768994967::1::::<><><>0<>0<>f75b0269a24d08304710d6e475a6d337<>res://.godot/imported/frame0003.png-38b9cd729596eaa74c0cc032ad894f5d.ctex::
+frame0004.png::CompressedTexture2D::6934655458917759201::1765531292::1768994967::1::::<><><>0<>0<>13a386e1c8da4ba9ea7468e8a36bdde9<>res://.godot/imported/frame0004.png-98a292a96477e5be071f23d7e5e75ded.ctex::
+frame0005.png::CompressedTexture2D::1543658814103437705::1765531292::1768994967::1::::<><><>0<>0<>f058199a3a7f64c9690f20e31cbc7ad8<>res://.godot/imported/frame0005.png-78eb2e10695786c516640f6ead60f1fd.ctex::
+frame0006.png::CompressedTexture2D::3771659126266634599::1765531292::1768994967::1::::<><><>0<>0<>cf504f848008af08315b6b8c8b2040ef<>res://.godot/imported/frame0006.png-b769f5df5fbba3136a46f0f0aca6d7a7.ctex::
+frame0007.png::CompressedTexture2D::2767175828224966750::1765531292::1768994967::1::::<><><>0<>0<>96b212ec9b049b1450e53130768cb121<>res://.godot/imported/frame0007.png-bf64dd655841dc366a8a3afd75590a30.ctex::
+frame0008.png::CompressedTexture2D::7040508487856703737::1765531292::1768994967::1::::<><><>0<>0<>2c8ea5e6ea3a3b6a573ac87bff40b3a9<>res://.godot/imported/frame0008.png-cf4cb31da157cc663663043853fa8959.ctex::
+frame0009.png::CompressedTexture2D::6942488087216510505::1765531292::1768994967::1::::<><><>0<>0<>6d3a40560d9532d399b698cbbcd4c09d<>res://.godot/imported/frame0009.png-b9e9207b33320fb31e20e7dec880cd39.ctex::
+frame0010.png::CompressedTexture2D::1871466392370287947::1765531292::1768994967::1::::<><><>0<>0<>ce28f31b0b6d910b07bb7bc401f7a7d4<>res://.godot/imported/frame0010.png-9f3990a5abd09bd75017d4bdab30c9f6.ctex::
+frame0011.png::CompressedTexture2D::8530245481825854790::1765531292::1768994967::1::::<><><>0<>0<>3a8afbed1bc5ce8b3febeb2c4868e68e<>res://.godot/imported/frame0011.png-f35d10a05de6edcc80c6d4f0c40b7dbe.ctex::
 ::res://Tilemap/::1765531292
 ::res://Tilemap/PixelFantasy_Caves_1.0/::1765531292
 background1.png::CompressedTexture2D::2505218070515810506::1765531292::1765531292::1::::<><><>0<>0<>776de47c7e3f069502d9835b4ea915c4<>res://.godot/imported/background1.png-9d775cf077e6c27e52e3a8e48e7ba2fd.ctex::

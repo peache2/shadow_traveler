@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://df3l8orlk0kgk"]
+[gd_scene load_steps=41 format=3 uid="uid://df3l8orlk0kgk"]
 
 [ext_resource type="Texture2D" uid="uid://gabehqhoa7l8" path="res://Sprites/Character/Attack 1.png" id="1_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://bydd40ntbcxx3" path="res://Sprites/Character/Fall.png" id="2_1jxqw"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://br4od2nncfi0q" path="res://sword_collision.gd" id="3_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://dbal8a3ywlxv6" path="res://Sprites/Character/Jump.png" id="4_b26j0"]
 [ext_resource type="Texture2D" uid="uid://dpp5iwrxo2fgg" path="res://Sprites/Character/Run.png" id="5_n7ghd"]
+[ext_resource type="AudioStream" uid="uid://b07ujxx448spf" path="res://Sounds/CrisisFight.mp3" id="7_1jxqw"]
 
 [sub_resource type="GDScript" id="GDScript_pjt0s"]
 script/source = "extends CharacterBody2D
@@ -19,8 +20,10 @@ script/source = "extends CharacterBody2D
 @export var look_l: bool = true
 
 
+
 func _ready() -> void:
 	animated_sprite_2d.flip_h = true
+	
 
 
 var jump_count = 0
@@ -103,6 +106,11 @@ func _physics_process(delta):
 
 func _on_dash_timer_timeout():
 	speed = 300
+
+
+
+	
+	
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
@@ -373,6 +381,9 @@ scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_hqtel")
 disabled = true
 debug_color = Color(0.5680971, 0.9732383, 1.540184e-06, 0.41960785)
+
+[node name="CrisisFight" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_1jxqw")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
