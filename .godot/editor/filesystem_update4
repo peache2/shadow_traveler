@@ -1,6 +1,2 @@
-res://world.tscn
+res://1rtBoss.tscn
 res://player.tscn
-res://enemy (2).tscn
-res://patrol_enemy.gd
-res://PatrolEnemy.tscn
-res://PatrolEnemy.gd

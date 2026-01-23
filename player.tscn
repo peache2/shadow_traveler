@@ -11,7 +11,7 @@
 [sub_resource type="GDScript" id="GDScript_pjt0s"]
 script/source = "extends CharacterBody2D
 
-@export var speed = 250
+@export var speed = 170
 @export var jump = -500
 @export var bullet_node: PackedScene
 @export var atacar = false
@@ -72,11 +72,6 @@ func _physics_process(delta):
 	# MOVIMIENTO
 	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
 	
-	if Input.is_action_just_pressed(\"dash\"):
-		$DashTimer.start()
-		speed *= 5
-		velocity.x = direction * speed
-
 	# Girar sprite
 	if direction < 0:
 		animated_sprite_2d.flip_h = true
@@ -103,9 +98,6 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-
-func _on_dash_timer_timeout():
-	speed = 300
 
 
 
@@ -367,9 +359,6 @@ sprite_frames = SubResource("SpriteFrames_qi5as")
 animation = &"Idle"
 autoplay = "Idle"
 
-[node name="DashTimer" type="Timer" parent="."]
-wait_time = 0.12
-
 [node name="SwordCollision" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
@@ -386,6 +375,5 @@ debug_color = Color(0.5680971, 0.9732383, 1.540184e-06, 0.41960785)
 stream = ExtResource("7_1jxqw")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
 [connection signal="body_entered" from="SwordCollision" to="SwordCollision" method="_on_body_entered"]
 [connection signal="body_exited" from="SwordCollision" to="SwordCollision" method="_on_body_exited"]

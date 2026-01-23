@@ -11,7 +11,7 @@ func _ready():
  
 func _physics_process(_delta):
 	var direction = player.position - position
-	velocity = direction.normalized() * 80
+	velocity = direction.normalized() * 40
 
 	move_and_slide()
  
