@@ -1,0 +1,102 @@
+[gd_scene load_steps=12 format=3 uid="uid://drrif687cyyiy"]
+
+[ext_resource type="Script" uid="uid://c6d5tuxljpfc" path="res://PatrolEnemyHead.gd" id="1_fxpsx"]
+[ext_resource type="Texture2D" uid="uid://csmt30fuyv8hp" path="res://Sprites/Enemy/flying-head.png" id="2_7ljs1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_haro7"]
+size = Vector2(29, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bipd5"]
+atlas = ExtResource("2_7ljs1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gsmf"]
+atlas = ExtResource("2_7ljs1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfril"]
+atlas = ExtResource("2_7ljs1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5ndo"]
+atlas = ExtResource("2_7ljs1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5ekr"]
+atlas = ExtResource("2_7ljs1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnw1v"]
+atlas = ExtResource("2_7ljs1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_po0sg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bipd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3gsmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfril")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5ndo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5ekr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnw1v")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 11.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f0kj"]
+size = Vector2(25, 30)
+
+[node name="PatrolEnemyDeadUp" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_fxpsx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 12.5)
+shape = SubResource("RectangleShape2D_haro7")
+debug_color = Color(1.347661e-06, 0.5611593, 0.8838623, 0.41960785)
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 27)
+scale = Vector2(-1.1582758, 1.328125)
+sprite_frames = SubResource("SpriteFrames_po0sg")
+animation = &"Run"
+frame_progress = 0.7958255
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 16
+
+[node name="DamageColider" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.5, 16)
+shape = SubResource("RectangleShape2D_1f0kj")
+debug_color = Color(0.93337053, 2.2140146e-05, 0.6469917, 0.41960785)
+
+[node name="Ray" type="Node2D" parent="."]
+
+[node name="RightRay" type="RayCast2D" parent="Ray"]
+target_position = Vector2(70, 0)
+
+[node name="Timer" type="Timer" parent="Ray/RightRay"]
+wait_time = 0.4
+
+[node name="LeftRay" type="RayCast2D" parent="Ray"]
+target_position = Vector2(-70, 0)
+
+[node name="Floor" type="RayCast2D" parent="."]
+position = Vector2(16, -10)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

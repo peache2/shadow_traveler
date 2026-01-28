@@ -12,7 +12,7 @@
 script/source = "extends CharacterBody2D
 
 @export var speed = 170
-@export var jump = -500
+@export var jump = -300
 @export var bullet_node: PackedScene
 @export var atacar = false
 @onready var animated_sprite_2d = $AnimatedSprite2D
@@ -102,6 +102,9 @@ func _physics_process(delta):
 
 
 	
+	
+
+
 	
 "
 
@@ -353,6 +356,8 @@ scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_pjt0s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.7517818, 0.84415275, 0.9656189, 1)
+self_modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
 position = Vector2(-1.754386, 6.3157897)
 scale = Vector2(0.5027778, 0.57343745)
 sprite_frames = SubResource("SpriteFrames_qi5as")
