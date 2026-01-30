@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://df3l8orlk0kgk"]
+[gd_scene format=3 uid="uid://df3l8orlk0kgk"]
 
 [ext_resource type="Texture2D" uid="uid://gabehqhoa7l8" path="res://Sprites/Character/Attack 1.png" id="1_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://bydd40ntbcxx3" path="res://Sprites/Character/Fall.png" id="2_1jxqw"]
@@ -11,8 +11,8 @@
 [sub_resource type="GDScript" id="GDScript_pjt0s"]
 script/source = "extends CharacterBody2D
 
-@export var speed = 170
-@export var jump = -300
+@export var speed = 150
+@export var jump = -330
 @export var bullet_node: PackedScene
 @export var atacar = false
 @onready var animated_sprite_2d = $AnimatedSprite2D
@@ -345,17 +345,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
 size = Vector2(9.4000025, 14.800003)
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" unique_id=219804308]
 scale = Vector2(2.85, 2.85)
 collision_layer = 16
 script = SubResource("GDScript_pjt0s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=22297901]
 position = Vector2(-1.8, 3.3999999)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_pjt0s")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1482148384]
 modulate = Color(0.7517818, 0.84415275, 0.9656189, 1)
 self_modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
 position = Vector2(-1.754386, 6.3157897)
@@ -364,19 +364,19 @@ sprite_frames = SubResource("SpriteFrames_qi5as")
 animation = &"Idle"
 autoplay = "Idle"
 
-[node name="SwordCollision" type="Area2D" parent="."]
+[node name="SwordCollision" type="Area2D" parent="." unique_id=2001388625]
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("3_i3pqv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordCollision"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordCollision" unique_id=576597794]
 position = Vector2(6.8999996, 3.3999991)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_hqtel")
 disabled = true
 debug_color = Color(0.5680971, 0.9732383, 1.540184e-06, 0.41960785)
 
-[node name="CrisisFight" type="AudioStreamPlayer" parent="."]
+[node name="CrisisFight" type="AudioStreamPlayer" parent="." unique_id=1789248048]
 stream = ExtResource("7_1jxqw")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

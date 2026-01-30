@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://c8kkoalfhhgjj"]
+[gd_scene format=3 uid="uid://c8kkoalfhhgjj"]
 
 [ext_resource type="Script" uid="uid://blqfris6x47ak" path="res://boss.gd" id="1_kles1"]
 [ext_resource type="Texture2D" uid="uid://dtjcn2g5qulac" path="res://Sprites/Enemy/Executioner/Anims/attacking.png" id="1_o1i15"]
@@ -718,39 +718,39 @@ height = 49.69
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we8h1"]
 size = Vector2(60, 60)
 
-[node name="boss" type="CharacterBody2D"]
-collision_layer = 2
-collision_mask = 0
+[node name="boss" type="CharacterBody2D" unique_id=1293883826]
+scale = Vector2(1.25, 1.25)
+collision_layer = 0
+collision_mask = 2
 slide_on_ceiling = false
 script = ExtResource("1_kles1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=651253059]
 position = Vector2(-1.4999971, -3)
 sprite_frames = SubResource("SpriteFrames_ein1h")
 animation = &"Idle"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=954101749]
 root_node = NodePath("../AnimatedSprite2D")
-libraries = {
-&"": SubResource("AnimationLibrary_2rput")
-}
-autoplay = "idle"
+libraries/ = SubResource("AnimationLibrary_2rput")
+autoplay = &"idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2143649280]
 position = Vector2(-6, 0)
 shape = SubResource("CapsuleShape2D_o1i15")
 
-[node name="PlayerDetect" type="Area2D" parent="."]
-collision_layer = 0
+[node name="PlayerDetect" type="Area2D" parent="." unique_id=1644755419]
+scale = Vector2(1.5, 1.5)
+collision_layer = 2
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect"]
-position = Vector2(-5, -1.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect" unique_id=1064045861]
 shape = SubResource("RectangleShape2D_we8h1")
 debug_color = Color(0.9822305, 0, 0.36822537, 0.41960785)
 
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="UI" type="CanvasLayer" parent="." unique_id=1539084687]
 
-[node name="ProgressBar" type="ProgressBar" parent="UI"]
+[node name="ProgressBar" type="ProgressBar" parent="UI" unique_id=1294851932]
 modulate = Color(0.5465015, 0.0039540376, 0.9918929, 1)
 custom_minimum_size = Vector2(200, 0)
 anchors_preset = 7
@@ -767,7 +767,7 @@ grow_vertical = 0
 step = 0.001
 value = 100.0
 
-[node name="Label" type="Label" parent="UI/ProgressBar"]
+[node name="Label" type="Label" parent="UI/ProgressBar" unique_id=28962721]
 visible = false
 layout_mode = 0
 offset_left = 1.0
@@ -778,7 +778,7 @@ theme_override_font_sizes/font_size = 15
 text = "EXECUTIONER"
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="UI"]
+[node name="Label" type="Label" parent="UI" unique_id=2110003645]
 self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 8
 anchor_left = 0.5
@@ -794,12 +794,12 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 40
 text = "DEAD"
 
-[node name="Logo" type="Sprite2D" parent="UI"]
+[node name="Logo" type="Sprite2D" parent="UI" unique_id=89763163]
 position = Vector2(938, 52)
 scale = Vector2(1.5701524, 1.5124999)
 texture = ExtResource("7_lc4na")
 
-[node name="debug" type="Label" parent="."]
+[node name="debug" type="Label" parent="." unique_id=1718387581]
 visible = false
 offset_left = -25.0
 offset_top = -47.0
@@ -810,29 +810,29 @@ text = "debug"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="FiniteStateMachine" type="Node2D" parent="."]
+[node name="FiniteStateMachine" type="Node2D" parent="." unique_id=1017405275]
 script = ExtResource("6_kvofc")
 
-[node name="Idle" type="Node2D" parent="FiniteStateMachine"]
+[node name="Idle" type="Node2D" parent="FiniteStateMachine" unique_id=664720836]
 script = ExtResource("7_ry61v")
 
-[node name="Follow" type="Node2D" parent="FiniteStateMachine"]
+[node name="Follow" type="Node2D" parent="FiniteStateMachine" unique_id=1657863105]
 script = ExtResource("9_etj48")
 
-[node name="Attack" type="Node2D" parent="FiniteStateMachine"]
+[node name="Attack" type="Node2D" parent="FiniteStateMachine" unique_id=1092920663]
 script = ExtResource("10_etj48")
 
-[node name="Teleport" type="Node2D" parent="FiniteStateMachine"]
+[node name="Teleport" type="Node2D" parent="FiniteStateMachine" unique_id=901927426]
 script = ExtResource("11_h3lj5")
 
-[node name="SpawnMinion" type="Node2D" parent="FiniteStateMachine"]
+[node name="SpawnMinion" type="Node2D" parent="FiniteStateMachine" unique_id=1598703379]
 script = ExtResource("12_km2bi")
 minion_node = ExtResource("13_u0duv")
 
-[node name="Death" type="Node2D" parent="FiniteStateMachine"]
+[node name="Death" type="Node2D" parent="FiniteStateMachine" unique_id=936692412]
 script = ExtResource("14_km2bi")
 
-[node name="Knockout" type="AudioStreamPlayer" parent="."]
+[node name="Knockout" type="AudioStreamPlayer" parent="." unique_id=1348797406]
 stream = ExtResource("15_u0duv")
 
 [connection signal="body_entered" from="PlayerDetect" to="FiniteStateMachine/Idle" method="_on_player_detect_body_entered"]

@@ -1,12 +1,12 @@
 extends CharacterBody2D
 
-const enemyrun = 80
+const enemyrun = 40
 const gravedad = 98
 
 var jugador_en_area: Node2D = null
 
 @onready var area: Area2D = $Area2D
-@onready var timer: Timer = $Ray/RightRay/Timer
+@onready var timer: Timer = $Timer
 @onready var sprite: AnimatedSprite2D = $Sprite
 @onready var ray_suelo: RayCast2D = $Floor
 
