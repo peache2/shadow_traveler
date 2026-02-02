@@ -1,9 +1,2 @@
-res://PatrolEnemy.tscn
-res://PatrolEnemy.gd
 res://1rtBoss.tscn
-res://PatrolEnemyHeadLow.tscn
-res://player.tscn
-res://boss1.tscn
-res://boss.gd
-res://boss.tscn
-res://follow.gd
+res://PatrolEnemy.gd
