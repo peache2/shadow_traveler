@@ -1,3 +1,5 @@
+
+	 
 extends State
  
 func enter():
@@ -17,5 +19,5 @@ func combo():
 	combo()
  
 func transition():
-	if owner.direction.length() > 100:
+	if owner.direction.length() > 40:
 		get_parent().change_state("Follow")

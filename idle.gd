@@ -1,19 +1,24 @@
 extends State
  
-@onready var collision = $"../../PlayerDetect/CollisionShape2D"
-@onready var progress_bar = owner.find_child("ProgressBar")
+func _enter_tree():
+	randomize()
  
+func enter():
+	super.enter()
+	owner.set_physics_process(true)
+	animation_player.play("idle")
  
-var player_entered: bool = false:
-	set(value):
-		player_entered = value
-		collision.set_deferred("disabled", value)
-		progress_bar.set_deferred("visible",value)
- 
- 
-func _on_player_detect_body_entered(_body: Node2D) -> void:
-	player_entered = true
+func exit():
+	super.exit()
+	owner.set_physics_process(false)
  
 func transition():
-	if player_entered:
-		get_parent().change_state("Follow")
+	if owner.direction.length() < 40:
+		get_parent().change_state("Attack")
+	if owner.direction.length() > 150:
+		var chance = randi() % 2
+		match chance:
+			0:
+				get_parent().change_state("SpawnMinion")
+			1:
+				get_parent().change_state("Teleport")

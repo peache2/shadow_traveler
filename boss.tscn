@@ -716,12 +716,11 @@ _data = {
 height = 49.69
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_we8h1"]
-size = Vector2(60, 60)
+size = Vector2(59.61, 60)
 
 [node name="boss" type="CharacterBody2D" unique_id=1293883826]
-scale = Vector2(1.25, 1.25)
-collision_layer = 0
-collision_mask = 2
+scale = Vector2(1.5, 1.5)
+collision_mask = 16
 slide_on_ceiling = false
 script = ExtResource("1_kles1")
 
