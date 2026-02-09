@@ -9,7 +9,6 @@
 [ext_resource type="AudioStream" uid="uid://b07ujxx448spf" path="res://Sounds/CrisisFight.mp3" id="4_tydh1"]
 [ext_resource type="PackedScene" uid="uid://1qqmngll3bi6" path="res://PatrolEnemy.tscn" id="5_ge541"]
 [ext_resource type="PackedScene" uid="uid://dcke5h3hknyo0" path="res://PatrolEnemyHeadLow.tscn" id="7_6x6lj"]
-[ext_resource type="AudioStream" uid="uid://ctxuaki2t6avq" path="res://Sounds/menu.wav" id="10_5c2kb"]
 [ext_resource type="AudioStream" uid="uid://dgoq3yncmvme6" path="res://Sounds/test.mp3" id="11_bgurh"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cbp6q"]
@@ -1187,23 +1186,10 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_umc6r")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ge541"]
-size = Vector2(61, 12)
+size = Vector2(61, 47)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ex1y1"]
 size = Vector2(1, 25)
-
-[sub_resource type="Environment" id="Environment_afcoj"]
-background_mode = 3
-ambient_light_color = Color(0.54742754, 0.9533468, 0.9945279, 1)
-tonemap_mode = 2
-tonemap_white = 0.87
-glow_enabled = true
-glow_intensity = 1.31
-glow_bloom = 0.2
-fog_light_color = Color(1, 1, 1, 1)
-volumetric_fog_enabled = true
-volumetric_fog_density = 1.15
-volumetric_fog_emission = Color(0, 1, 1, 1)
 
 [node name="World" type="Node2D" unique_id=2117897544]
 script = ExtResource("1_ex1y1")
@@ -1252,7 +1238,7 @@ texture = ExtResource("1_ge541")
 flip_v = true
 
 [node name="player" parent="." unique_id=1829882282 instance=ExtResource("2_ge541")]
-position = Vector2(-1236.0001, 1066)
+position = Vector2(-1236, 1055)
 scale = Vector2(2.365, 2.365)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1596015408]
@@ -1305,7 +1291,7 @@ position = Vector2(-1294, 480)
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Zone2" unique_id=133228041]
-position = Vector2(-5, 24)
+position = Vector2(-5, 6.5)
 shape = SubResource("RectangleShape2D_ge541")
 
 [node name="Zone1" type="Area2D" parent="." unique_id=1727042977]
@@ -1335,14 +1321,6 @@ scale = Vector2(1.215, 1.215)
 [node name="PatrolEnemyHead2" parent="." unique_id=1563137434 instance=ExtResource("7_6x6lj")]
 position = Vector2(-1255.0001, 486)
 scale = Vector2(1.215, 1.215)
-
-[node name="Menu" type="AudioStreamPlayer" parent="." unique_id=1074181782]
-stream = ExtResource("10_5c2kb")
-volume_db = 8.667
-autoplay = true
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Menu" unique_id=174904742]
-environment = SubResource("Environment_afcoj")
 
 [node name="Test" type="AudioStreamPlayer" parent="." unique_id=1055374696]
 stream = ExtResource("11_bgurh")

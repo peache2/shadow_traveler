@@ -361,8 +361,10 @@ self_modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
 position = Vector2(-1.754386, 6.3157897)
 scale = Vector2(0.5027778, 0.57343745)
 sprite_frames = SubResource("SpriteFrames_qi5as")
-animation = &"Idle"
+animation = &"Jump"
 autoplay = "Idle"
+frame = 1
+frame_progress = 0.13899964
 
 [node name="SwordCollision" type="Area2D" parent="." unique_id=2001388625]
 collision_layer = 0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dppbq762vrhbp"]
+[gd_scene format=3 uid="uid://dppbq762vrhbp"]
 
 [ext_resource type="Script" uid="uid://yhdrl31w6crk" path="res://pantalla_de_carga.gd" id="1_35hou"]
 [ext_resource type="Texture2D" uid="uid://dvatftj2kc5cs" path="res://photos/loadingpng/frame_00_delay-0.05s.png" id="2_81dn8"]
@@ -108,20 +108,20 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="pantalla_de_carga" type="Node2D"]
+[node name="pantalla_de_carga" type="Node2D" unique_id=789827988]
 script = ExtResource("1_35hou")
 
-[node name="BlackScreen" type="Sprite2D" parent="."]
+[node name="BlackScreen" type="Sprite2D" parent="." unique_id=306797629]
 modulate = Color(0, 0, 0, 1)
 position = Vector2(577.75, 324.25)
 scale = Vector2(1156.5, 649.5)
 texture = SubResource("PlaceholderTexture2D_5x53v")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=2032070980]
 wait_time = 3.0
 autostart = true
 
-[node name="ChargeIcon" type="AnimatedSprite2D" parent="."]
+[node name="ChargeIcon" type="AnimatedSprite2D" parent="." unique_id=144754473]
 position = Vector2(1111, 606)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_qiomu")
