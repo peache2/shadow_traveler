@@ -1,3 +1,9 @@
+ParallaxBackground
+CanvasLayer
+CollisionShape2D
+ShapeCast2D
+Area2D
+StaticBody2D
 PointLight2D
 AnimatedSprite2D
 TileMapLayer
@@ -5,10 +11,5 @@ TileMap
 RayCast2D
 DirectionalLight2D
 WorldEnvironment
-CollisionShape2D
-StaticBody2D
-Area2D
 Label
 Timer
-SpotLight3D
-Sprite2D

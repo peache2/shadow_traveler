@@ -3,10 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://gabehqhoa7l8" path="res://Sprites/Character/Attack 1.png" id="1_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://bydd40ntbcxx3" path="res://Sprites/Character/Fall.png" id="2_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://c3pw10btdtnsi" path="res://Sprites/Character/idle.png" id="3_dw050"]
-[ext_resource type="Script" uid="uid://br4od2nncfi0q" path="res://sword_collision.gd" id="3_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://dbal8a3ywlxv6" path="res://Sprites/Character/Jump.png" id="4_b26j0"]
 [ext_resource type="Texture2D" uid="uid://dpp5iwrxo2fgg" path="res://Sprites/Character/Run.png" id="5_n7ghd"]
 [ext_resource type="AudioStream" uid="uid://b07ujxx448spf" path="res://Sounds/CrisisFight.mp3" id="7_1jxqw"]
+[ext_resource type="Script" uid="uid://cplhrfj5nxnbo" path="res://ui.gd" id="7_b26j0"]
+[ext_resource type="Texture2D" uid="uid://cywgpwpgyarp4" path="res://Sprites/Enemy/Executioner/LOGO.png" id="7_dw050"]
 
 [sub_resource type="GDScript" id="GDScript_pjt0s"]
 script/source = "extends CharacterBody2D
@@ -16,9 +17,8 @@ script/source = "extends CharacterBody2D
 @export var bullet_node: PackedScene
 @export var atacar = false
 @onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var sword_collision = $SwordCollision/CollisionShape2D
 @export var look_l: bool = true
-
+var health : int = 100
 
 
 func _ready() -> void:
@@ -28,30 +28,6 @@ func _ready() -> void:
 
 var jump_count = 0
 var gravity = 950
-
-func _process(_delta):
-
-	# DETECTAR ATAQUE
-	if Input.is_action_just_pressed(\"Attack\") and not atacar:
-		attack()
-
-	if atacar:
-		var total_frames = animated_sprite_2d.sprite_frames.get_frame_count(\"Attack\")
-		var last_frame = total_frames - 1
-		
-		if animated_sprite_2d.animation == \"Attack\" \\
-		and animated_sprite_2d.frame == last_frame \\
-		and not animated_sprite_2d.is_playing():
-			atacar = false
-			sword_collision.disabled = true
-
-
-func attack():
-	atacar = true
-	velocity.x = 0  
-	animated_sprite_2d.play(\"Attack\")
-	sword_collision.disabled = false
-
 
 func _physics_process(delta):
 
@@ -96,6 +72,9 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 
+
+	# VIDA
+		
 	move_and_slide()
 
 
@@ -108,8 +87,9 @@ func _physics_process(delta):
 	
 "
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
-size = Vector2(7.6000004, 14.800003)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dw050"]
+radius = 3.157896
+height = 10.175441
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_urp6f"]
 atlas = ExtResource("1_2hs0m")
@@ -342,18 +322,16 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(9.4000025, 14.800003)
-
-[node name="player" type="CharacterBody2D" unique_id=219804308]
+[node name="player" type="CharacterBody2D" unique_id=219804308 groups=["enemy"]]
 scale = Vector2(2.85, 2.85)
 collision_layer = 16
 script = SubResource("GDScript_pjt0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=22297901]
-position = Vector2(-1.8, 3.3999999)
-scale = Vector2(0.99999976, 0.99999976)
-shape = SubResource("RectangleShape2D_pjt0s")
+visible = false
+position = Vector2(-1.7543861, 5.7894745)
+scale = Vector2(0.99999964, 0.99999964)
+shape = SubResource("CapsuleShape2D_dw050")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1482148384]
 modulate = Color(0.7517818, 0.84415275, 0.9656189, 1)
@@ -361,26 +339,73 @@ self_modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
 position = Vector2(-1.754386, 6.3157897)
 scale = Vector2(0.5027778, 0.57343745)
 sprite_frames = SubResource("SpriteFrames_qi5as")
-animation = &"Jump"
+animation = &"Idle"
 autoplay = "Idle"
-frame = 1
-frame_progress = 0.13899964
-
-[node name="SwordCollision" type="Area2D" parent="." unique_id=2001388625]
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("3_i3pqv")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordCollision" unique_id=576597794]
-position = Vector2(6.8999996, 3.3999991)
-scale = Vector2(0.99999976, 0.99999976)
-shape = SubResource("RectangleShape2D_hqtel")
-disabled = true
-debug_color = Color(0.5680971, 0.9732383, 1.540184e-06, 0.41960785)
 
 [node name="CrisisFight" type="AudioStreamPlayer" parent="." unique_id=1789248048]
 stream = ExtResource("7_1jxqw")
 
+[node name="UI" type="CanvasLayer" parent="." unique_id=853232797]
+script = ExtResource("7_b26j0")
+
+[node name="ProgressBar" type="ProgressBar" parent="UI" unique_id=212972668]
+modulate = Color(0.5465015, 0.0039540376, 0.9918929, 1)
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 352.0
+offset_top = -626.0
+offset_right = 552.0
+offset_bottom = -599.0
+grow_horizontal = 2
+grow_vertical = 0
+step = 0.001
+value = 100.0
+
+[node name="Label" type="Label" parent="UI/ProgressBar" unique_id=1799077357]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = -19.0
+offset_right = 103.0
+offset_bottom = 4.0
+theme_override_font_sizes/font_size = 15
+text = "EXECUTIONER"
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="UI" unique_id=1819143780]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "DEAD"
+
+[node name="Logo" type="Sprite2D" parent="UI" unique_id=1562202786]
+position = Vector2(938, 52)
+scale = Vector2(1.5701524, 1.5124999)
+texture = ExtResource("7_dw050")
+
+[node name="debug" type="Label" parent="." unique_id=1426903579]
+visible = false
+offset_left = -25.0
+offset_top = -47.0
+offset_right = 14.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 11
+text = "debug"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="SwordCollision" to="SwordCollision" method="_on_body_entered"]
-[connection signal="body_exited" from="SwordCollision" to="SwordCollision" method="_on_body_exited"]
