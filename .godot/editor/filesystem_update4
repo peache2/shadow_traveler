@@ -1,5 +1,3 @@
-res://player.tscn
 res://SoulWorld.tscn
-res://menu_principal.tscn
-res://pantalla_de_carga.tscn
-res://pantalla_de_carga.gd
+res://MiniPatrolEnemy.tscn
+res://1_rt_boss.gd

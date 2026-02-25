@@ -1,3 +1,7 @@
+Sprite2D
+Timer
+AnimatedSprite2D
+DirectionalLight2D
 ParallaxBackground
 CanvasLayer
 CollisionShape2D
@@ -5,11 +9,7 @@ ShapeCast2D
 Area2D
 StaticBody2D
 PointLight2D
-AnimatedSprite2D
 TileMapLayer
 TileMap
 RayCast2D
-DirectionalLight2D
 WorldEnvironment
-Label
-Timer

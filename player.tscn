@@ -324,11 +324,10 @@ animations = [{
 
 [node name="player" type="CharacterBody2D" unique_id=219804308 groups=["enemy"]]
 scale = Vector2(2.85, 2.85)
-collision_layer = 16
+collision_layer = 144
 script = SubResource("GDScript_pjt0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=22297901]
-visible = false
 position = Vector2(-1.7543861, 5.7894745)
 scale = Vector2(0.99999964, 0.99999964)
 shape = SubResource("CapsuleShape2D_dw050")
@@ -336,8 +335,8 @@ shape = SubResource("CapsuleShape2D_dw050")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1482148384]
 modulate = Color(0.7517818, 0.84415275, 0.9656189, 1)
 self_modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
-position = Vector2(-1.754386, 6.3157897)
-scale = Vector2(0.5027778, 0.57343745)
+position = Vector2(-1.7543858, 7.0175447)
+scale = Vector2(0.45, 0.48)
 sprite_frames = SubResource("SpriteFrames_qi5as")
 animation = &"Idle"
 autoplay = "Idle"

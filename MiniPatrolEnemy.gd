@@ -33,3 +33,8 @@ func _physics_process(_delta):
 		ray_suelo.position.x = 8
 
 	move_and_slide()
+	
+
+
+func _on_area_2d_body_entered(_body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://SoulWorld.tscn")
