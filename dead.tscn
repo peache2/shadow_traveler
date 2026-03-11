@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ca0nrgjd2gjqu"]
+
+[ext_resource type="Script" uid="uid://d237ir3srl6ne" path="res://dead.gd" id="1_unegr"]
+[ext_resource type="Texture2D" uid="uid://r1q2bckqihxf" path="res://Sprites/Character/deadcharacter.png" id="2_vrggy"]
+[ext_resource type="AudioStream" uid="uid://djy470yypba5q" path="res://Sounds/gameover.mp3" id="3_vrggy"]
+
+[sub_resource type="SystemFont" id="SystemFont_vrggy"]
+font_italic = true
+
+[sub_resource type="FontVariation" id="FontVariation_nihps"]
+base_font = SubResource("SystemFont_vrggy")
+
+[node name="Dead" type="Node2D" unique_id=1875001089]
+script = ExtResource("1_unegr")
+
+[node name="Deadcharacter" type="Sprite2D" parent="." unique_id=1798165072]
+position = Vector2(577, 326.5)
+scale = Vector2(0.75130206, 0.6376954)
+texture = ExtResource("2_vrggy")
+
+[node name="Timer" type="Timer" parent="." unique_id=496865101]
+wait_time = 3.0
+autostart = true
+
+[node name="Gameover" type="AudioStreamPlayer" parent="." unique_id=1528359315]
+stream = ExtResource("3_vrggy")
+autoplay = true
+
+[node name="Label" type="Label" parent="." unique_id=1754313191]
+offset_left = 289.0
+offset_top = 302.0
+offset_right = 827.0
+offset_bottom = 431.0
+theme_override_fonts/font = SubResource("FontVariation_nihps")
+theme_override_font_sizes/font_size = 94
+text = "GAME OVER"
+
+[node name="TextEdit" type="TextEdit" parent="Label" unique_id=1539770377]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

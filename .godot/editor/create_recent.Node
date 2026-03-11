@@ -1,5 +1,7 @@
-Sprite2D
+Label
+TextEdit
 Timer
+Sprite2D
 AnimatedSprite2D
 DirectionalLight2D
 ParallaxBackground
@@ -11,5 +13,3 @@ StaticBody2D
 PointLight2D
 TileMapLayer
 TileMap
-RayCast2D
-WorldEnvironment
