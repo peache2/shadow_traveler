@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773225809
+::res://::1773834202
 1_rt_boss.gd::GDScript::1300447162116051377::1772020471::0::1::::<>Node2D<><>0<>0<><>::
 attack.gd::GDScript::3305558568591789841::1770720545::0::1::::<>State<><>0<>0<><>::
 boss.gd::GDScript::3191862400670320578::1770720545::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -8,14 +8,14 @@ boss_zone.gd::GDScript::806444797099167199::1770720545::0::1::::<>Area2D<><>0<>0
 bullet.gd::GDScript::5553383051957979148::1770720545::0::1::::<>Area2D<><>0<>0<><>::
 bullet.tscn::PackedScene::4099480423462542446::1770720545::0::1::::<><><>0<>0<><>::uid://cledn4cvm46ce::::res://bullet.gd
 dead.gd::GDScript::9114121573532117346::1773049736::0::1::::<>Node2D<><>0<>0<><>::
-dead.tscn::PackedScene::4825270819856018520::1773050304::0::1::::<><><>0<>0<><>::uid://d237ir3srl6ne::::res://dead.gd<>uid://r1q2bckqihxf::::res://Sprites/Character/deadcharacter.png<>uid://djy470yypba5q::::res://Sounds/gameover.mp3
+dead.tscn::PackedScene::4825270819856018520::1773833553::0::1::::<><><>0<>0<><>::uid://d237ir3srl6ne::::res://dead.gd<>uid://r1q2bckqihxf::::res://Sprites/Character/deadcharacter.png<>uid://djy470yypba5q::::res://Sounds/gameover.mp3<>uid://dhisoryfcfmwj::::res://fonts/trajan-pro/TrajanPro-Bold.otf
 death.gd::GDScript::6705994757132116899::1770720545::0::1::::<>State<><>0<>0<><>::
 finite_state_machine.gd::GDScript::7000239887152193749::1770720545::0::1::::<>Node2D<><>0<>0<><>::
 follow.gd::GDScript::5554390158618075412::1770720545::0::1::::<>State<><>0<>0<><>::
 icon.svg::CompressedTexture2D::7559548607474439773::1772017525::1772017567::1::::<><><>0<>0<>fc42611d8242a9cddd08f4b723e9156f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 idle.gd::GDScript::6720621261655881719::1770720545::0::1::::<>State<><>0<>0<><>::
 menu_principal.gd::GDScript::8250021544518042455::1770720545::0::1::::<>Node2D<><>0<>0<><>::
-menu_principal.tscn::PackedScene::9217589606776973890::1771413543::0::1::::<><><>0<>0<><>::uid://dpsmwc20r1x3d::::res://menu_principal.gd<>uid://fifryl3y30en::::res://photos/menunew.png<>uid://dhisoryfcfmwj::::res://fonts/trajan-pro/TrajanPro-Bold.otf<>uid://ctxuaki2t6avq::::res://Sounds/menu.wav<>uid://bvebsiw1yrfdp::::res://Sounds/clicknewgame.wav
+menu_principal.tscn::PackedScene::9217589606776973890::1773833457::0::1::::<><><>0<>0<><>::uid://dpsmwc20r1x3d::::res://menu_principal.gd<>uid://fifryl3y30en::::res://photos/menunew.png<>uid://dhisoryfcfmwj::::res://fonts/trajan-pro/TrajanPro-Bold.otf<>uid://ctxuaki2t6avq::::res://Sounds/menu.wav<>uid://bvebsiw1yrfdp::::res://Sounds/clicknewgame.wav
 minion.gd::GDScript::1487647055088517993::1770720545::0::1::::<>CharacterBody2D<><>0<>0<><>::
 minion.tscn::PackedScene::4024866803410891588::1770720545::0::1::::<><><>0<>0<><>::uid://vgvlhcskekb6::::res://minion.gd<>uid://egj1b2ndo84f::::res://Sprites/Executioner/Anims/summonAppear.png<>uid://b02kub7onfdbc::::res://Sprites/Executioner/Anims/summonIdle.png
 MiniPatrolEnemy.gd::GDScript::6610571547292543832::1773049736::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -27,9 +27,9 @@ PatrolEnemy.tscn::PackedScene::1858933572652890275::1771935621::0::1::::<><><>0<
 PatrolEnemyHead.gd::GDScript::204610152347190848::1773049736::0::1::::<>CharacterBody2D<><>0<>0<><>::
 PatrolEnemyHeadLow.tscn::PackedScene::7320580368934103613::1771935736::0::1::::<><><>0<>0<><>::uid://c6d5tuxljpfc::::res://PatrolEnemyHead.gd<>uid://csmt30fuyv8hp::::res://Sprites/Enemy/flying-head.png
 PatrolEnemyHeadUp.tscn::PackedScene::8388063160316503848::1770720545::0::1::::<><><>0<>0<><>::uid://c6d5tuxljpfc::::res://PatrolEnemyHead.gd<>uid://csmt30fuyv8hp::::res://Sprites/Enemy/flying-head.png
-player.tscn::PackedScene::7568736426605155974::1771935621::0::1::::<><><>0<>0<><>::uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://b07ujxx448spf::::res://Sounds/CrisisFight.mp3<>uid://cplhrfj5nxnbo::::res://ui.gd<>uid://cywgpwpgyarp4::::res://Sprites/Enemy/Executioner/LOGO.png
+player.tscn::PackedScene::7568736426605155974::1773225880::0::1::::<><><>0<>0<><>::uid://gabehqhoa7l8::::res://Sprites/Character/Attack 1.png<>uid://bydd40ntbcxx3::::res://Sprites/Character/Fall.png<>uid://c3pw10btdtnsi::::res://Sprites/Character/idle.png<>uid://dbal8a3ywlxv6::::res://Sprites/Character/Jump.png<>uid://dpp5iwrxo2fgg::::res://Sprites/Character/Run.png<>uid://b07ujxx448spf::::res://Sounds/CrisisFight.mp3<>uid://cplhrfj5nxnbo::::res://ui.gd<>uid://cywgpwpgyarp4::::res://Sprites/Enemy/Executioner/LOGO.png
 README.md::TextFile::-1::1770720545::0::1::::<><><>0<>0<><>::
-SoulWorld.tscn::PackedScene::1991983494557933706::1773049154::0::1::::<><><>0<>0<><>::uid://sr7f7a4hfpyn::::res://1_rt_boss.gd<>uid://cbnj5ywyxgnqq::::res://Tilemap/PixelFantasy_Caves_1.0/background4b.png<>uid://df3l8orlk0kgk::::res://player.tscn<>uid://ky4bw5vwqco0::::res://Tilemap/PixelFantasy_Caves_1.0/mainlev_build.png<>uid://b07ujxx448spf::::res://Sounds/CrisisFight.mp3<>uid://1qqmngll3bi6::::res://PatrolEnemy.tscn<>uid://dcke5h3hknyo0::::res://PatrolEnemyHeadLow.tscn<>uid://dgoq3yncmvme6::::res://Sounds/test.mp3<>uid://capb7515yj4wg::::res://Tilemap/PixelFantasy_Caves_1.0/background4a.png<>uid://t8ehdreit5sx::::res://MiniPatrolEnemy.tscn<>uid://cvkg3xjh1ae6d::::res://Sprites/letters.png
+SoulWorld.tscn::PackedScene::1991983494557933706::1773833664::0::1::::<><><>0<>0<><>::uid://sr7f7a4hfpyn::::res://1_rt_boss.gd<>uid://cbnj5ywyxgnqq::::res://Tilemap/PixelFantasy_Caves_1.0/background4b.png<>uid://df3l8orlk0kgk::::res://player.tscn<>uid://ky4bw5vwqco0::::res://Tilemap/PixelFantasy_Caves_1.0/mainlev_build.png<>uid://b07ujxx448spf::::res://Sounds/CrisisFight.mp3<>uid://1qqmngll3bi6::::res://PatrolEnemy.tscn<>uid://dcke5h3hknyo0::::res://PatrolEnemyHeadLow.tscn<>uid://dgoq3yncmvme6::::res://Sounds/test.mp3<>uid://capb7515yj4wg::::res://Tilemap/PixelFantasy_Caves_1.0/background4a.png<>uid://t8ehdreit5sx::::res://MiniPatrolEnemy.tscn<>uid://cvkg3xjh1ae6d::::res://Sprites/letters.png
 spawn_minion.gd::GDScript::131674988052430543::1770720545::0::1::::<>State<><>0<>0<><>::
 sword_collision.gd::GDScript::3640354814494281386::1770720545::0::1::::<>Area2D<><>0<>0<><>::
 teleport.gd::GDScript::6892420257344940060::1770720545::0::1::::<>State<><>0<>0<><>::
@@ -86,6 +86,20 @@ frame_20_delay-0.05s.png::CompressedTexture2D::931770919663478740::1770720545::1
 frame_21_delay-0.05s.png::CompressedTexture2D::975880924282880807::1770720545::1770720545::1::::<><><>0<>0<>440fec0b1c0e4705b6ce2fed982ef92d<>res://.godot/imported/frame_21_delay-0.05s.png-e4bbd489bb4472dcbf5024473ab26883.ctex::
 frame_22_delay-0.05s.png::CompressedTexture2D::5109077401867440677::1770720545::1770720545::1::::<><><>0<>0<>24a1c2db02c56f4a45da4a51336f29f1<>res://.godot/imported/frame_22_delay-0.05s.png-c20d40aeb0ba0492ed3c57a5a68a7286.ctex::
 frame_23_delay-0.05s.png::CompressedTexture2D::6736123872376710976::1770720545::1770720545::1::::<><><>0<>0<>4d7eb0e48133397c1925643e68e94b36<>res://.godot/imported/frame_23_delay-0.05s.png-bf52eec31f5eb029133cea64780e7d6b.ctex::
+::res://Shader/::1773834170
+::res://SHADERS/::1773834200
+::res://SHADERS/addons/::1725278817
+::res://SHADERS/addons/crt_shader/::1725313216
+CRTFrame.png::CompressedTexture2D::4668592702206978995::1725278817::1773834204::1::::<><><>0<>0<>2ed9304f92dfab3a53fcabf46f92fffe<>res://.godot/imported/CRTFrame.png-6a9e60e624c5b922eed066d2277f1834.ctex::
+CRTShader.gdshader::Shader::2083076191225248062::1725313216::0::1::::<><><>0<>0<><>::
+crt_screen.gd::GDScript::8622156510823166125::1725312744::0::1::::<>ColorRect<><>0<>1<><>::
+crt_shader.gd::GDScript::2752805772543143684::1725313163::0::1::::<>EditorPlugin<><>0<>1<><>::
+icon.png::CompressedTexture2D::7051253944144066780::1725313125::1773834204::1::::<><><>0<>0<>4ecbdb9dad256b3bcf7ebccce1fbd235<>res://.godot/imported/icon.png-d8c1e3dc833a80675e765b9a564b24a9.ctex::
+plugin.cfg::TextFile::-1::1725278817::0::1::::<><><>0<>0<><>::
+ShaderScreen.material::ShaderMaterial::6424236798359683919::1725313216::0::1::::<><><>0<>0<><>::res://addons/crt_shader/CRTShader.gdshader
+::res://SHADERS/samples/::1725307805
+sample.png::CompressedTexture2D::2210359191053546519::1725278817::1773834204::1::::<><><>0<>0<>963760537e67c45d7142dc5cc6eceaea<>res://.godot/imported/sample.png-eb2882dbcb711f1165f241cb242e7e9d.ctex::
+withshader.png::CompressedTexture2D::8532721259185812781::1725278817::1773834204::1::::<><><>0<>0<>83237d2e4dc06924be2aaeaff6d1a7f1<>res://.godot/imported/withshader.png-fc33887f313d65b2788c480c5e772ef8.ctex::
 ::res://Sounds/::1773049967
 clicknewgame.wav::AudioStreamWAV::3868737227777640273::1770720545::1770720545::1::::<><><>0<>0<>6d55e6c6b18bb45a7bcf88a3e13901d4<>res://.godot/imported/clicknewgame.wav-ff13a14a5890295987192b27b0cf71ce.sample::
 CrisisFight.mp3::AudioStreamMP3::4208433519699551107::1770720545::1770720545::1::::<><><>0<>0<>3c43f2b7322441325c1cbafcfb8b775c<>res://.godot/imported/CrisisFight.mp3-a185c0929c940ac2690f6eaadf39cb90.mp3str::
