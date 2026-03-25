@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://n5yu7m5kwvyt" path="res://photos/loadingpng/frame_21_delay-0.05s.png" id="23_j84si"]
 [ext_resource type="Texture2D" uid="uid://ce1401wyb3o1j" path="res://photos/loadingpng/frame_22_delay-0.05s.png" id="24_0ips8"]
 [ext_resource type="Texture2D" uid="uid://c28a8gjobax0c" path="res://photos/loadingpng/frame_23_delay-0.05s.png" id="25_td378"]
+[ext_resource type="Shader" uid="uid://ctbcwfubtobkv" path="res://Shader.gdshader" id="26_bpsbb"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5x53v"]
 
@@ -108,6 +109,31 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pgmp0"]
+shader = ExtResource("26_bpsbb")
+shader_parameter/brightness = 2.0
+shader_parameter/contrast = 0.610000028975
+shader_parameter/saturation = 0.6550000311125
+shader_parameter/gamma = 0.66000002483023
+shader_parameter/curvature = 0.0
+shader_parameter/corner_soften = 0.1370000065075
+shader_parameter/vignette = 0.0
+shader_parameter/scanline_strength = 1.1850000562875
+shader_parameter/scanline_density = 0.6210000057475
+shader_parameter/interlace_strength = 1.0
+shader_parameter/mask_strength = 0.6830000324425
+shader_parameter/mask_scale = 0.5
+shader_parameter/chroma_offset_px = 1.6350000776625
+shader_parameter/luma_smear_px = 2.2
+shader_parameter/jitter_px = 1.8
+shader_parameter/wobble_px = 0.0
+shader_parameter/tape_noise = 1.0
+shader_parameter/tape_lines = 0.35
+shader_parameter/roll_speed = 1.5
+shader_parameter/roll_strength = 0.15
+shader_parameter/glow_strength = 2.0
+shader_parameter/glow_threshold = 0.5200000247
+
 [node name="pantalla_de_carga" type="Node2D" unique_id=789827988]
 script = ExtResource("1_35hou")
 
@@ -122,10 +148,21 @@ wait_time = 3.0
 autostart = true
 
 [node name="ChargeIcon" type="AnimatedSprite2D" parent="." unique_id=144754473]
-position = Vector2(1111, 606)
+position = Vector2(1039, 570)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_qiomu")
 autoplay = "default"
 frame_progress = 0.6691688
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=258524486]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=373859552]
+material = SubResource("ShaderMaterial_pgmp0")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

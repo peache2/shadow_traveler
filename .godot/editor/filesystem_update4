@@ -1,5 +1,6 @@
 res://SoulWorld.tscn
-res://menu_principal.tscn
-res://dead.tscn
 res://Shader.gdshader
-res://shader.tscn
+res://dead.tscn
+res://menu_principal.tscn
+res://pantalla_de_carga.tscn
+res://PatrolEnemy.tscn

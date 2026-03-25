@@ -2,8 +2,35 @@
 
 [ext_resource type="Script" uid="uid://d237ir3srl6ne" path="res://dead.gd" id="1_unegr"]
 [ext_resource type="Texture2D" uid="uid://r1q2bckqihxf" path="res://Sprites/Character/deadcharacter.png" id="2_vrggy"]
-[ext_resource type="AudioStream" uid="uid://djy470yypba5q" path="res://Sounds/gameover.mp3" id="3_vrggy"]
-[ext_resource type="FontFile" uid="uid://dhisoryfcfmwj" path="res://fonts/trajan-pro/TrajanPro-Bold.otf" id="4_nihps"]
+[ext_resource type="FontFile" uid="uid://bd5nop8a6p3kj" path="res://fonts/horror/HorrorFont-Regular.ttf" id="3_jblhf"]
+[ext_resource type="Shader" uid="uid://ctbcwfubtobkv" path="res://Shader.gdshader" id="5_q2olc"]
+[ext_resource type="AudioStream" uid="uid://dntf6s7ipps4x" path="res://Sounds/horrordead.wav" id="6_hvuha"]
+[ext_resource type="Texture2D" uid="uid://cxam5ye5gdpbx" path="res://photos/blood.png" id="6_jblhf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q2olc"]
+shader = ExtResource("5_q2olc")
+shader_parameter/brightness = 0.6550000311125
+shader_parameter/contrast = 2.0
+shader_parameter/saturation = 2.0
+shader_parameter/gamma = 0.20000000298023
+shader_parameter/curvature = 0.0
+shader_parameter/corner_soften = 0.1370000065075
+shader_parameter/vignette = 1.0
+shader_parameter/scanline_strength = 2.0
+shader_parameter/scanline_density = 0.6210000057475
+shader_parameter/interlace_strength = 1.0
+shader_parameter/mask_strength = 1.0
+shader_parameter/mask_scale = 0.5
+shader_parameter/chroma_offset_px = 1.6350000776625
+shader_parameter/luma_smear_px = 2.2
+shader_parameter/jitter_px = 1.8
+shader_parameter/wobble_px = 0.0
+shader_parameter/tape_noise = 1.0
+shader_parameter/tape_lines = 0.35
+shader_parameter/roll_speed = 1.5
+shader_parameter/roll_strength = 0.15
+shader_parameter/glow_strength = 2.0
+shader_parameter/glow_threshold = 0.5200000247
 
 [node name="Dead" type="Node2D" unique_id=1875001089]
 script = ExtResource("1_unegr")
@@ -14,25 +41,44 @@ scale = Vector2(0.75130206, 0.6376954)
 texture = ExtResource("2_vrggy")
 
 [node name="Timer" type="Timer" parent="." unique_id=496865101]
-wait_time = 3.0
+wait_time = 6.0
 autostart = true
 
-[node name="Gameover" type="AudioStreamPlayer" parent="." unique_id=1528359315]
-stream = ExtResource("3_vrggy")
-autoplay = true
-
 [node name="Label" type="Label" parent="." unique_id=1754313191]
-offset_left = 270.0
-offset_top = 347.0
-offset_right = 892.0
-offset_bottom = 476.0
-theme_override_fonts/font = ExtResource("4_nihps")
-theme_override_font_sizes/font_size = 94
-text = "GAME OVER"
+offset_left = 168.0
+offset_top = 343.0
+offset_right = 995.0
+offset_bottom = 487.0
+theme_override_colors/font_shadow_color = Color(0.96271783, 0, 0.1995677, 0)
+theme_override_fonts/font = ExtResource("3_jblhf")
+theme_override_font_sizes/font_size = 150
+text = "you are dead"
 
 [node name="TextEdit" type="TextEdit" parent="Label" unique_id=1539770377]
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=876347800]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1178803982]
+material = SubResource("ShaderMaterial_q2olc")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Blood2" type="Sprite2D" parent="." unique_id=625397327]
+modulate = Color(1, 1, 1, 0.554)
+position = Vector2(550, 497.99997)
+scale = Vector2(1.2189543, 0.3563218)
+texture = ExtResource("6_jblhf")
+
+[node name="Horrordead" type="AudioStreamPlayer2D" parent="." unique_id=333739132]
+position = Vector2(-157, 535)
+stream = ExtResource("6_hvuha")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

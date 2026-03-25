@@ -1,7 +1,7 @@
 shader_type canvas_item;
 render_mode unshaded;
 
-// Full-screen post-process: reads the already-rendered frame. :contentReference[oaicite:1]{index=1}
+// Full-screen post-process: reads the already-rendereddead. frame. :contentReference[oaicite:1]{index=1}
 uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;
 
 // --- Color controls ---
