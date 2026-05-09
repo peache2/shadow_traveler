@@ -1,17 +1,6 @@
-res://Sprites/EnemyGiant/Idle-MoonstoneKeeper-SUCART/No BG
-res://Sprites/EnemyGiant/Run-MoonstoneKeeper-SUCART/No BG
-res://Sprites/EnemyGiant/Land-MoonstoneKeeper-SUCART/No BG
-res://Sprites/EnemyGiant/Jump Loop-MoonstoneKeeper-SUCART/No BG
-res://Sprites/EnemyGiant/Attack1-MoonstoneKeeper-SUCART/No BG
-res://Sprites/EnemyGiant/Attack2-MoonstoneKeeper-SUCART/No BG
-res://Sprites/EnemyGiant/Death-MoonstoneKeeper-SUCART/No BG
-res://Sprites/Character
-res://Sprites/NewCharacter/DarkSamuraiAssets
-res://Sprites/DemonMinion
+res://Scripts/
+res://Scenes/
 res://
-res://Sprites/Executioner/Anims
-res://Sprites/Executioner
-res://Sprites/Crow/Animations
-res://Sprites/Twins/Walk
-res://Sounds
-res://Sprites/Enemy
+res://Sprites/Character/
+res://Sounds/
+res://Sprites/Enemy/

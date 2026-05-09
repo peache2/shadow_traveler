@@ -1,5 +1,10 @@
-ColorRect
+Area2D
+CollisionShape2D
+Marker2D
+TextureProgressBar
+HBoxContainer
 CanvasLayer
+ColorRect
 Label
 TextEdit
 Timer
@@ -7,8 +12,3 @@ Sprite2D
 AnimatedSprite2D
 DirectionalLight2D
 ParallaxBackground
-CollisionShape2D
-ShapeCast2D
-Area2D
-StaticBody2D
-PointLight2D

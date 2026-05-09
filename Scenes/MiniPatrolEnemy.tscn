@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://t8ehdreit5sx"]
+
+[ext_resource type="Script" uid="uid://c1ghfat8rwn5i" path="res://Scripts/MiniPatrolEnemy.gd" id="1_vupd3"]
+[ext_resource type="Texture2D" uid="uid://4rcf4vfd0jsp" path="res://Sprites/Enemy/Patrol/Ramses Free Package/Walk/Spr_Walk.png" id="2_vupd3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_haro7"]
+size = Vector2(28, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0cf5"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_usvrv"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(40, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3fy0"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymkux"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(120, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7b1l"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(160, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yx7yv"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(200, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1wgo"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(240, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1tq0"]
+atlas = ExtResource("2_vupd3")
+region = Rect2(280, 0, 40, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_po0sg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0cf5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_usvrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3fy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymkux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7b1l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yx7yv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1wgo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1tq0")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f0kj"]
+size = Vector2(29, 20)
+
+[node name="MiniPatrolEnemy" type="CharacterBody2D" unique_id=824258805 groups=["enemy"]]
+collision_layer = 2
+script = ExtResource("1_vupd3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1377764414]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_haro7")
+debug_color = Color(1.347661e-06, 0.5611593, 0.8838623, 0.41960785)
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1174900624]
+modulate = Color(0.39475948, 0.7232013, 0.82975906, 1)
+texture_filter = 1
+scale = Vector2(-1.1582758, 1.328125)
+sprite_frames = SubResource("SpriteFrames_po0sg")
+animation = &"Run"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=349761549]
+collision_layer = 2
+collision_mask = 16
+
+[node name="DamageColider" type="CollisionShape2D" parent="Area2D" unique_id=831712810]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_1f0kj")
+debug_color = Color(0.93337053, 2.2140146e-05, 0.6469917, 0.41960785)
+
+[node name="Ray" type="Node2D" parent="." unique_id=316807382]
+
+[node name="RightRay" type="RayCast2D" parent="Ray" unique_id=133839439]
+target_position = Vector2(70, 0)
+
+[node name="LeftRay" type="RayCast2D" parent="Ray" unique_id=1042943616]
+target_position = Vector2(-70, 0)
+
+[node name="Timer" type="Timer" parent="." unique_id=1690310206]
+wait_time = 0.4
+
+[node name="Floor" type="RayCast2D" parent="." unique_id=741437289]
+position = Vector2(-17, -17)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
