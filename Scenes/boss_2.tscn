@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://c16xywikw1ye0"]
+
+[ext_resource type="Script" uid="uid://dgjxp7dtil7at" path="res://Scenes/boss_2.gd" id="1_04q3p"]
+[ext_resource type="Texture2D" uid="uid://y7dpp300gbgo" path="res://Sprites/Enemy/BackgroundEnemy/BCKenem.png" id="1_grha5"]
+[ext_resource type="AudioStream" uid="uid://6lbyslh4qoby" path="res://Sounds/hit_sound.wav" id="3_l8mlm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cxba"]
+size = Vector2(32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04q3p"]
+atlas = ExtResource("1_grha5")
+region = Rect2(0, 0, 128, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8mlm"]
+atlas = ExtResource("1_grha5")
+region = Rect2(128, 0, 128, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4cwe"]
+atlas = ExtResource("1_grha5")
+region = Rect2(256, 0, 128, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyqgd"]
+atlas = ExtResource("1_grha5")
+region = Rect2(384, 0, 128, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4oh1a"]
+atlas = ExtResource("1_grha5")
+region = Rect2(512, 0, 128, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1r5n1"]
+atlas = ExtResource("1_grha5")
+region = Rect2(640, 0, 128, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grha5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04q3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8mlm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4cwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyqgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4oh1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1r5n1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_04q3p"]
+size = Vector2(22, 48)
+
+[node name="boss2" type="CharacterBody2D" unique_id=1040963437 groups=["Player", "enemy"]]
+scale = Vector2(2, 2)
+collision_mask = 16
+script = ExtResource("1_04q3p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=520110436 groups=["Player", "enemy"]]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_2cxba")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=449335107]
+modulate = Color(0.054517426, 0.88274235, 0.9999997, 1)
+position = Vector2(-8.499999, 0.49999997)
+scale = Vector2(-0.344, 0.373)
+sprite_frames = SubResource("SpriteFrames_grha5")
+autoplay = "default"
+frame_progress = 0.77611935
+
+[node name="DamagePlayerArea" type="Area2D" parent="." unique_id=1111670211 groups=["Player", "enemy"]]
+collision_layer = 0
+collision_mask = 144
+
+[node name="DamageColider" type="CollisionShape2D" parent="DamagePlayerArea" unique_id=878751516]
+position = Vector2(-1, 2)
+shape = SubResource("RectangleShape2D_04q3p")
+debug_color = Color(0.98215586, 0, 0.36888444, 0.41960785)
+
+[node name="HitSound" type="AudioStreamPlayer" parent="." unique_id=213058917]
+stream = ExtResource("3_l8mlm")
+volume_db = 18.02
+pitch_scale = 0.45
+
+[connection signal="body_entered" from="DamagePlayerArea" to="." method="_on_damage_player_area_body_entered"]

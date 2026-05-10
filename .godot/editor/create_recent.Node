@@ -1,5 +1,7 @@
 Area2D
 CollisionShape2D
+AnimatedSprite2D
+CharacterBody2D
 Marker2D
 TextureProgressBar
 HBoxContainer
@@ -9,6 +11,4 @@ Label
 TextEdit
 Timer
 Sprite2D
-AnimatedSprite2D
 DirectionalLight2D
-ParallaxBackground
