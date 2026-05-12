@@ -111,6 +111,9 @@ stream = ExtResource("6_5mndp")
 mix_target = 1
 playback_type = 1
 
+[node name="Timer" type="Timer" parent="." unique_id=279808967]
+
 [connection signal="pressed" from="PLAY" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SETTINGS" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SETTINGS" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="EXIT" to="." method="_on_button_2_pressed"]

@@ -59,7 +59,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1f0kj"]
 size = Vector2(25, 30)
 
-[node name="PatrolEnemyDeadUp" type="CharacterBody2D" unique_id=1133442320]
+[node name="PatrolEnemyHeadUp" type="CharacterBody2D" unique_id=1133442320]
 collision_layer = 2
 script = ExtResource("1_b8t3d")
 

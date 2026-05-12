@@ -6,6 +6,30 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_haro7"]
 size = Vector2(25, 45)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_d26d1"]
+atlas = ExtResource("2_2laan")
+region = Rect2(0, 192, 127, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xkak"]
+atlas = ExtResource("2_2laan")
+region = Rect2(128, 192, 127, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84ele"]
+atlas = ExtResource("2_2laan")
+region = Rect2(256, 192, 127, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpiuq"]
+atlas = ExtResource("2_2laan")
+region = Rect2(384, 192, 127, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqfvu"]
+atlas = ExtResource("2_2laan")
+region = Rect2(512, 192, 127, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q185c"]
+atlas = ExtResource("2_2laan")
+region = Rect2(640, 192, 127, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_u7y3b"]
 atlas = ExtResource("2_2laan")
 region = Rect2(0, 64, 128, 64)
@@ -28,6 +52,29 @@ region = Rect2(512, 64, 128, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_po0sg"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d26d1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xkak")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84ele")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpiuq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqfvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q185c")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_u7y3b")
@@ -67,7 +114,10 @@ texture_filter = 1
 position = Vector2(1.9398266, 9.5)
 scale = Vector2(-1.1582758, 1.328125)
 sprite_frames = SubResource("SpriteFrames_po0sg")
-animation = &"Run"
+animation = &"Attack"
+autoplay = "Run"
+frame = 5
+frame_progress = 1.0
 
 [node name="Area2D" type="Area2D" parent="." unique_id=349761549]
 collision_layer = 2

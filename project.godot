@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Shadow Traveler"
-run/main_scene="uid://3m6xa0v02law"
+run/main_scene="uid://d4lcmbmhgpuq1"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 

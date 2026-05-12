@@ -1,9 +1,5 @@
 res://Scenes/SoulWorld.tscn
 res://SHADERS/Shader.gdshader
-res://Scenes/boss2.tscn
-res://Scripts/idle2.gd
-res://Scenes/boss.tscn
-res://Scenes/boss_2.tscn
-res://Scripts/boss.gd
-res://Scenes/boss_2.gd
-res://Scenes/PatrolEnemy.tscn
+res://Scenes/PatrolEnemyHeadLow.tscn
+res://Scenes/player.tscn
+res://Scenes/PatrolEnemyHeadUp.tscn
