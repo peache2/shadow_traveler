@@ -46,6 +46,5 @@ func take_damage():
 
 func _on_damage_player_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		if GameManager:
-			GameManager.take_damage(0.5)
-			$HitSound.play()
+		if body.has_method("take_damage"):
+			body.take_damage(0.5)

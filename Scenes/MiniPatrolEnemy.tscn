@@ -1,10 +1,27 @@
 [gd_scene format=3 uid="uid://t8ehdreit5sx"]
 
 [ext_resource type="Script" uid="uid://c1ghfat8rwn5i" path="res://Scripts/MiniPatrolEnemy.gd" id="1_vupd3"]
+[ext_resource type="Texture2D" uid="uid://b0bc8yq073nxg" path="res://Sprites/Enemy/Patrol/Ramses Free Package/Track/Spr_Track.png" id="2_kj74h"]
 [ext_resource type="Texture2D" uid="uid://4rcf4vfd0jsp" path="res://Sprites/Enemy/Patrol/Ramses Free Package/Walk/Spr_Walk.png" id="2_vupd3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_haro7"]
 size = Vector2(28, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkb3t"]
+atlas = ExtResource("2_kj74h")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p03d7"]
+atlas = ExtResource("2_kj74h")
+region = Rect2(40, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7fky3"]
+atlas = ExtResource("2_kj74h")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfmqu"]
+atlas = ExtResource("2_kj74h")
+region = Rect2(120, 0, 40, 40)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l0cf5"]
 atlas = ExtResource("2_vupd3")
@@ -40,6 +57,23 @@ region = Rect2(280, 0, 40, 40)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_po0sg"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkb3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p03d7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7fky3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfmqu")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 11.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_l0cf5")
@@ -88,6 +122,7 @@ texture_filter = 1
 scale = Vector2(-1.1582758, 1.328125)
 sprite_frames = SubResource("SpriteFrames_po0sg")
 animation = &"Run"
+autoplay = "Run"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=349761549]
 collision_layer = 2

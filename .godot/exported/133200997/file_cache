@@ -1,0 +1,17 @@
+res://Scenes/boss.tscn::70c35ae9af77893e6a6b3cfa826a1d46::1778487722::res://.godot/exported/133200997/export-8b13cdd0fb9e21d4274e7ba446385f4a-boss.scn
+res://Scenes/boss_2.tscn::77859548595a19c4a7d63cc97b92c735::1778747530::res://.godot/exported/133200997/export-f40e1e57be20fa55a97f609c2422cf14-boss_2.scn
+res://Scenes/bullet.tscn::28e87df913d2763b8ec54d8341668d06::1778487035::res://.godot/exported/133200997/export-ebb3521b4f0ab2fc80eef1183e18e924-bullet.scn
+res://Scenes/dead.tscn::7e587474b226a1bc5f1af4ed1f60b1ed::1778487035::res://.godot/exported/133200997/export-8c1c78f575db1819c49e5dc4b2d81c3a-dead.scn
+res://Scenes/hud.tscn::1bd47843a3281adacb264cc17d010760::1778487035::res://.godot/exported/133200997/export-885e17d6a23b453de5b281f1a900d8bb-hud.scn
+res://Scenes/menu_principal.tscn::0a74ace9418909c6423d7f9a1470c992::1778665954::res://.godot/exported/133200997/export-582b63c1e76b6dbd50e95e6d8a5e5ff4-menu_principal.scn
+res://Scenes/minion.tscn::d45549d6b3b456953b0e45b5e7f7446a::1778487035::res://.godot/exported/133200997/export-5f23d9189db92bb30c4f1d9a16af77bd-minion.scn
+res://Scenes/MiniPatrolEnemy.tscn::68230fd6370971e6623ec79f44fd350c::1778666245::res://.godot/exported/133200997/export-8af51127f31d4e31e851131b3ad1c314-MiniPatrolEnemy.scn
+res://Scenes/pantalla_de_carga.tscn::3054baac579a30398af0fa203367786b::1778487035::res://.godot/exported/133200997/export-803e5ac6d5ffeeb0cf0d871e3f43b341-pantalla_de_carga.scn
+res://Scenes/PatrolEnemy.tscn::d08b219f6db2eed69fbc77fa236d62ec::1778665954::res://.godot/exported/133200997/export-e003ba3c68ed7f500326b85d734f1ae4-PatrolEnemy.scn
+res://Scenes/PatrolEnemyHeadLow.tscn::cdf57ed9802e6eb7514e97d8794a435c::1778665954::res://.godot/exported/133200997/export-15ce89ef35e9e7a5af8e207dcba9eefe-PatrolEnemyHeadLow.scn
+res://Scenes/PatrolEnemyHeadUp.tscn::47b01d16702d4380ae5f957860b5fe10::1778665954::res://.godot/exported/133200997/export-18f11b6263a0059f277d129ab1094bdd-PatrolEnemyHeadUp.scn
+res://Scenes/player.tscn::24596c192361117ab9abde39ba77ef7c::1778747542::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
+res://Scenes/settings.tscn::e6cd6bd6c507e88a8def625528dc3893::1778487035::res://.godot/exported/133200997/export-05ec5d85e038ce378b6af9e5c62e3479-settings.scn
+res://Scenes/SoulWorld.tscn::3a9ede73e4071875092781302322cb2d::1778747042::res://.godot/exported/133200997/export-c8b5ad3806c746d6cad2651df9e1eba9-SoulWorld.scn
+res://Scenes/Traveler.tscn::788832c0401b48b0cb5e0550134b4666::1778487035::res://.godot/exported/133200997/export-3522fbee7f8f5debfde84f643751e81e-Traveler.scn
+res://ball.tscn::0fd3888196356510bb0e9f2cb3cc46f3::1778671127::res://.godot/exported/133200997/export-f46c71a9b7f0892a5bf2bd9cf0943875-ball.scn
