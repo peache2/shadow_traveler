@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://ce1401wyb3o1j" path="res://photos/loadingpng/frame_22_delay-0.05s.png" id="24_hy1bx"]
 [ext_resource type="Texture2D" uid="uid://c28a8gjobax0c" path="res://photos/loadingpng/frame_23_delay-0.05s.png" id="25_vehgl"]
 [ext_resource type="Shader" uid="uid://ctbcwfubtobkv" path="res://SHADERS/Shader.gdshader" id="26_1keyd"]
+[ext_resource type="FontFile" uid="uid://dhisoryfcfmwj" path="res://fonts/trajan-pro/TrajanPro-Bold.otf" id="26_7f3ef"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5x53v"]
 
@@ -109,6 +110,8 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uaqhj"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pgmp0"]
 shader = ExtResource("26_1keyd")
 shader_parameter/brightness = 2.0
@@ -155,6 +158,26 @@ autoplay = "default"
 frame_progress = 0.6691688
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=258524486]
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer" unique_id=602127361]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -263.0
+offset_top = -75.0
+offset_right = 373.0
+offset_bottom = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("26_7f3ef")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_uaqhj")
+text = "Wasd : to move
+Space: jump
+Ctrl: throw power (Bosses)"
+virtual_keyboard_enabled = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=373859552]
 material = SubResource("ShaderMaterial_pgmp0")

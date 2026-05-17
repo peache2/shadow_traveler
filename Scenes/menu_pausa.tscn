@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bfryk1mxinp6g"]
+
+[ext_resource type="Script" uid="uid://cm62jartgwjuf" path="res://Scenes/main_menu.gd" id="1_7dldy"]
+[ext_resource type="FontFile" uid="uid://bd5nop8a6p3kj" path="res://fonts/horror/HorrorFont-Regular.ttf" id="2_pq2yk"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_7dldy"]
+
+[node name="menu_pausa" type="CanvasLayer" unique_id=778130276]
+process_mode = 3
+layer = 128
+script = ExtResource("1_7dldy")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1684030433]
+modulate = Color(0, 0, 0, 0.50600004)
+position = Vector2(576.25, 322.75)
+scale = Vector2(1153.5, 646.5)
+texture = SubResource("CanvasTexture_7dldy")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1812168940]
+layout_direction = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = -49.0
+offset_right = 127.5
+offset_bottom = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=223284086]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pq2yk")
+theme_override_font_sizes/font_size = 40
+text = "CONTINUE"
+
+[node name="Main Menu" type="Button" parent="VBoxContainer" unique_id=1224325525]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pq2yk")
+theme_override_font_sizes/font_size = 40
+text = "MAIN MENU"

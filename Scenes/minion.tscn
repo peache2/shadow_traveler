@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://bxlw76iuiwnr5"]
 
-[ext_resource type="Script" uid="uid://vgvlhcskekb6" path="res://Scripts/minion.gd" id="1_777tc"]
 [ext_resource type="Texture2D" uid="uid://egj1b2ndo84f" path="res://Sprites/Enemy/Executioner/Anims/summonAppear.png" id="2_777tc"]
 [ext_resource type="Texture2D" uid="uid://b02kub7onfdbc" path="res://Sprites/Enemy/Executioner/Anims/summonIdle.png" id="3_012lr"]
 
@@ -87,21 +86,38 @@ animations = [{
 "speed": 6.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5x54"]
+size = Vector2(21.666666, 41.666664)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_012lr"]
 size = Vector2(23, 44)
 
-[node name="Minion" type="CharacterBody2D" unique_id=273031157]
+[node name="Minion" type="CharacterBody2D" unique_id=273031157 groups=["Player", "enemy"]]
 scale = Vector2(0.6, 0.6)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("1_777tc")
+collision_mask = 128
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1464822625]
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1464822625]
+visible = false
 scale = Vector2(2.1, 2.1)
 sprite_frames = SubResource("SpriteFrames_gnj65")
 animation = &"idle"
 autoplay = "default"
 
-[node name="AnimatedSprite2D2" type="CollisionShape2D" parent="." unique_id=1732091672]
+[node name="DamagePlayerArea" type="Area2D" parent="." unique_id=242635031]
+collision_layer = 8
+collision_mask = 128
+monitoring = false
+monitorable = false
+
+[node name="DamageColider" type="CollisionShape2D" parent="DamagePlayerArea" unique_id=907414163]
+position = Vector2(-2.4999995, 5.833334)
+shape = SubResource("RectangleShape2D_f5x54")
+disabled = true
+debug_color = Color(0.9769748, 0, 0.41136557, 0.41960785)
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1732091672]
 position = Vector2(-2.5, 5)
 shape = SubResource("RectangleShape2D_012lr")
+disabled = true
+
+[connection signal="body_entered" from="DamagePlayerArea" to="." method="_on_damage_player_area_body_entered"]

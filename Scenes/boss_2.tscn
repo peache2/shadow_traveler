@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dgjxp7dtil7at" path="res://Scenes/boss_2.gd" id="1_04q3p"]
 [ext_resource type="Texture2D" uid="uid://y7dpp300gbgo" path="res://Sprites/Enemy/BackgroundEnemy/BCKenem.png" id="1_grha5"]
-[ext_resource type="AudioStream" uid="uid://6lbyslh4qoby" path="res://Sounds/hit_sound.wav" id="3_l8mlm"]
+[ext_resource type="AudioStream" uid="uid://dk6uoi7pyl4ny" path="res://Sounds/hit.mp3" id="3_k4cwe"]
+[ext_resource type="Script" uid="uid://b87gw2nqimyuo" path="res://Scenes/control.gd" id="4_k4cwe"]
+[ext_resource type="Texture2D" uid="uid://mosjtngl2u0m" path="res://Sprites/Enemy/BackgroundEnemy/boss2_logo.png" id="5_nyqgd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2cxba"]
 size = Vector2(32, 48)
@@ -61,12 +63,11 @@ animations = [{
 size = Vector2(39, 48)
 
 [node name="boss2" type="CharacterBody2D" unique_id=1040963437 groups=["Player", "enemy"]]
-scale = Vector2(2, 2)
-collision_layer = 0
-collision_mask = 0
+scale = Vector2(2.0014973, 2)
+collision_mask = 128
 script = ExtResource("1_04q3p")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=520110436 groups=["Player", "enemy"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=520110436]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_2cxba")
 
@@ -87,8 +88,43 @@ shape = SubResource("RectangleShape2D_04q3p")
 debug_color = Color(0.98215586, 0, 0.36888444, 0.41960785)
 
 [node name="HitSound" type="AudioStreamPlayer" parent="DamagePlayerArea" unique_id=213058917]
-stream = ExtResource("3_l8mlm")
-volume_db = 18.02
-pitch_scale = 0.45
+stream = ExtResource("3_k4cwe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2013259191]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1363093903]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 36.0
+offset_right = -68.5
+offset_bottom = 64.5
+grow_horizontal = 0
+script = ExtResource("4_k4cwe")
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer" unique_id=840299446]
+modulate = Color(0, 0.5592293, 0.36136603, 1)
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 306.0
+offset_top = -597.0
+offset_right = 506.0
+offset_bottom = -570.0
+grow_horizontal = 2
+grow_vertical = 0
+step = 1.0
+value = 100.0
+
+[node name="Boss2Logo" type="Sprite2D" parent="CanvasLayer" unique_id=603339553]
+position = Vector2(885, 57.000004)
+scale = Vector2(1.1174161, 1.3846154)
+texture = ExtResource("5_nyqgd")
 
 [connection signal="body_entered" from="DamagePlayerArea" to="." method="_on_damage_player_area_body_entered"]

@@ -14,3 +14,4 @@ func spawn_enemy():
 	enemy_instance.global_position = marker_2d.global_position
 	$"../CrisisFight".play()
 	$"../Suspenseloop".stop()
+	$"../Bossbattle".stop()

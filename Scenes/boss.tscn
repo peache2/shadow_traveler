@@ -15,7 +15,7 @@
 [ext_resource type="Script" uid="uid://b41wx82t2s4f" path="res://Scripts/spawn_minion.gd" id="12_km2bi"]
 [ext_resource type="PackedScene" uid="uid://bxlw76iuiwnr5" path="res://Scenes/minion.tscn" id="13_u0duv"]
 [ext_resource type="Script" uid="uid://c2so0vq731m8b" path="res://Scripts/death.gd" id="14_km2bi"]
-[ext_resource type="AudioStream" uid="uid://dof0y1gycchrl" path="res://Sounds/atacking.wav" id="16_hbq6j"]
+[ext_resource type="AudioStream" uid="uid://dk6uoi7pyl4ny" path="res://Sounds/hit.mp3" id="16_hbq6j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kles1"]
 atlas = ExtResource("1_o1i15")
@@ -719,16 +719,15 @@ height = 49.69
 size = Vector2(59.61, 60)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_42olf"]
-size = Vector2(24, 61.333336)
+size = Vector2(47.333336, 61.333336)
 
 [node name="boss" type="CharacterBody2D" unique_id=1293883826 groups=["Player", "enemy"]]
 scale = Vector2(1.5, 1.5)
-collision_mask = 16
+collision_mask = 128
 slide_on_ceiling = false
 script = ExtResource("1_kles1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=651253059]
-modulate = Color(0.5256653, 0.7954379, 1, 1)
 position = Vector2(-1.4999971, -3)
 sprite_frames = SubResource("SpriteFrames_ein1h")
 animation = &"Idle"
@@ -769,8 +768,8 @@ offset_right = 552.0
 offset_bottom = -599.0
 grow_horizontal = 2
 grow_vertical = 0
-step = 0.001
-value = 100.0
+max_value = 35.0
+value = 35.0
 
 [node name="Label" type="Label" parent="UI/ProgressBar" unique_id=28962721]
 visible = false
@@ -843,7 +842,7 @@ collision_layer = 0
 collision_mask = 144
 
 [node name="DamageColider" type="CollisionShape2D" parent="DamagePlayerArea" unique_id=1391241957]
-position = Vector2(-0.666667, -0.6666666)
+position = Vector2(11.000003, -0.6666666)
 shape = SubResource("RectangleShape2D_42olf")
 debug_color = Color(1.1551381e-06, 0.6469994, 0.23078433, 0.41960785)
 
